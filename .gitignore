@@ -1,3 +1,6 @@
 .venv/
 __pycache__/
 *.pyc
+02-PDF-RAG/data/
+02-PDF-RAG/extracted_text.txt
+02-PDF-RAG/chunks.json
