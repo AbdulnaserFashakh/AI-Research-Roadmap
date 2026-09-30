@@ -1,0 +1,296 @@
+[
+  {
+    "id": "Q01",
+    "question_ar": "قارن دقة نماذج CNN وRNN وLSTM في التصنيف الثنائي. ما النموذج الأفضل؟",
+    "retrieval_query_en": "Compare the accuracy of CNN, RNN, and LSTM models for binary classification. Which model performed best?",
+    "candidates": [
+      {
+        "rank": 1,
+        "page": 13,
+        "chunk_id": 182,
+        "score": 0.7881,
+        "text": "performance of different machine learning models and neural networks in binary classification. The two methods used included: Metrics evaluation: The models were evaluated based on key performance indicators such as accuracy, recall, F1 score, and precision. The results showed that advanced neural network architectures, especially recurrent neural network (RNN) and long short-term memory (LSTM) models, provided superior performance metrics, outperforming traditional machine learning models such as support vector machines (SVMs) and decision trees in accuracy and overall effectiveness for binary"
+      },
+      {
+        "rank": 2,
+        "page": 12,
+        "chunk_id": 171,
+        "score": 0.7441,
+        "text": "(RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision, recall, F1-score for both classes (Class 0 and Class 1), and overall accuracy. The performance metrics for each model are summarized below Table 5. Discussion The sentiment analysis results highlight varying performance across traditional machine learning models and neural network architectures. Among traditional models, the Support Vector Machine (SVM) achieved the highest accuracy of 0.96, with balanced precision (0.96) and"
+      },
+      {
+        "rank": 3,
+        "page": 12,
+        "chunk_id": 170,
+        "score": 0.7017,
+        "text": "Table 4. 9. Evaluation metrics 9.1. Comparative analysis This study evaluates the performance of various machine learning and neural network models in classifying binary classes, focusing on metrics such as precision, recall, F1-score, and accuracy. The models analyzed include Logistic Regression, Decision Tree, Random Forest, Support Vector Machine (SVM), Convolutional Neural Network (CNN), Simple Neural Network (MLP), Recurrent Neural Network (RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision,"
+      },
+      {
+        "rank": 4,
+        "page": 13,
+        "chunk_id": 178,
+        "score": 0.6838,
+        "text": "accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to subtler linguistic patterns. The success of CNN also supports findings in previous studies that highlight its efficiency in extracting local features from text sequences. While traditional models like SVM and Random Forest showed high performance, their limitations become evident in handling sequential sentiment dynamics, especially when compared to LSTM and RNN. This confirms the importance of sequential modeling when analyzing"
+      },
+      {
+        "rank": 5,
+        "page": 13,
+        "chunk_id": 177,
+        "score": 0.6651,
+        "text": "below illustrates the comparison of model performance. The comparative analysis of model performances reveals important insights into the effectiveness of different algorithms for sentiment classification in the context of cyberbullying detection. Deep learning models, especially RNN and LSTM, outperformed traditional classifiers by effectively capturing temporal and contextual nuances in textual data. Their ability to model long-term dependencies explains their superior accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to"
+      }
+    ]
+  },
+  {
+    "id": "Q02",
+    "question_ar": "كم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟",
+    "retrieval_query_en": "How many tweets remained after data cleaning, and how many were obtained after balancing the dataset?",
+    "candidates": [
+      {
+        "rank": 1,
+        "page": 5,
+        "chunk_id": 70,
+        "score": 0.7053,
+        "text": "of the important categories and with the completion of the process of balancing data categories, the total number of tweets became (71,704) by (17,926) for each category, as shown in the following distribution in the table below: Table 2. 4.2. Model training This study builds on an integrated methodology that combines diverse machine learning models, including traditional methods such as logistic regression and decision trees, along with newer technologies such as conventional neural networks (CNNs) and long- and short-term memory"
+      },
+      {
+        "rank": 2,
+        "page": 4,
+        "chunk_id": 58,
+        "score": 0.6487,
+        "text": "nature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text"
+      },
+      {
+        "rank": 3,
+        "page": 5,
+        "chunk_id": 74,
+        "score": 0.6324,
+        "text": "of cyberbullying texts reinforced by Tweepy, resulting in a powerful collection of 58,000 tweets. Advanced data processing steps, including text cleaning, are developed into codes, and features are extracted using Term Frequency-Inverse Document Frequency (TF-IDF) and sentiment analysis to ensure that data are adapted appropriately for model training and assessment. The TF-IDF vectors capture term relevance, while sentiment polarity (from TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes"
+      },
+      {
+        "rank": 4,
+        "page": 4,
+        "chunk_id": 55,
+        "score": 0.6127,
+        "text": "This collection consists of cyberbullying scripts collected from various sources, including Kaggle, and has been expanded using Tweepy, a Python programming tool that gives access to the Twitter API. This resulted in a rich and diverse dataset of 58,000 tweets, which after processing, cleaning and iterating became 51,202 tweets that can provide a solid foundation for analysis and study. This joint strategy provided coverage across a range of cyberbullying types and language variants, promoting model generalizability. 4.1.2. Sources and expansion"
+      },
+      {
+        "rank": 5,
+        "page": 4,
+        "chunk_id": 65,
+        "score": 0.5815,
+        "text": "models are trained in diverse data and can generalize well in different contexts. Labels: Each tweet was labeled as cyberbullying or not, allowing for supervised learning and evaluation of model performance. In the Figure below, we explain the mechanism of retrieving tweets using the Tweepy Library: see Fig. 1 Here is a detailed explanation of the dataset: This multi-category dataset is categorized according to the category of cyberbullying as follows: Table 1 and Fig. 2. 4.1.5. Importance of the Dataset"
+      }
+    ]
+  },
+  {
+    "id": "Q03",
+    "question_ar": "ما الفئات الأربع المستخدمة لتصنيف أنواع التنمر الإلكتروني؟",
+    "retrieval_query_en": "What were the four categories used to classify cyberbullying types?",
+    "candidates": [
+      {
+        "rank": 1,
+        "page": 10,
+        "chunk_id": 151,
+        "score": 0.7396,
+        "text": "gender, religion, age, and ethnicity classifications, which offer a comprehensive view of the prevalence and nature of cyberbullying. The results are as follows: 8.2. Distribution of cyberbullying cases by subcategory 8.2.1. General Category (Other) The largest portion of the dataset falls under the “Other” category, comprising 42,255 cases. This category is likely to summarize a range of incidents that do not fit precisely to specific demographic classifications such as gender, religion, or age. The high frequency of this category underscores"
+      },
+      {
+        "rank": 2,
+        "page": 2,
+        "chunk_id": 30,
+        "score": 0.7034,
+        "text": "have been employed to detect cyberbullying. These approaches frequently utilize NLP, information retrieval, and feature extraction techniques. For example [16], recognized social network structure as an influencing factor in cyberbullying detection, advocating for the integration of text and social network analysis. So used NLP to identify offensive language in social media [17]. They also worked on the same principles and linked cyberbullying to multiple characteristics such as profanity, violence, temporary feedback patterns, social networks, language, and visual content. This requires"
+      },
+      {
+        "rank": 3,
+        "page": 2,
+        "chunk_id": 31,
+        "score": 0.689,
+        "text": "linked cyberbullying to multiple characteristics such as profanity, violence, temporary feedback patterns, social networks, language, and visual content. This requires establishment of precise standards for cyberbullying. Conventional bullying, which includes power imbalance, intent, aggression, and repetition, can have its basic characteristics expanded and used as a basis for the definition of cyberbullying [18]. Media use is a part of aggressive behavior. Threats, insults, ridicules, spreading A.M. Fashakh et al. Egyptian Informatics Journal 32 (2025) 100856 2"
+      },
+      {
+        "rank": 4,
+        "page": 10,
+        "chunk_id": 150,
+        "score": 0.6886,
+        "text": "to understand the groups most affected by cyberbullying and to help develop targeted strategies to address this phenomenon. All statistical insights presented here were derived from a balanced dataset and verified using exploratory data analysis to ensure consistent distribution and eliminate class bias. The dataset was analysed to explore the distribution of cyberbullying incidents across various subcategories. The subcategories include gender, religion, age, and ethnicity classifications, which offer a comprehensive view of the prevalence and nature of cyberbullying. The results"
+      },
+      {
+        "rank": 5,
+        "page": 10,
+        "chunk_id": 149,
+        "score": 0.6844,
+        "text": "classification of cyberbullying text was rarely addressed using deep learning methods on a balanced, large-scale dataset. 8. Results and discussion 8.1. Statistical analysis Descriptive Statistics: Data available for different subcategories and number of cyberbullying cases and Sentiment Analysis like negative emotions have been analyzed to detect the distribution of this phenomenon across different categories. Data have been compiled and disaggregated to understand the groups most affected by cyberbullying and to help develop targeted strategies to address this phenomenon. All statistical"
+      }
+    ]
+  },
+  {
+    "id": "Q04",
+    "question_ar": "ما دقة نموذج التصنيف متعدد الفئات الأربع؟",
+    "retrieval_query_en": "What accuracy was achieved for the four-class classification task?",
+    "candidates": [
+      {
+        "rank": 1,
+        "page": 12,
+        "chunk_id": 171,
+        "score": 0.6325,
+        "text": "(RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision, recall, F1-score for both classes (Class 0 and Class 1), and overall accuracy. The performance metrics for each model are summarized below Table 5. Discussion The sentiment analysis results highlight varying performance across traditional machine learning models and neural network architectures. Among traditional models, the Support Vector Machine (SVM) achieved the highest accuracy of 0.96, with balanced precision (0.96) and"
+      },
+      {
+        "rank": 2,
+        "page": 13,
+        "chunk_id": 178,
+        "score": 0.6126,
+        "text": "accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to subtler linguistic patterns. The success of CNN also supports findings in previous studies that highlight its efficiency in extracting local features from text sequences. While traditional models like SVM and Random Forest showed high performance, their limitations become evident in handling sequential sentiment dynamics, especially when compared to LSTM and RNN. This confirms the importance of sequential modeling when analyzing"
+      },
+      {
+        "rank": 3,
+        "page": 12,
+        "chunk_id": 170,
+        "score": 0.6118,
+        "text": "Table 4. 9. Evaluation metrics 9.1. Comparative analysis This study evaluates the performance of various machine learning and neural network models in classifying binary classes, focusing on metrics such as precision, recall, F1-score, and accuracy. The models analyzed include Logistic Regression, Decision Tree, Random Forest, Support Vector Machine (SVM), Convolutional Neural Network (CNN), Simple Neural Network (MLP), Recurrent Neural Network (RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision,"
+      },
+      {
+        "rank": 4,
+        "page": 13,
+        "chunk_id": 182,
+        "score": 0.6053,
+        "text": "performance of different machine learning models and neural networks in binary classification. The two methods used included: Metrics evaluation: The models were evaluated based on key performance indicators such as accuracy, recall, F1 score, and precision. The results showed that advanced neural network architectures, especially recurrent neural network (RNN) and long short-term memory (LSTM) models, provided superior performance metrics, outperforming traditional machine learning models such as support vector machines (SVMs) and decision trees in accuracy and overall effectiveness for binary"
+      },
+      {
+        "rank": 5,
+        "page": 12,
+        "chunk_id": 174,
+        "score": 0.5626,
+        "text": "0.67 accuracy, with notably low precision (0.48) and recall (0.01) for positive sentiment. Key Insights: • Traditional Models: SVM, Decision Tree, and Random Forest performed robustly, with SVM providing the most balanced results. Fig. 5. The Distribution of of Sub_categories and Sentiment Negative. A.M. Fashakh et al. Egyptian Informatics Journal 32 (2025) 100856 12"
+      }
+    ]
+  },
+  {
+    "id": "Q05",
+    "question_ar": "ما الدقة التي حققها نموذج تحليل المشاعر؟",
+    "retrieval_query_en": "What accuracy was achieved by the sentiment analysis model?",
+    "candidates": [
+      {
+        "rank": 1,
+        "page": 13,
+        "chunk_id": 175,
+        "score": 0.7444,
+        "text": "• Neural Networks: CNN, RNN, and LSTM outperformed traditional models, excelling in handling complex sentiment patterns. • MLP Limitations: MLP’s poor performance highlights its inability to capture sequential dependencies effectively. Further, an ablation study was conducted to evaluate the contribution of sentiment features alone, versus combined text and emotion features. Results showed that inclusion of emotional cues significantly improved performance in RNN and LSTM by approximately 3 % in F1score. The experimental setup was executed on Google Colab Pro with"
+      },
+      {
+        "rank": 2,
+        "page": 3,
+        "chunk_id": 47,
+        "score": 0.7119,
+        "text": "provides for good textual feature representation, and TextBlob sentiment scoring introduces emotional nuance to enhance model sensitivity and contextual comprehension. 3.1.2. Study objective This study aimed to compare the performance of various machine learning models in detecting cyberbullying using text and emotional features. The evaluated models include traditional models such as logistical regression, decision tree, and random forest, as well as advanced models such as synthetic neural networks (CNN), repetitive neural networks (RNN), and long- and short-range memory (LSTM). Texts"
+      },
+      {
+        "rank": 3,
+        "page": 3,
+        "chunk_id": 38,
+        "score": 0.7077,
+        "text": "[24]. In literature, sentiment analysis is a supporting task used to improve the performance of the core task [25]. Emotions are the thoughts and opinions that develop from emotions linked to a specific thing, and they typically fall into one of three categories: positive, neutral, or negative [26]. Unlike text analysis, sentiment analysis detects different sentiments through text expressions such as anger, disgust, fear, happiness, sadness, and surprise. There are three common ways to detect feelings in texts: the keyword-based"
+      },
+      {
+        "rank": 4,
+        "page": 10,
+        "chunk_id": 144,
+        "score": 0.702,
+        "text": "others. \u0000 Director of sentiment analysis presents a classification of emotions between “positive” and “negative”. This multi-headed output design was implemented using a shared feature extractor followed by parallel dense layers, each optimized independently for its respective task using categorical cross-entropy and soft max activation. Phases of training and treatment \u0000 Data processing: The data cleaning process included removing noise such as unnecessary codes, converting text into small letters, and removing repetitions. \u0000 Category coding: Bullying, subcategories and emotions rankings"
+      },
+      {
+        "rank": 5,
+        "page": 3,
+        "chunk_id": 51,
+        "score": 0.6979,
+        "text": "making it necessary to conduct a comprehensive analysis and measurement of these impacts. The integration of sentiment analysis allows psychological effects to be measured using emotional metrics derived from user-generated content. 3.2.2. Study objective This objective was to study and measure the psychological impact of A.M. Fashakh et al. Egyptian Informatics Journal 32 (2025) 100856 3"
+      }
+    ]
+  },
+  {
+    "id": "Q06",
+    "question_ar": "ما مصدرا بيانات التغريدات، وكم بلغ عددها الإجمالي قبل التنظيف؟",
+    "retrieval_query_en": "What were the two sources of the tweet dataset, and how many tweets were collected before cleaning?",
+    "candidates": [
+      {
+        "rank": 1,
+        "page": 4,
+        "chunk_id": 58,
+        "score": 0.6519,
+        "text": "nature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text"
+      },
+      {
+        "rank": 2,
+        "page": 4,
+        "chunk_id": 55,
+        "score": 0.6339,
+        "text": "This collection consists of cyberbullying scripts collected from various sources, including Kaggle, and has been expanded using Tweepy, a Python programming tool that gives access to the Twitter API. This resulted in a rich and diverse dataset of 58,000 tweets, which after processing, cleaning and iterating became 51,202 tweets that can provide a solid foundation for analysis and study. This joint strategy provided coverage across a range of cyberbullying types and language variants, promoting model generalizability. 4.1.2. Sources and expansion"
+      },
+      {
+        "rank": 3,
+        "page": 5,
+        "chunk_id": 70,
+        "score": 0.6245,
+        "text": "of the important categories and with the completion of the process of balancing data categories, the total number of tweets became (71,704) by (17,926) for each category, as shown in the following distribution in the table below: Table 2. 4.2. Model training This study builds on an integrated methodology that combines diverse machine learning models, including traditional methods such as logistic regression and decision trees, along with newer technologies such as conventional neural networks (CNNs) and long- and short-term memory"
+      },
+      {
+        "rank": 4,
+        "page": 5,
+        "chunk_id": 74,
+        "score": 0.6244,
+        "text": "of cyberbullying texts reinforced by Tweepy, resulting in a powerful collection of 58,000 tweets. Advanced data processing steps, including text cleaning, are developed into codes, and features are extracted using Term Frequency-Inverse Document Frequency (TF-IDF) and sentiment analysis to ensure that data are adapted appropriately for model training and assessment. The TF-IDF vectors capture term relevance, while sentiment polarity (from TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes"
+      },
+      {
+        "rank": 5,
+        "page": 4,
+        "chunk_id": 65,
+        "score": 0.6116,
+        "text": "models are trained in diverse data and can generalize well in different contexts. Labels: Each tweet was labeled as cyberbullying or not, allowing for supervised learning and evaluation of model performance. In the Figure below, we explain the mechanism of retrieving tweets using the Tweepy Library: see Fig. 1 Here is a detailed explanation of the dataset: This multi-category dataset is categorized according to the category of cyberbullying as follows: Table 1 and Fig. 2. 4.1.5. Importance of the Dataset"
+      }
+    ]
+  },
+  {
+    "id": "Q07",
+    "question_ar": "ما أثر دمج الإشارات العاطفية مع خصائص النص على أداء نماذج RNN وLSTM؟",
+    "retrieval_query_en": "What effect did combining text and emotional features have on the performance of RNN and LSTM models?",
+    "candidates": [
+      {
+        "rank": 1,
+        "page": 13,
+        "chunk_id": 175,
+        "score": 0.7787,
+        "text": "• Neural Networks: CNN, RNN, and LSTM outperformed traditional models, excelling in handling complex sentiment patterns. • MLP Limitations: MLP’s poor performance highlights its inability to capture sequential dependencies effectively. Further, an ablation study was conducted to evaluate the contribution of sentiment features alone, versus combined text and emotion features. Results showed that inclusion of emotional cues significantly improved performance in RNN and LSTM by approximately 3 % in F1score. The experimental setup was executed on Google Colab Pro with"
+      },
+      {
+        "rank": 2,
+        "page": 3,
+        "chunk_id": 47,
+        "score": 0.7685,
+        "text": "provides for good textual feature representation, and TextBlob sentiment scoring introduces emotional nuance to enhance model sensitivity and contextual comprehension. 3.1.2. Study objective This study aimed to compare the performance of various machine learning models in detecting cyberbullying using text and emotional features. The evaluated models include traditional models such as logistical regression, decision tree, and random forest, as well as advanced models such as synthetic neural networks (CNN), repetitive neural networks (RNN), and long- and short-range memory (LSTM). Texts"
+      },
+      {
+        "rank": 3,
+        "page": 13,
+        "chunk_id": 180,
+        "score": 0.765,
+        "text": "These results align with prior research emphasizing the critical role of emotional features in enhancing model performance. By incorporating sentiment analysis using tools like TextBlob, the study successfully demonstrated how emotional context improves classification. This integration helps bridge computational detection with psychological interpretation—offering both technical precision and realworld applicability in understanding victims’ mental health risks. Ultimately, these findings reinforce the need for hybrid models that combine linguistic, emotional, and contextual analysis for accurate cyberbullying detection. They also point to the"
+      },
+      {
+        "rank": 4,
+        "page": 13,
+        "chunk_id": 179,
+        "score": 0.7397,
+        "text": "handling sequential sentiment dynamics, especially when compared to LSTM and RNN. This confirms the importance of sequential modeling when analyzing emotionally charged or context-sensitive text, which is common in cyberbullying discourse. Interestingly, MLP’s weak performance (Accuracy: 0.67) indicates that simple feedforward networks are not sufficient for this task, especially when dealing with nuanced emotional content that lacks strong linear separability. These results align with prior research emphasizing the critical role of emotional features in enhancing model performance. By incorporating sentiment"
+      },
+      {
+        "rank": 5,
+        "page": 3,
+        "chunk_id": 48,
+        "score": 0.7298,
+        "text": "as advanced models such as synthetic neural networks (CNN), repetitive neural networks (RNN), and long- and short-range memory (LSTM). Texts are analyzed using advanced techniques such as TF-IDF to convert texts into digital representations and TextBlob to extract emotions scores. The choice of these models provides the ability to compare performance on both traditional and deep learning approaches, with an emphasis on emotional context to enhance detection accuracy. 3.1.3. Importance of the objective Improving the accuracy and efficiency of the"
+      }
+    ]
+  }
+]

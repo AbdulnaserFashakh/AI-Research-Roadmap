@@ -1,0 +1,130 @@
+{
+  "configuration": {
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "top_k": 5,
+    "total_questions": 7,
+    "evaluated_questions": 5,
+    "excluded_questions": 2
+  },
+  "per_question": [
+    {
+      "id": "Q01",
+      "gold_chunk_ids": [
+        173,
+        186
+      ],
+      "retrieved_chunk_ids": [
+        182,
+        171,
+        170,
+        178,
+        177
+      ],
+      "retrieved_gold_ids": [],
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "hit_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "Q02",
+      "gold_chunk_ids": [
+        55,
+        70
+      ],
+      "retrieved_chunk_ids": [
+        70,
+        58,
+        74,
+        55,
+        65
+      ],
+      "retrieved_gold_ids": [
+        70,
+        55
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.4,
+      "hit_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "Q03",
+      "gold_chunk_ids": [
+        150,
+        151
+      ],
+      "retrieved_chunk_ids": [
+        151,
+        30,
+        31,
+        150,
+        149
+      ],
+      "retrieved_gold_ids": [
+        151,
+        150
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.4,
+      "hit_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "Q06",
+      "gold_chunk_ids": [
+        55
+      ],
+      "retrieved_chunk_ids": [
+        58,
+        55,
+        70,
+        74,
+        65
+      ],
+      "retrieved_gold_ids": [
+        55
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_at_5": 1.0,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "Q07",
+      "gold_chunk_ids": [
+        175
+      ],
+      "retrieved_chunk_ids": [
+        175,
+        47,
+        180,
+        179,
+        48
+      ],
+      "retrieved_gold_ids": [
+        175
+      ],
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.2,
+      "hit_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    }
+  ],
+  "summary": {
+    "mean_recall_at_5": 0.8,
+    "mean_precision_at_5": 0.24,
+    "hit_rate_at_5": 0.8,
+    "mrr_at_5": 0.7
+  },
+  "excluded": [
+    {
+      "id": "Q04",
+      "reason": "The expected four-class accuracy is absent from chunks.json"
+    },
+    {
+      "id": "Q05",
+      "reason": "The expected sentiment accuracy is absent from chunks.json"
+    }
+  ]
+}

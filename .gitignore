@@ -4,3 +4,6 @@ __pycache__/
 02-PDF-RAG/data/
 02-PDF-RAG/extracted_text.txt
 02-PDF-RAG/chunks.json
+# Regenerated RAG evaluation outputs
+02-PDF-RAG/retrieval_candidates.json
+02-PDF-RAG/retrieval_metrics.json

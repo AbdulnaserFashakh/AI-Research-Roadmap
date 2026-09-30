@@ -1,0 +1,101 @@
+[
+  {
+    "id": "Q01",
+    "question_ar": "قارن دقة نماذج CNN وRNN وLSTM في التصنيف الثنائي. ما النموذج الأفضل؟",
+    "retrieval_query_en": "Compare the accuracy of CNN, RNN, and LSTM models for binary classification. Which model performed best?",
+    "expected_concepts": [
+      ["CNN"],
+      ["0.97", "97%"],
+      ["RNN"],
+      ["LSTM"],
+      ["0.98", "98%"]
+    ],
+    "answerable": true,
+    "evaluation_role": "retrieval_test",
+    "relevant_pages": [12, 13],
+    "relevant_chunk_ids": [173, 186]
+  },
+  {
+    "id": "Q02",
+    "question_ar": "كم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟",
+    "retrieval_query_en": "How many tweets remained after data cleaning, and how many were obtained after balancing the dataset?",
+    "expected_concepts": [
+      ["51202", "51,202"],
+      ["71704", "71,704"]
+    ],
+    "answerable": true,
+    "evaluation_role": "retrieval_test",
+    "relevant_pages": [4, 5],
+    "relevant_chunk_ids": [55, 70]
+  },
+  {
+    "id": "Q03",
+    "question_ar": "ما الفئات الأربع المستخدمة لتصنيف أنواع التنمر الإلكتروني؟",
+    "retrieval_query_en": "What were the four categories used to classify cyberbullying types?",
+    "expected_concepts": [
+      ["age", "العمر"],
+      ["gender", "الجنس"],
+      ["religion", "الدين"],
+      ["ethnicity", "العرق", "الإثنية"]
+    ],
+    "answerable": true,
+    "evaluation_role": "retrieval_test",
+    "relevant_pages": [10],
+    "relevant_chunk_ids": [150, 151]
+  },
+  {
+    "id": "Q04",
+    "question_ar": "ما دقة نموذج التصنيف متعدد الفئات الأربع؟",
+    "retrieval_query_en": "What accuracy was achieved for the four-class classification task?",
+    "expected_concepts": [
+      ["0.6257", "62.57"]
+    ],
+    "answerable": false,
+    "evaluation_role": "abstention_test",
+    "exclusion_reason": "The expected four-class accuracy is absent from chunks.json",
+    "relevant_pages": [],
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "Q05",
+    "question_ar": "ما الدقة التي حققها نموذج تحليل المشاعر؟",
+    "retrieval_query_en": "What accuracy was achieved by the sentiment analysis model?",
+    "expected_concepts": [
+      ["0.9399", "93.99"]
+    ],
+    "answerable": false,
+    "evaluation_role": "abstention_test",
+    "exclusion_reason": "The expected sentiment accuracy is absent from chunks.json",
+    "relevant_pages": [],
+    "relevant_chunk_ids": []
+  },
+  {
+    "id": "Q06",
+    "question_ar": "ما مصدرا بيانات التغريدات، وكم بلغ عددها الإجمالي قبل التنظيف؟",
+    "retrieval_query_en": "What were the two sources of the tweet dataset, and how many tweets were collected before cleaning?",
+    "expected_concepts": [
+      ["Kaggle"],
+      ["Tweepy", "Twitter API"],
+      ["58000", "58,000"]
+    ],
+    "answerable": true,
+    "evaluation_role": "retrieval_test",
+    "relevant_pages": [4],
+    "relevant_chunk_ids": [55]
+  },
+  {
+    "id": "Q07",
+    "question_ar": "ما أثر دمج الإشارات العاطفية مع خصائص النص على أداء نماذج RNN وLSTM؟",
+    "retrieval_query_en": "What effect did combining text and emotional features have on the performance of RNN and LSTM models?",
+    "expected_concepts": [
+      ["RNN"],
+      ["LSTM"],
+      ["3%", "3 %"],
+      ["F1-score", "F1 score"]
+    ],
+    "answerable": true,
+    "evaluation_role": "retrieval_test",
+    "relevant_pages": [13],
+    "relevant_chunk_ids": [175]
+  }
+]
