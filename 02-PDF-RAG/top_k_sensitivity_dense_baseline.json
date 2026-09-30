@@ -1,0 +1,623 @@
+{
+  "configuration": {
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "corpus_size": 221,
+    "answerable_questions": 5,
+    "k_values": [
+      1,
+      3,
+      5,
+      10,
+      20
+    ]
+  },
+  "gold_rank_analysis": [
+    {
+      "id": "Q01",
+      "gold_chunk_ids": [
+        173,
+        186
+      ],
+      "gold_ranks": [
+        {
+          "chunk_id": 173,
+          "rank": 6,
+          "page": 12,
+          "score": 0.6632
+        },
+        {
+          "chunk_id": 186,
+          "rank": 19,
+          "page": 13,
+          "score": 0.5836
+        }
+      ],
+      "first_gold_rank": 6,
+      "all_gold_rank": 19,
+      "top_20_chunk_ids": [
+        182,
+        171,
+        170,
+        178,
+        177,
+        173,
+        138,
+        139,
+        133,
+        176,
+        97,
+        100,
+        194,
+        6,
+        71,
+        48,
+        132,
+        193,
+        186,
+        76
+      ]
+    },
+    {
+      "id": "Q02",
+      "gold_chunk_ids": [
+        55,
+        70
+      ],
+      "gold_ranks": [
+        {
+          "chunk_id": 70,
+          "rank": 1,
+          "page": 5,
+          "score": 0.7053
+        },
+        {
+          "chunk_id": 55,
+          "rank": 4,
+          "page": 4,
+          "score": 0.6127
+        }
+      ],
+      "first_gold_rank": 1,
+      "all_gold_rank": 4,
+      "top_20_chunk_ids": [
+        70,
+        58,
+        74,
+        55,
+        65,
+        69,
+        66,
+        132,
+        57,
+        64,
+        116,
+        73,
+        3,
+        134,
+        152,
+        80,
+        68,
+        54,
+        145,
+        153
+      ]
+    },
+    {
+      "id": "Q03",
+      "gold_chunk_ids": [
+        150,
+        151
+      ],
+      "gold_ranks": [
+        {
+          "chunk_id": 151,
+          "rank": 1,
+          "page": 10,
+          "score": 0.7396
+        },
+        {
+          "chunk_id": 150,
+          "rank": 4,
+          "page": 10,
+          "score": 0.6886
+        }
+      ],
+      "first_gold_rank": 1,
+      "all_gold_rank": 4,
+      "top_20_chunk_ids": [
+        151,
+        30,
+        31,
+        150,
+        149,
+        37,
+        28,
+        207,
+        152,
+        204,
+        141,
+        27,
+        29,
+        25,
+        22,
+        140,
+        40,
+        157,
+        169,
+        24
+      ]
+    },
+    {
+      "id": "Q06",
+      "gold_chunk_ids": [
+        55
+      ],
+      "gold_ranks": [
+        {
+          "chunk_id": 55,
+          "rank": 2,
+          "page": 4,
+          "score": 0.6339
+        }
+      ],
+      "first_gold_rank": 2,
+      "all_gold_rank": 2,
+      "top_20_chunk_ids": [
+        58,
+        55,
+        70,
+        74,
+        65,
+        57,
+        69,
+        66,
+        132,
+        3,
+        64,
+        152,
+        116,
+        73,
+        153,
+        60,
+        40,
+        80,
+        54,
+        141
+      ]
+    },
+    {
+      "id": "Q07",
+      "gold_chunk_ids": [
+        175
+      ],
+      "gold_ranks": [
+        {
+          "chunk_id": 175,
+          "rank": 1,
+          "page": 13,
+          "score": 0.7787
+        }
+      ],
+      "first_gold_rank": 1,
+      "all_gold_rank": 1,
+      "top_20_chunk_ids": [
+        175,
+        47,
+        180,
+        179,
+        48,
+        63,
+        75,
+        144,
+        51,
+        64,
+        177,
+        191,
+        76,
+        6,
+        38,
+        176,
+        118,
+        142,
+        68,
+        49
+      ]
+    }
+  ],
+  "sensitivity_results": [
+    {
+      "k": 1,
+      "summary": {
+        "mean_recall": 0.4,
+        "mean_precision": 0.6,
+        "hit_rate": 0.6,
+        "mrr": 0.6
+      },
+      "per_question": [
+        {
+          "id": "Q01",
+          "gold_chunk_ids": [
+            173,
+            186
+          ],
+          "retrieved_gold_ids": [],
+          "recall": 0.0,
+          "precision": 0.0,
+          "hit": 0.0,
+          "reciprocal_rank": 0.0
+        },
+        {
+          "id": "Q02",
+          "gold_chunk_ids": [
+            55,
+            70
+          ],
+          "retrieved_gold_ids": [
+            70
+          ],
+          "recall": 0.5,
+          "precision": 1.0,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q03",
+          "gold_chunk_ids": [
+            150,
+            151
+          ],
+          "retrieved_gold_ids": [
+            151
+          ],
+          "recall": 0.5,
+          "precision": 1.0,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q06",
+          "gold_chunk_ids": [
+            55
+          ],
+          "retrieved_gold_ids": [],
+          "recall": 0.0,
+          "precision": 0.0,
+          "hit": 0.0,
+          "reciprocal_rank": 0.0
+        },
+        {
+          "id": "Q07",
+          "gold_chunk_ids": [
+            175
+          ],
+          "retrieved_gold_ids": [
+            175
+          ],
+          "recall": 1.0,
+          "precision": 1.0,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "summary": {
+        "mean_recall": 0.6,
+        "mean_precision": 0.2666,
+        "hit_rate": 0.8,
+        "mrr": 0.7
+      },
+      "per_question": [
+        {
+          "id": "Q01",
+          "gold_chunk_ids": [
+            173,
+            186
+          ],
+          "retrieved_gold_ids": [],
+          "recall": 0.0,
+          "precision": 0.0,
+          "hit": 0.0,
+          "reciprocal_rank": 0.0
+        },
+        {
+          "id": "Q02",
+          "gold_chunk_ids": [
+            55,
+            70
+          ],
+          "retrieved_gold_ids": [
+            70
+          ],
+          "recall": 0.5,
+          "precision": 0.3333,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q03",
+          "gold_chunk_ids": [
+            150,
+            151
+          ],
+          "retrieved_gold_ids": [
+            151
+          ],
+          "recall": 0.5,
+          "precision": 0.3333,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q06",
+          "gold_chunk_ids": [
+            55
+          ],
+          "retrieved_gold_ids": [
+            55
+          ],
+          "recall": 1.0,
+          "precision": 0.3333,
+          "hit": 1.0,
+          "reciprocal_rank": 0.5
+        },
+        {
+          "id": "Q07",
+          "gold_chunk_ids": [
+            175
+          ],
+          "retrieved_gold_ids": [
+            175
+          ],
+          "recall": 1.0,
+          "precision": 0.3333,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      ]
+    },
+    {
+      "k": 5,
+      "summary": {
+        "mean_recall": 0.8,
+        "mean_precision": 0.24,
+        "hit_rate": 0.8,
+        "mrr": 0.7
+      },
+      "per_question": [
+        {
+          "id": "Q01",
+          "gold_chunk_ids": [
+            173,
+            186
+          ],
+          "retrieved_gold_ids": [],
+          "recall": 0.0,
+          "precision": 0.0,
+          "hit": 0.0,
+          "reciprocal_rank": 0.0
+        },
+        {
+          "id": "Q02",
+          "gold_chunk_ids": [
+            55,
+            70
+          ],
+          "retrieved_gold_ids": [
+            70,
+            55
+          ],
+          "recall": 1.0,
+          "precision": 0.4,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q03",
+          "gold_chunk_ids": [
+            150,
+            151
+          ],
+          "retrieved_gold_ids": [
+            151,
+            150
+          ],
+          "recall": 1.0,
+          "precision": 0.4,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q06",
+          "gold_chunk_ids": [
+            55
+          ],
+          "retrieved_gold_ids": [
+            55
+          ],
+          "recall": 1.0,
+          "precision": 0.2,
+          "hit": 1.0,
+          "reciprocal_rank": 0.5
+        },
+        {
+          "id": "Q07",
+          "gold_chunk_ids": [
+            175
+          ],
+          "retrieved_gold_ids": [
+            175
+          ],
+          "recall": 1.0,
+          "precision": 0.2,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      ]
+    },
+    {
+      "k": 10,
+      "summary": {
+        "mean_recall": 0.9,
+        "mean_precision": 0.14,
+        "hit_rate": 1.0,
+        "mrr": 0.7333
+      },
+      "per_question": [
+        {
+          "id": "Q01",
+          "gold_chunk_ids": [
+            173,
+            186
+          ],
+          "retrieved_gold_ids": [
+            173
+          ],
+          "recall": 0.5,
+          "precision": 0.1,
+          "hit": 1.0,
+          "reciprocal_rank": 0.1667
+        },
+        {
+          "id": "Q02",
+          "gold_chunk_ids": [
+            55,
+            70
+          ],
+          "retrieved_gold_ids": [
+            70,
+            55
+          ],
+          "recall": 1.0,
+          "precision": 0.2,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q03",
+          "gold_chunk_ids": [
+            150,
+            151
+          ],
+          "retrieved_gold_ids": [
+            151,
+            150
+          ],
+          "recall": 1.0,
+          "precision": 0.2,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q06",
+          "gold_chunk_ids": [
+            55
+          ],
+          "retrieved_gold_ids": [
+            55
+          ],
+          "recall": 1.0,
+          "precision": 0.1,
+          "hit": 1.0,
+          "reciprocal_rank": 0.5
+        },
+        {
+          "id": "Q07",
+          "gold_chunk_ids": [
+            175
+          ],
+          "retrieved_gold_ids": [
+            175
+          ],
+          "recall": 1.0,
+          "precision": 0.1,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      ]
+    },
+    {
+      "k": 20,
+      "summary": {
+        "mean_recall": 1.0,
+        "mean_precision": 0.08,
+        "hit_rate": 1.0,
+        "mrr": 0.7333
+      },
+      "per_question": [
+        {
+          "id": "Q01",
+          "gold_chunk_ids": [
+            173,
+            186
+          ],
+          "retrieved_gold_ids": [
+            173,
+            186
+          ],
+          "recall": 1.0,
+          "precision": 0.1,
+          "hit": 1.0,
+          "reciprocal_rank": 0.1667
+        },
+        {
+          "id": "Q02",
+          "gold_chunk_ids": [
+            55,
+            70
+          ],
+          "retrieved_gold_ids": [
+            70,
+            55
+          ],
+          "recall": 1.0,
+          "precision": 0.1,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q03",
+          "gold_chunk_ids": [
+            150,
+            151
+          ],
+          "retrieved_gold_ids": [
+            151,
+            150
+          ],
+          "recall": 1.0,
+          "precision": 0.1,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        },
+        {
+          "id": "Q06",
+          "gold_chunk_ids": [
+            55
+          ],
+          "retrieved_gold_ids": [
+            55
+          ],
+          "recall": 1.0,
+          "precision": 0.05,
+          "hit": 1.0,
+          "reciprocal_rank": 0.5
+        },
+        {
+          "id": "Q07",
+          "gold_chunk_ids": [
+            175
+          ],
+          "retrieved_gold_ids": [
+            175
+          ],
+          "recall": 1.0,
+          "precision": 0.05,
+          "hit": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      ]
+    }
+  ]
+}

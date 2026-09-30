@@ -13,7 +13,24 @@
     "answerable": true,
     "evaluation_role": "retrieval_test",
     "relevant_pages": [12, 13],
-    "relevant_chunk_ids": [173, 186]
+    "relevant_chunk_ids": [173, 186],
+    "evidence_groups": [
+      {
+        "claim_id": "Q01-C1",
+        "claim": "CNN accuracy is 0.97",
+        "acceptable_chunk_ids": [173, 186]
+      },
+      {
+        "claim_id": "Q01-C2",
+        "claim": "RNN accuracy is 0.98",
+        "acceptable_chunk_ids": [173, 186]
+      },
+      {
+        "claim_id": "Q01-C3",
+        "claim": "LSTM accuracy is 0.98",
+        "acceptable_chunk_ids": [173, 186]
+      }
+    ]
   },
   {
     "id": "Q02",
@@ -26,7 +43,19 @@
     "answerable": true,
     "evaluation_role": "retrieval_test",
     "relevant_pages": [4, 5],
-    "relevant_chunk_ids": [55, 70]
+    "relevant_chunk_ids": [55, 70],
+    "evidence_groups": [
+      {
+        "claim_id": "Q02-C1",
+        "claim": "The dataset contained 51,202 tweets after cleaning",
+        "acceptable_chunk_ids": [55]
+      },
+      {
+        "claim_id": "Q02-C2",
+        "claim": "The balanced dataset contained 71,704 tweets",
+        "acceptable_chunk_ids": [70]
+      }
+    ]
   },
   {
     "id": "Q03",
@@ -41,7 +70,29 @@
     "answerable": true,
     "evaluation_role": "retrieval_test",
     "relevant_pages": [10],
-    "relevant_chunk_ids": [150, 151]
+    "relevant_chunk_ids": [150, 151],
+    "evidence_groups": [
+      {
+        "claim_id": "Q03-C1",
+        "claim": "Age is a cyberbullying category",
+        "acceptable_chunk_ids": [150, 151]
+      },
+      {
+        "claim_id": "Q03-C2",
+        "claim": "Gender is a cyberbullying category",
+        "acceptable_chunk_ids": [150, 151]
+      },
+      {
+        "claim_id": "Q03-C3",
+        "claim": "Religion is a cyberbullying category",
+        "acceptable_chunk_ids": [150, 151]
+      },
+      {
+        "claim_id": "Q03-C4",
+        "claim": "Ethnicity is a cyberbullying category",
+        "acceptable_chunk_ids": [150, 151]
+      }
+    ]
   },
   {
     "id": "Q04",
@@ -54,7 +105,8 @@
     "evaluation_role": "abstention_test",
     "exclusion_reason": "The expected four-class accuracy is absent from chunks.json",
     "relevant_pages": [],
-    "relevant_chunk_ids": []
+    "relevant_chunk_ids": [],
+    "evidence_groups": []
   },
   {
     "id": "Q05",
@@ -67,7 +119,8 @@
     "evaluation_role": "abstention_test",
     "exclusion_reason": "The expected sentiment accuracy is absent from chunks.json",
     "relevant_pages": [],
-    "relevant_chunk_ids": []
+    "relevant_chunk_ids": [],
+    "evidence_groups": []
   },
   {
     "id": "Q06",
@@ -81,7 +134,24 @@
     "answerable": true,
     "evaluation_role": "retrieval_test",
     "relevant_pages": [4],
-    "relevant_chunk_ids": [55]
+    "relevant_chunk_ids": [55],
+    "evidence_groups": [
+      {
+        "claim_id": "Q06-C1",
+        "claim": "Kaggle was a dataset source",
+        "acceptable_chunk_ids": [55]
+      },
+      {
+        "claim_id": "Q06-C2",
+        "claim": "Tweepy or the Twitter API was a dataset source",
+        "acceptable_chunk_ids": [55]
+      },
+      {
+        "claim_id": "Q06-C3",
+        "claim": "The dataset contained 58,000 tweets before cleaning",
+        "acceptable_chunk_ids": [55]
+      }
+    ]
   },
   {
     "id": "Q07",
@@ -96,6 +166,18 @@
     "answerable": true,
     "evaluation_role": "retrieval_test",
     "relevant_pages": [13],
-    "relevant_chunk_ids": [175]
+    "relevant_chunk_ids": [175],
+    "evidence_groups": [
+      {
+        "claim_id": "Q07-C1",
+        "claim": "Emotional cues improved RNN and LSTM performance",
+        "acceptable_chunk_ids": [175]
+      },
+      {
+        "claim_id": "Q07-C2",
+        "claim": "The F1-score improvement was approximately 3 percent",
+        "acceptable_chunk_ids": [175]
+      }
+    ]
   }
 ]

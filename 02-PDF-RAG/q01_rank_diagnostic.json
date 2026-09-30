@@ -1,0 +1,170 @@
+{
+  "question_id": "Q01",
+  "query": "Compare the accuracy of CNN, RNN, and LSTM models for binary classification. Which model performed best?",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "corpus_size": 221,
+  "gold_chunk_ids": [
+    173,
+    186
+  ],
+  "minimum_k_for_any_gold": 6,
+  "minimum_k_for_all_gold": 19,
+  "gold_results": [
+    {
+      "rank": 6,
+      "page": 12,
+      "chunk_id": 173,
+      "score": 0.6632,
+      "text": "(0.93) but demonstrated strong recall for negative sentiment (0.98). In contrast, neural networks showed superior performance. The CNN achieved an accuracy of 0.97, while both RNN and LSTM achieved the highest accuracy of 0.98. These models excelled with F1-scores of 0.99 (Class 0) and 0.97 (Class 1), effectively capturing sequential patterns in sentiment data. The MLP performed poorly, achieving only 0.67 accuracy, with notably low precision (0.48) and recall (0.01) for positive sentiment. Key Insights: • Traditional Models: SVM, Decision"
+    },
+    {
+      "rank": 19,
+      "page": 13,
+      "chunk_id": 186,
+      "score": 0.5836,
+      "text": "(Class 0) Recall (Class 1) F1-Score (Class 0) F1-Score (Class 1) Accuracy Logistic Regression 0.92 0.95 0.98 0.84 0.95 0.89 0.93 Decision Tree 0.97 0.94 0.97 0.94 0.97 0.94 0.96 Random Forest 0.96 0.94 0.97 0.92 0.97 0.93 0.96 (SVM) 0.96 0.96 0.98 0.91 0.97 0.94 0.96 (MLP) 0.67 0.48 0.99 0.01 0.80 0.02 0.67 (CNN) 0.98 0.96 0.98 0.96 0.98 0.96 0.97 (RNN) 0.98 0.98 0.99 0.96 0.99 0.97 0.98 (LSTM) 0.98 0.98 0.99 0.96 0.99 0.97 0.98 Fig."
+    }
+  ],
+  "top_20_results": [
+    {
+      "rank": 1,
+      "page": 13,
+      "chunk_id": 182,
+      "score": 0.7881,
+      "text": "performance of different machine learning models and neural networks in binary classification. The two methods used included: Metrics evaluation: The models were evaluated based on key performance indicators such as accuracy, recall, F1 score, and precision. The results showed that advanced neural network architectures, especially recurrent neural network (RNN) and long short-term memory (LSTM) models, provided superior performance metrics, outperforming traditional machine learning models such as support vector machines (SVMs) and decision trees in accuracy and overall effectiveness for binary"
+    },
+    {
+      "rank": 2,
+      "page": 12,
+      "chunk_id": 171,
+      "score": 0.7441,
+      "text": "(RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision, recall, F1-score for both classes (Class 0 and Class 1), and overall accuracy. The performance metrics for each model are summarized below Table 5. Discussion The sentiment analysis results highlight varying performance across traditional machine learning models and neural network architectures. Among traditional models, the Support Vector Machine (SVM) achieved the highest accuracy of 0.96, with balanced precision (0.96) and"
+    },
+    {
+      "rank": 3,
+      "page": 12,
+      "chunk_id": 170,
+      "score": 0.7017,
+      "text": "Table 4. 9. Evaluation metrics 9.1. Comparative analysis This study evaluates the performance of various machine learning and neural network models in classifying binary classes, focusing on metrics such as precision, recall, F1-score, and accuracy. The models analyzed include Logistic Regression, Decision Tree, Random Forest, Support Vector Machine (SVM), Convolutional Neural Network (CNN), Simple Neural Network (MLP), Recurrent Neural Network (RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision,"
+    },
+    {
+      "rank": 4,
+      "page": 13,
+      "chunk_id": 178,
+      "score": 0.6838,
+      "text": "accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to subtler linguistic patterns. The success of CNN also supports findings in previous studies that highlight its efficiency in extracting local features from text sequences. While traditional models like SVM and Random Forest showed high performance, their limitations become evident in handling sequential sentiment dynamics, especially when compared to LSTM and RNN. This confirms the importance of sequential modeling when analyzing"
+    },
+    {
+      "rank": 5,
+      "page": 13,
+      "chunk_id": 177,
+      "score": 0.6651,
+      "text": "below illustrates the comparison of model performance. The comparative analysis of model performances reveals important insights into the effectiveness of different algorithms for sentiment classification in the context of cyberbullying detection. Deep learning models, especially RNN and LSTM, outperformed traditional classifiers by effectively capturing temporal and contextual nuances in textual data. Their ability to model long-term dependencies explains their superior accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to"
+    },
+    {
+      "rank": 6,
+      "page": 12,
+      "chunk_id": 173,
+      "score": 0.6632,
+      "text": "(0.93) but demonstrated strong recall for negative sentiment (0.98). In contrast, neural networks showed superior performance. The CNN achieved an accuracy of 0.97, while both RNN and LSTM achieved the highest accuracy of 0.98. These models excelled with F1-scores of 0.99 (Class 0) and 0.97 (Class 1), effectively capturing sequential patterns in sentiment data. The MLP performed poorly, achieving only 0.67 accuracy, with notably low precision (0.48) and recall (0.01) for positive sentiment. Key Insights: • Traditional Models: SVM, Decision"
+    },
+    {
+      "rank": 7,
+      "page": 10,
+      "chunk_id": 138,
+      "score": 0.6586,
+      "text": "Evaluate models using the following metrics: Accuracy = Number of Predictions Total Number of Predictions Precision= True Positives True Positives+ False Positives Recall= True Positives True Positives+ False Nagative F1\u0000 Score= 2× Precision×Recall Precision+ Recall These metrics were selected to ensure robust evaluation of imbalanced classes and model generalizability, particularly Recall and F1 which reflect model sensitivity to minority cyberbullying categories [52]. Comparison and results • Compare model performance based on these metrics. • Present the results in tables and"
+    },
+    {
+      "rank": 8,
+      "page": 10,
+      "chunk_id": 139,
+      "score": 0.6347,
+      "text": "categories [52]. Comparison and results • Compare model performance based on these metrics. • Present the results in tables and charts for clarity. The multi-metric evaluation supports a deeper understanding of trade-offs between different model types, enabling selection not just based on accuracy but based on balanced performance across precision, recall, and F1. LSTM model development In this research on the effects of cyberbullying in different parts of society, a neural network model with Long Short-Term Memory (LSTM) architecture has"
+    },
+    {
+      "rank": 9,
+      "page": 9,
+      "chunk_id": 133,
+      "score": 0.629,
+      "text": "layers. • MLP provides a simple, effective benchmark for deep learning comparisons. • RNN captures sequence context but is limited by gradient issues. • LSTM performs best in this study due to its ability to model long-term dependencies. All deep learning models were implemented using Keras with TensorFlow backend, and hyperparameters were tuned for optimal performance. 7. Evaluation and metrics 7.1. Analaysis by counts This approach focuses on analysing the distribution of data and understanding patterns based on numbers within"
+    },
+    {
+      "rank": 10,
+      "page": 13,
+      "chunk_id": 176,
+      "score": 0.6201,
+      "text": "in RNN and LSTM by approximately 3 % in F1score. The experimental setup was executed on Google Colab Pro with Tesla T4 GPU, 25 GB RAM, and Python libraries including Scikit-learn, Keras, TensorFlow, and TextBlob. These findings underscore the advantages of deep learning models for sentiment analysis, particularly when dealing with data where temporal context is critical. In Fig. 6 below illustrates the comparison of model performance. The comparative analysis of model performances reveals important insights into the effectiveness of"
+    },
+    {
+      "rank": 11,
+      "page": 6,
+      "chunk_id": 97,
+      "score": 0.6159,
+      "text": "the dataset. We implemented the classifier using the sklearnlinear_model package. This model is suitable for large-scale text classification tasks due to its speed and effectiveness in linearly separable problems [43]. Working: A Logistic Regression uses the logistic function (sigmoid function) to model the probability that a sample belongs to a specific class. The probability p is calculated as follows: p= 1 1+ e\u0000 z where: z is the linear combination of the feature values weighed by the model coefficients: z="
+    },
+    {
+      "rank": 12,
+      "page": 7,
+      "chunk_id": 100,
+      "score": 0.6127,
+      "text": "‒ SVM performs well in high-dimensional spaces but is computationally expensive. ‒ Logistic Regression is efficient and simple but may underperform with non-linear data. All models were implemented using the Scikit-learn (sklearn) Python library, ensuring consistent API usage and parameter tuning. 6. Deep learning models 6.1. Convolutional Neural Network (CNN) CNNs are deep learning models primarily used for image processing but can also be applied to text data through embedding layers [44]. This model was selected due to its high"
+    },
+    {
+      "rank": 13,
+      "page": 14,
+      "chunk_id": 194,
+      "score": 0.6058,
+      "text": "in binary classification, leading to more accurate and reliable systems in multiple applications. This comprehensive approach ensures that our results are not only scientifically robust, but also relevant to practical application, paving the way for continued progress in the field of machine learning and artificial intelligence. Additionally, we propose developing early-warning systems that can flag abusive content in social media in real time, enabling platforms and educators to respond proactively. It is also crucial to ensure fairness and prevent model"
+    },
+    {
+      "rank": 14,
+      "page": 1,
+      "chunk_id": 6,
+      "score": 0.5935,
+      "text": "outperforming others. Among the traditional models, Random Forest performed better, while Logistic Regression was the worst performing. The inclusion of sentiment features significantly improved calssification accuracy, particularly in LSTM. A multi-output LSTM model was created to predict cyberbullying_type, sub_category and sentiment all at once, providing an end-to-end detection system. This framwork enables proactive monitoring of online harm and support timely interventions. 1. Introduction Incorporating ethical considerations into the development and implementation of tools to prevent and mitigate cyberbullying is important."
+    },
+    {
+      "rank": 15,
+      "page": 5,
+      "chunk_id": 71,
+      "score": 0.5925,
+      "text": "logistic regression and decision trees, along with newer technologies such as conventional neural networks (CNNs) and long- and short-term memory networks (LSTM). These methodologies were selected for their proven effectiveness in processing complex datasets and for their ability to monitor accurate patterns in texts [32], which is a multifaceted challenge in the digital age, requiring robust methodologies to effectively detect and mitigate its effects, especially in vulnerable populations such as adolescents, children, and marginalized communities [33]. Each model was chosen"
+    },
+    {
+      "rank": 16,
+      "page": 3,
+      "chunk_id": 48,
+      "score": 0.5902,
+      "text": "as advanced models such as synthetic neural networks (CNN), repetitive neural networks (RNN), and long- and short-range memory (LSTM). Texts are analyzed using advanced techniques such as TF-IDF to convert texts into digital representations and TextBlob to extract emotions scores. The choice of these models provides the ability to compare performance on both traditional and deep learning approaches, with an emphasis on emotional context to enhance detection accuracy. 3.1.3. Importance of the objective Improving the accuracy and efficiency of the"
+    },
+    {
+      "rank": 17,
+      "page": 9,
+      "chunk_id": 132,
+      "score": 0.5857,
+      "text": "filter out unnecessary data through gating mechanisms. This enables them to effectively recognize long-term patterns in sequential data [50]. This model was used to construct the final multi-output classifier that accurately predicts the cyberbullying type, subcategory, and emotional sentiment of tweets, as detailed in the “LSTM Model Development” section. Summary Comparison: • CNN excels at extracting localized features using embedded layers. • MLP provides a simple, effective benchmark for deep learning comparisons. • RNN captures sequence context but is limited"
+    },
+    {
+      "rank": 18,
+      "page": 14,
+      "chunk_id": 193,
+      "score": 0.5844,
+      "text": "improve performance. Practical Applications: Applying models to real-world datasets from diverse domains to test their performance and adaptability to multiple contexts. Interpretability: Developing methods to increase the interpretability of complex neural networks to facilitate their use in critical decisionmaking scenarios. By addressing these future research directions, we can improve the effectiveness and applicability of machine learning and neural network models in binary classification, leading to more accurate and reliable systems in multiple applications. This comprehensive approach ensures that our results"
+    },
+    {
+      "rank": 19,
+      "page": 13,
+      "chunk_id": 186,
+      "score": 0.5836,
+      "text": "(Class 0) Recall (Class 1) F1-Score (Class 0) F1-Score (Class 1) Accuracy Logistic Regression 0.92 0.95 0.98 0.84 0.95 0.89 0.93 Decision Tree 0.97 0.94 0.97 0.94 0.97 0.94 0.96 Random Forest 0.96 0.94 0.97 0.92 0.97 0.93 0.96 (SVM) 0.96 0.96 0.98 0.91 0.97 0.94 0.96 (MLP) 0.67 0.48 0.99 0.01 0.80 0.02 0.67 (CNN) 0.98 0.96 0.98 0.96 0.98 0.96 0.97 (RNN) 0.98 0.98 0.99 0.96 0.99 0.97 0.98 (LSTM) 0.98 0.98 0.99 0.96 0.99 0.97 0.98 Fig."
+    },
+    {
+      "rank": 20,
+      "page": 5,
+      "chunk_id": 76,
+      "score": 0.5788,
+      "text": "of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide a comprehensive assessment of the model’s efficiency [35]. The full evaluation was conducted using a hold-out test set (20 % of the data) to measure real-world generalization. This study, combined to analyze sentiment with traditional text characteristics, seeks to improve model detection capabilities and provides a deeper understanding of the emotional impact of cyberbullying, contributing to more efficient intervention strategies."
+    }
+  ]
+}

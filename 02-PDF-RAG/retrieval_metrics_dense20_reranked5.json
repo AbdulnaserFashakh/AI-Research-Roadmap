@@ -1,0 +1,301 @@
+{
+  "configuration": {
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "candidate_k": 20,
+    "final_k": 5,
+    "total_questions": 7,
+    "evaluated_questions": 5
+  },
+  "candidate_generation": {
+    "mean_recall_at_20": 1.0
+  },
+  "comparison": {
+    "dense_top5": {
+      "mean_recall": 0.8,
+      "mean_precision": 0.24,
+      "hit_rate": 0.8,
+      "mrr": 0.7
+    },
+    "reranked_top5": {
+      "mean_recall": 0.9,
+      "mean_precision": 0.28,
+      "hit_rate": 1.0,
+      "mrr": 1.0
+    },
+    "delta": {
+      "mean_recall": 0.1,
+      "mean_precision": 0.04,
+      "hit_rate": 0.2,
+      "mrr": 0.3
+    }
+  },
+  "per_question": [
+    {
+      "id": "Q01",
+      "gold_chunk_ids": [
+        173,
+        186
+      ],
+      "candidate_recall_at_20": 1.0,
+      "gold_rank_transitions": [
+        {
+          "chunk_id": 173,
+          "dense_rank": 6,
+          "rerank_rank": 1,
+          "dense_score": 0.663154,
+          "rerank_score": 6.980254
+        },
+        {
+          "chunk_id": 186,
+          "dense_rank": 19,
+          "rerank_rank": 14,
+          "dense_score": 0.583588,
+          "rerank_score": -1.838932
+        }
+      ],
+      "dense_top5": {
+        "retrieved_chunk_ids": [
+          182,
+          171,
+          170,
+          178,
+          177
+        ],
+        "retrieved_gold_ids": [],
+        "recall": 0.0,
+        "precision": 0.0,
+        "hit": 0.0,
+        "reciprocal_rank": 0.0
+      },
+      "reranked_top5": {
+        "retrieved_chunk_ids": [
+          173,
+          170,
+          171,
+          178,
+          177
+        ],
+        "retrieved_gold_ids": [
+          173
+        ],
+        "recall": 0.5,
+        "precision": 0.2,
+        "hit": 1.0,
+        "reciprocal_rank": 1.0
+      }
+    },
+    {
+      "id": "Q02",
+      "gold_chunk_ids": [
+        55,
+        70
+      ],
+      "candidate_recall_at_20": 1.0,
+      "gold_rank_transitions": [
+        {
+          "chunk_id": 55,
+          "dense_rank": 4,
+          "rerank_rank": 1,
+          "dense_score": 0.612654,
+          "rerank_score": 4.940287
+        },
+        {
+          "chunk_id": 70,
+          "dense_rank": 1,
+          "rerank_rank": 2,
+          "dense_score": 0.705324,
+          "rerank_score": 4.255901
+        }
+      ],
+      "dense_top5": {
+        "retrieved_chunk_ids": [
+          70,
+          58,
+          74,
+          55,
+          65
+        ],
+        "retrieved_gold_ids": [
+          70,
+          55
+        ],
+        "recall": 1.0,
+        "precision": 0.4,
+        "hit": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "reranked_top5": {
+        "retrieved_chunk_ids": [
+          55,
+          70,
+          69,
+          74,
+          3
+        ],
+        "retrieved_gold_ids": [
+          55,
+          70
+        ],
+        "recall": 1.0,
+        "precision": 0.4,
+        "hit": 1.0,
+        "reciprocal_rank": 1.0
+      }
+    },
+    {
+      "id": "Q03",
+      "gold_chunk_ids": [
+        150,
+        151
+      ],
+      "candidate_recall_at_20": 1.0,
+      "gold_rank_transitions": [
+        {
+          "chunk_id": 151,
+          "dense_rank": 1,
+          "rerank_rank": 1,
+          "dense_score": 0.73965,
+          "rerank_score": 5.966066
+        },
+        {
+          "chunk_id": 150,
+          "dense_rank": 4,
+          "rerank_rank": 4,
+          "dense_score": 0.688575,
+          "rerank_score": 4.15727
+        }
+      ],
+      "dense_top5": {
+        "retrieved_chunk_ids": [
+          151,
+          30,
+          31,
+          150,
+          149
+        ],
+        "retrieved_gold_ids": [
+          151,
+          150
+        ],
+        "recall": 1.0,
+        "precision": 0.4,
+        "hit": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "reranked_top5": {
+        "retrieved_chunk_ids": [
+          151,
+          140,
+          157,
+          150,
+          152
+        ],
+        "retrieved_gold_ids": [
+          151,
+          150
+        ],
+        "recall": 1.0,
+        "precision": 0.4,
+        "hit": 1.0,
+        "reciprocal_rank": 1.0
+      }
+    },
+    {
+      "id": "Q06",
+      "gold_chunk_ids": [
+        55
+      ],
+      "candidate_recall_at_20": 1.0,
+      "gold_rank_transitions": [
+        {
+          "chunk_id": 55,
+          "dense_rank": 2,
+          "rerank_rank": 1,
+          "dense_score": 0.633901,
+          "rerank_score": 5.830668
+        }
+      ],
+      "dense_top5": {
+        "retrieved_chunk_ids": [
+          58,
+          55,
+          70,
+          74,
+          65
+        ],
+        "retrieved_gold_ids": [
+          55
+        ],
+        "recall": 1.0,
+        "precision": 0.2,
+        "hit": 1.0,
+        "reciprocal_rank": 0.5
+      },
+      "reranked_top5": {
+        "retrieved_chunk_ids": [
+          55,
+          3,
+          74,
+          69,
+          57
+        ],
+        "retrieved_gold_ids": [
+          55
+        ],
+        "recall": 1.0,
+        "precision": 0.2,
+        "hit": 1.0,
+        "reciprocal_rank": 1.0
+      }
+    },
+    {
+      "id": "Q07",
+      "gold_chunk_ids": [
+        175
+      ],
+      "candidate_recall_at_20": 1.0,
+      "gold_rank_transitions": [
+        {
+          "chunk_id": 175,
+          "dense_rank": 1,
+          "rerank_rank": 1,
+          "dense_score": 0.778662,
+          "rerank_score": 6.847484
+        }
+      ],
+      "dense_top5": {
+        "retrieved_chunk_ids": [
+          175,
+          47,
+          180,
+          179,
+          48
+        ],
+        "retrieved_gold_ids": [
+          175
+        ],
+        "recall": 1.0,
+        "precision": 0.2,
+        "hit": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "reranked_top5": {
+        "retrieved_chunk_ids": [
+          175,
+          179,
+          47,
+          48,
+          180
+        ],
+        "retrieved_gold_ids": [
+          175
+        ],
+        "recall": 1.0,
+        "precision": 0.2,
+        "hit": 1.0,
+        "reciprocal_rank": 1.0
+      }
+    }
+  ]
+}
