@@ -1,0 +1,62 @@
+{
+  "question_id": "Q05",
+  "question_ar": "ما الدقة التي حققها نموذج تحليل المشاعر؟",
+  "retrieval_method": "Reranked@5",
+  "model": "qwen3:4b",
+  "temperature": 0,
+  "seed": 42,
+  "retrieved_chunks": [
+    {
+      "dense_rank": 10,
+      "chunk_id": 173,
+      "page": 12,
+      "dense_score": 0.65024,
+      "text": "(0.93) but demonstrated strong recall for negative sentiment (0.98). In contrast, neural networks showed superior performance. The CNN achieved an accuracy of 0.97, while both RNN and LSTM achieved the highest accuracy of 0.98. These models excelled with F1-scores of 0.99 (Class 0) and 0.97 (Class 1), effectively capturing sequential patterns in sentiment data. The MLP performed poorly, achieving only 0.67 accuracy, with notably low precision (0.48) and recall (0.01) for positive sentiment. Key Insights: • Traditional Models: SVM, Decision",
+      "rerank_score": 7.863984,
+      "rerank_rank": 1,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 7,
+      "chunk_id": 174,
+      "page": 12,
+      "dense_score": 0.678372,
+      "text": "0.67 accuracy, with notably low precision (0.48) and recall (0.01) for positive sentiment. Key Insights: • Traditional Models: SVM, Decision Tree, and Random Forest performed robustly, with SVM providing the most balanced results. Fig. 5. The Distribution of of Sub_categories and Sentiment Negative. A.M. Fashakh et al. Egyptian Informatics Journal 32 (2025) 100856 12",
+      "rerank_score": 6.477203,
+      "rerank_rank": 2,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 14,
+      "chunk_id": 6,
+      "page": 1,
+      "dense_score": 0.611417,
+      "text": "outperforming others. Among the traditional models, Random Forest performed better, while Logistic Regression was the worst performing. The inclusion of sentiment features significantly improved calssification accuracy, particularly in LSTM. A multi-output LSTM model was created to predict cyberbullying_type, sub_category and sentiment all at once, providing an end-to-end detection system. This framwork enables proactive monitoring of online harm and support timely interventions. 1. Introduction Incorporating ethical considerations into the development and implementation of tools to prevent and mitigate cyberbullying is important.",
+      "rerank_score": 5.248528,
+      "rerank_rank": 3,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 11,
+      "chunk_id": 177,
+      "page": 13,
+      "dense_score": 0.646356,
+      "text": "below illustrates the comparison of model performance. The comparative analysis of model performances reveals important insights into the effectiveness of different algorithms for sentiment classification in the context of cyberbullying detection. Deep learning models, especially RNN and LSTM, outperformed traditional classifiers by effectively capturing temporal and contextual nuances in textual data. Their ability to model long-term dependencies explains their superior accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to",
+      "rerank_score": 5.148711,
+      "rerank_rank": 4,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 12,
+      "chunk_id": 179,
+      "page": 13,
+      "dense_score": 0.640536,
+      "text": "handling sequential sentiment dynamics, especially when compared to LSTM and RNN. This confirms the importance of sequential modeling when analyzing emotionally charged or context-sensitive text, which is common in cyberbullying discourse. Interestingly, MLP’s weak performance (Accuracy: 0.67) indicates that simple feedforward networks are not sufficient for this task, especially when dealing with nuanced emotional content that lacks strong linear separability. These results align with prior research emphasizing the critical role of emotional features in enhancing model performance. By incorporating sentiment",
+      "rerank_score": 4.467599,
+      "rerank_rank": 5,
+      "selected_for_final_top5": true
+    }
+  ],
+  "prompt": "\nأنت مساعد بحثي.\n\nاعتمد فقط على السياق المرفق.\nلا تستخدم معرفتك السابقة.\nاذكر الدقة لكل نموذج إذا كانت موجودة في السياق.\nلا تستنتج أرقاماً غير مذكورة.\nإذا تساوى نموذجان في الدقة، اذكر التعادل.\nبعد كل ادعاء اذكر مصدره بهذه الصيغة:\n[Page X, Chunk Y]\n\nإذا لم تجد الأدلة اللازمة للإجابة، قل:\nالسياق غير كافٍ للإجابة.\nيمكنك ذكر المعلومات المتاحة مع تحديد ما ينقصها.\n\nالسياق:\n[Page 12, Chunk 173]\n(0.93) but demonstrated strong recall for negative sentiment (0.98). In contrast, neural networks showed superior performance. The CNN achieved an accuracy of 0.97, while both RNN and LSTM achieved the highest accuracy of 0.98. These models excelled with F1-scores of 0.99 (Class 0) and 0.97 (Class 1), effectively capturing sequential patterns in sentiment data. The MLP performed poorly, achieving only 0.67 accuracy, with notably low precision (0.48) and recall (0.01) for positive sentiment. Key Insights: • Traditional Models: SVM, Decision\n\n[Page 12, Chunk 174]\n0.67 accuracy, with notably low precision (0.48) and recall (0.01) for positive sentiment. Key Insights: • Traditional Models: SVM, Decision Tree, and Random Forest performed robustly, with SVM providing the most balanced results. Fig. 5. The Distribution of of Sub_categories and Sentiment Negative. A.M. Fashakh et al. Egyptian Informatics Journal 32 (2025) 100856 12\n\n[Page 1, Chunk 6]\noutperforming others. Among the traditional models, Random Forest performed better, while Logistic Regression was the worst performing. The inclusion of sentiment features significantly improved calssification accuracy, particularly in LSTM. A multi-output LSTM model was created to predict cyberbullying_type, sub_category and sentiment all at once, providing an end-to-end detection system. This framwork enables proactive monitoring of online harm and support timely interventions. 1. Introduction Incorporating ethical considerations into the development and implementation of tools to prevent and mitigate cyberbullying is important.\n\n[Page 13, Chunk 177]\nbelow illustrates the comparison of model performance. The comparative analysis of model performances reveals important insights into the effectiveness of different algorithms for sentiment classification in the context of cyberbullying detection. Deep learning models, especially RNN and LSTM, outperformed traditional classifiers by effectively capturing temporal and contextual nuances in textual data. Their ability to model long-term dependencies explains their superior accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to\n\n[Page 13, Chunk 179]\nhandling sequential sentiment dynamics, especially when compared to LSTM and RNN. This confirms the importance of sequential modeling when analyzing emotionally charged or context-sensitive text, which is common in cyberbullying discourse. Interestingly, MLP’s weak performance (Accuracy: 0.67) indicates that simple feedforward networks are not sufficient for this task, especially when dealing with nuanced emotional content that lacks strong linear separability. These results align with prior research emphasizing the critical role of emotional features in enhancing model performance. By incorporating sentiment\n\nالسؤال:\nما الدقة التي حققها نموذج تحليل المشاعر؟\n\nأجب باللغة العربية.\n",
+  "answer": "0.98 [Page 12, Chunk 173] و [Page 13, Chunk 177]"
+}

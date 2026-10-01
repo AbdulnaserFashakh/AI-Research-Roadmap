@@ -1,0 +1,40 @@
+{
+  "question_id": "Q05",
+  "review_type": "human_review_with_ai_assistance",
+  "review_status": "answerability_audit_required",
+  "independent_second_review": false,
+  "original_annotation_answerable": false,
+  "answerability_adjudicated": null,
+  "include_in_abstention_aggregate": false,
+  "reason": "The Arabic question does not distinguish general sentiment classification from the sentiment output of the multi-output LSTM. Chunk 177 discusses sentiment classification with accuracy 0.98.",
+  "results": [
+    {
+      "method": "Dense@5",
+      "answer_file": "end_to_end_q05_dense5.json",
+      "withheld_numeric_answer": true,
+      "accuracy_precision_confusion": true,
+      "answer_correctness": null,
+      "abstention_correctness": null,
+      "review_findings": [
+        "No requested accuracy is reported in the inspected Dense context.",
+        "The answer interprets accuracy as precision.",
+        "Chunk 175 reports approximately 3 percent improvement in F1."
+      ]
+    },
+    {
+      "method": "Reranked@5",
+      "answer_file": "end_to_end_q05_reranked5.json",
+      "withheld_numeric_answer": false,
+      "reported_accuracy": 0.98,
+      "answer_correctness": null,
+      "abstention_correctness": null,
+      "review_findings": [
+        "Chunks 173 and 177 support accuracy 0.98 for RNN and LSTM.",
+        "Chunk 177 describes sentiment classification.",
+        "The chunks do not establish accuracy of the sentiment output of the multi-output LSTM."
+      ]
+    }
+  ],
+  "proposed_follow_up_question": "What Accuracy was reported specifically for the sentiment output of the multi-output LSTM predicting cyberbullying_type, sub_category and sentiment?",
+  "next_action": "Verify the intended task and its reported accuracy against the original paper and the full extracted corpus before creating a separate clarified-question experiment."
+}

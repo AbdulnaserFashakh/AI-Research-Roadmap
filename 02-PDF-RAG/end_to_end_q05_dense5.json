@@ -1,0 +1,47 @@
+{
+  "question_id": "Q05",
+  "question_ar": "ما الدقة التي حققها نموذج تحليل المشاعر؟",
+  "retrieval_method": "Dense@5",
+  "model": "qwen3:4b",
+  "temperature": 0,
+  "seed": 42,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "page": 13,
+      "chunk_id": 175,
+      "score": 0.7444,
+      "text": "• Neural Networks: CNN, RNN, and LSTM outperformed traditional models, excelling in handling complex sentiment patterns. • MLP Limitations: MLP’s poor performance highlights its inability to capture sequential dependencies effectively. Further, an ablation study was conducted to evaluate the contribution of sentiment features alone, versus combined text and emotion features. Results showed that inclusion of emotional cues significantly improved performance in RNN and LSTM by approximately 3 % in F1score. The experimental setup was executed on Google Colab Pro with"
+    },
+    {
+      "rank": 2,
+      "page": 3,
+      "chunk_id": 47,
+      "score": 0.7119,
+      "text": "provides for good textual feature representation, and TextBlob sentiment scoring introduces emotional nuance to enhance model sensitivity and contextual comprehension. 3.1.2. Study objective This study aimed to compare the performance of various machine learning models in detecting cyberbullying using text and emotional features. The evaluated models include traditional models such as logistical regression, decision tree, and random forest, as well as advanced models such as synthetic neural networks (CNN), repetitive neural networks (RNN), and long- and short-range memory (LSTM). Texts"
+    },
+    {
+      "rank": 3,
+      "page": 3,
+      "chunk_id": 38,
+      "score": 0.7077,
+      "text": "[24]. In literature, sentiment analysis is a supporting task used to improve the performance of the core task [25]. Emotions are the thoughts and opinions that develop from emotions linked to a specific thing, and they typically fall into one of three categories: positive, neutral, or negative [26]. Unlike text analysis, sentiment analysis detects different sentiments through text expressions such as anger, disgust, fear, happiness, sadness, and surprise. There are three common ways to detect feelings in texts: the keyword-based"
+    },
+    {
+      "rank": 4,
+      "page": 10,
+      "chunk_id": 144,
+      "score": 0.702,
+      "text": "others. \u0000 Director of sentiment analysis presents a classification of emotions between “positive” and “negative”. This multi-headed output design was implemented using a shared feature extractor followed by parallel dense layers, each optimized independently for its respective task using categorical cross-entropy and soft max activation. Phases of training and treatment \u0000 Data processing: The data cleaning process included removing noise such as unnecessary codes, converting text into small letters, and removing repetitions. \u0000 Category coding: Bullying, subcategories and emotions rankings"
+    },
+    {
+      "rank": 5,
+      "page": 3,
+      "chunk_id": 51,
+      "score": 0.6979,
+      "text": "making it necessary to conduct a comprehensive analysis and measurement of these impacts. The integration of sentiment analysis allows psychological effects to be measured using emotional metrics derived from user-generated content. 3.2.2. Study objective This objective was to study and measure the psychological impact of A.M. Fashakh et al. Egyptian Informatics Journal 32 (2025) 100856 3"
+    }
+  ],
+  "prompt": "\nأنت مساعد بحثي.\n\nاعتمد فقط على السياق المرفق.\nلا تستخدم معرفتك السابقة.\nاذكر الدقة لكل نموذج إذا كانت موجودة في السياق.\nلا تستنتج أرقاماً غير مذكورة.\nإذا تساوى نموذجان في الدقة، اذكر التعادل.\nبعد كل ادعاء اذكر مصدره بهذه الصيغة:\n[Page X, Chunk Y]\n\nإذا لم تجد الأدلة اللازمة للإجابة، قل:\nالسياق غير كافٍ للإجابة.\nيمكنك ذكر المعلومات المتاحة مع تحديد ما ينقصها.\n\nالسياق:\n[Page 13, Chunk 175]\n• Neural Networks: CNN, RNN, and LSTM outperformed traditional models, excelling in handling complex sentiment patterns. • MLP Limitations: MLP’s poor performance highlights its inability to capture sequential dependencies effectively. Further, an ablation study was conducted to evaluate the contribution of sentiment features alone, versus combined text and emotion features. Results showed that inclusion of emotional cues significantly improved performance in RNN and LSTM by approximately 3 % in F1score. The experimental setup was executed on Google Colab Pro with\n\n[Page 3, Chunk 47]\nprovides for good textual feature representation, and TextBlob sentiment scoring introduces emotional nuance to enhance model sensitivity and contextual comprehension. 3.1.2. Study objective This study aimed to compare the performance of various machine learning models in detecting cyberbullying using text and emotional features. The evaluated models include traditional models such as logistical regression, decision tree, and random forest, as well as advanced models such as synthetic neural networks (CNN), repetitive neural networks (RNN), and long- and short-range memory (LSTM). Texts\n\n[Page 3, Chunk 38]\n[24]. In literature, sentiment analysis is a supporting task used to improve the performance of the core task [25]. Emotions are the thoughts and opinions that develop from emotions linked to a specific thing, and they typically fall into one of three categories: positive, neutral, or negative [26]. Unlike text analysis, sentiment analysis detects different sentiments through text expressions such as anger, disgust, fear, happiness, sadness, and surprise. There are three common ways to detect feelings in texts: the keyword-based\n\n[Page 10, Chunk 144]\nothers. \u0000 Director of sentiment analysis presents a classification of emotions between “positive” and “negative”. This multi-headed output design was implemented using a shared feature extractor followed by parallel dense layers, each optimized independently for its respective task using categorical cross-entropy and soft max activation. Phases of training and treatment \u0000 Data processing: The data cleaning process included removing noise such as unnecessary codes, converting text into small letters, and removing repetitions. \u0000 Category coding: Bullying, subcategories and emotions rankings\n\n[Page 3, Chunk 51]\nmaking it necessary to conduct a comprehensive analysis and measurement of these impacts. The integration of sentiment analysis allows psychological effects to be measured using emotional metrics derived from user-generated content. 3.2.2. Study objective This objective was to study and measure the psychological impact of A.M. Fashakh et al. Egyptian Informatics Journal 32 (2025) 100856 3\n\nالسؤال:\nما الدقة التي حققها نموذج تحليل المشاعر؟\n\nأجب باللغة العربية.\n",
+  "answer": "السياق غير كافٍ للإجابة.  \nالمعلومات المتاحة تشير إلى تحسين في مقياس F1 (بقيمة 3%) عند إضافة عوامل مشاعر في نماذج RNN وLSTM، لكن السياق لا يذكر أي قيمة لـ \"الدقة\" (Precision) كمقياس محدد. يُرجى ملاحظة أن الدقة (Precision) وF1 Score هما مقياسان مختلفان، ولا يُذكر في السياق أي قيمة تُعَدّ دقة نموذج تحليل المشاعر.  \nالمعلومات المُتاحة:  \n- تحسين في F1 Score بقيمة 3% عند إضافة عوامل مشاعر [Page 13, Chunk 175]  \n- لا توجد ذكر لقيمة الدقة (Precision) في السياق."
+}
