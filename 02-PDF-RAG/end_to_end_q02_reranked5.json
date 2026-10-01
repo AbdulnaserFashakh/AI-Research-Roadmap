@@ -1,0 +1,62 @@
+{
+  "question_id": "Q02",
+  "question_ar": "كم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟",
+  "retrieval_method": "Reranked@5",
+  "model": "qwen3:4b",
+  "temperature": 0,
+  "seed": 42,
+  "retrieved_chunks": [
+    {
+      "dense_rank": 4,
+      "chunk_id": 55,
+      "page": 4,
+      "dense_score": 0.612654,
+      "text": "This collection consists of cyberbullying scripts collected from various sources, including Kaggle, and has been expanded using Tweepy, a Python programming tool that gives access to the Twitter API. This resulted in a rich and diverse dataset of 58,000 tweets, which after processing, cleaning and iterating became 51,202 tweets that can provide a solid foundation for analysis and study. This joint strategy provided coverage across a range of cyberbullying types and language variants, promoting model generalizability. 4.1.2. Sources and expansion",
+      "rerank_score": 4.940287,
+      "rerank_rank": 1,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 1,
+      "chunk_id": 70,
+      "page": 5,
+      "dense_score": 0.705324,
+      "text": "of the important categories and with the completion of the process of balancing data categories, the total number of tweets became (71,704) by (17,926) for each category, as shown in the following distribution in the table below: Table 2. 4.2. Model training This study builds on an integrated methodology that combines diverse machine learning models, including traditional methods such as logistic regression and decision trees, along with newer technologies such as conventional neural networks (CNNs) and long- and short-term memory",
+      "rerank_score": 4.255901,
+      "rerank_rank": 2,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 6,
+      "chunk_id": 69,
+      "page": 5,
+      "dense_score": 0.57649,
+      "text": "of the sentiment polarity and the categories of cyberbullying. After completing the process of data processing, cleaning, removing duplicates and encoding us, and then we had (51,202) tweets ready for analysis and training, we decided to merge the two categories (not_cyberbullying and other_cyberbullying) because they are not important to the subject of our research and redistribute them to the rest of the important categories and with the completion of the process of balancing data categories, the total number of tweets",
+      "rerank_score": 3.181205,
+      "rerank_rank": 3,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 3,
+      "chunk_id": 74,
+      "page": 5,
+      "dense_score": 0.632356,
+      "text": "of cyberbullying texts reinforced by Tweepy, resulting in a powerful collection of 58,000 tweets. Advanced data processing steps, including text cleaning, are developed into codes, and features are extracted using Term Frequency-Inverse Document Frequency (TF-IDF) and sentiment analysis to ensure that data are adapted appropriately for model training and assessment. The TF-IDF vectors capture term relevance, while sentiment polarity (from TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes",
+      "rerank_score": 1.291359,
+      "rerank_rank": 4,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 13,
+      "chunk_id": 3,
+      "page": 1,
+      "dense_score": 0.457849,
+      "text": "models, such as MLP, CNN, RNN, and (LSTM) networks. TF-IDF for text vectorization and TextBlob for sentiment analysis were utilized. In spite of TF-IDF’s shortcoming. Its simplicity enabled quick prototyping and insight results. The dataset contained 58,000 tweets, with 46,000 obtained from Kaggle and 12,000 collected via the Twitter API. Tweets were labeled into cyberbullying_type (gender, age, religion, and ethnicity) and subcategories: gender (male, female, LGBT, other), age (adult, teenager, other), religion (Muslim, Christian, Jewish, other), and ethnicity (ethical, unethical,",
+      "rerank_score": 0.664613,
+      "rerank_rank": 5,
+      "selected_for_final_top5": true
+    }
+  ],
+  "prompt": "\nأنت مساعد بحثي.\n\nاعتمد فقط على السياق المرفق.\nلا تستخدم معرفتك السابقة.\nاذكر الدقة لكل نموذج إذا كانت موجودة في السياق.\nلا تستنتج أرقاماً غير مذكورة.\nإذا تساوى نموذجان في الدقة، اذكر التعادل.\nبعد كل ادعاء اذكر مصدره بهذه الصيغة:\n[Page X, Chunk Y]\n\nإذا لم تجد الأدلة اللازمة للإجابة، قل:\nالسياق غير كافٍ للإجابة.\nيمكنك ذكر المعلومات المتاحة مع تحديد ما ينقصها.\n\nالسياق:\n[Page 4, Chunk 55]\nThis collection consists of cyberbullying scripts collected from various sources, including Kaggle, and has been expanded using Tweepy, a Python programming tool that gives access to the Twitter API. This resulted in a rich and diverse dataset of 58,000 tweets, which after processing, cleaning and iterating became 51,202 tweets that can provide a solid foundation for analysis and study. This joint strategy provided coverage across a range of cyberbullying types and language variants, promoting model generalizability. 4.1.2. Sources and expansion\n\n[Page 5, Chunk 70]\nof the important categories and with the completion of the process of balancing data categories, the total number of tweets became (71,704) by (17,926) for each category, as shown in the following distribution in the table below: Table 2. 4.2. Model training This study builds on an integrated methodology that combines diverse machine learning models, including traditional methods such as logistic regression and decision trees, along with newer technologies such as conventional neural networks (CNNs) and long- and short-term memory\n\n[Page 5, Chunk 69]\nof the sentiment polarity and the categories of cyberbullying. After completing the process of data processing, cleaning, removing duplicates and encoding us, and then we had (51,202) tweets ready for analysis and training, we decided to merge the two categories (not_cyberbullying and other_cyberbullying) because they are not important to the subject of our research and redistribute them to the rest of the important categories and with the completion of the process of balancing data categories, the total number of tweets\n\n[Page 5, Chunk 74]\nof cyberbullying texts reinforced by Tweepy, resulting in a powerful collection of 58,000 tweets. Advanced data processing steps, including text cleaning, are developed into codes, and features are extracted using Term Frequency-Inverse Document Frequency (TF-IDF) and sentiment analysis to ensure that data are adapted appropriately for model training and assessment. The TF-IDF vectors capture term relevance, while sentiment polarity (from TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes\n\n[Page 1, Chunk 3]\nmodels, such as MLP, CNN, RNN, and (LSTM) networks. TF-IDF for text vectorization and TextBlob for sentiment analysis were utilized. In spite of TF-IDF’s shortcoming. Its simplicity enabled quick prototyping and insight results. The dataset contained 58,000 tweets, with 46,000 obtained from Kaggle and 12,000 collected via the Twitter API. Tweets were labeled into cyberbullying_type (gender, age, religion, and ethnicity) and subcategories: gender (male, female, LGBT, other), age (adult, teenager, other), religion (Muslim, Christian, Jewish, other), and ethnicity (ethical, unethical,\n\nالسؤال:\nكم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟\n\nأجب باللغة العربية.\n",
+  "answer": "بعد التنظيف: 51,202 تغريدات [Page 4, Chunk 55] و [Page 5, Chunk 69]  \nبعد موازنة البيانات: 71,704 تغريدات [Page 5, Chunk 70]"
+}
