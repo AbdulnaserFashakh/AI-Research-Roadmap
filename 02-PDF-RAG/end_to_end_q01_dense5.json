@@ -1,0 +1,47 @@
+{
+  "question_id": "Q01",
+  "question_ar": "قارن دقة نماذج CNN وRNN وLSTM في التصنيف الثنائي. ما النموذج الأفضل؟",
+  "retrieval_method": "Dense@5",
+  "model": "qwen3:4b",
+  "temperature": 0,
+  "seed": 42,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "page": 13,
+      "chunk_id": 182,
+      "score": 0.7881,
+      "text": "performance of different machine learning models and neural networks in binary classification. The two methods used included: Metrics evaluation: The models were evaluated based on key performance indicators such as accuracy, recall, F1 score, and precision. The results showed that advanced neural network architectures, especially recurrent neural network (RNN) and long short-term memory (LSTM) models, provided superior performance metrics, outperforming traditional machine learning models such as support vector machines (SVMs) and decision trees in accuracy and overall effectiveness for binary"
+    },
+    {
+      "rank": 2,
+      "page": 12,
+      "chunk_id": 171,
+      "score": 0.7441,
+      "text": "(RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision, recall, F1-score for both classes (Class 0 and Class 1), and overall accuracy. The performance metrics for each model are summarized below Table 5. Discussion The sentiment analysis results highlight varying performance across traditional machine learning models and neural network architectures. Among traditional models, the Support Vector Machine (SVM) achieved the highest accuracy of 0.96, with balanced precision (0.96) and"
+    },
+    {
+      "rank": 3,
+      "page": 12,
+      "chunk_id": 170,
+      "score": 0.7017,
+      "text": "Table 4. 9. Evaluation metrics 9.1. Comparative analysis This study evaluates the performance of various machine learning and neural network models in classifying binary classes, focusing on metrics such as precision, recall, F1-score, and accuracy. The models analyzed include Logistic Regression, Decision Tree, Random Forest, Support Vector Machine (SVM), Convolutional Neural Network (CNN), Simple Neural Network (MLP), Recurrent Neural Network (RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision,"
+    },
+    {
+      "rank": 4,
+      "page": 13,
+      "chunk_id": 178,
+      "score": 0.6838,
+      "text": "accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to subtler linguistic patterns. The success of CNN also supports findings in previous studies that highlight its efficiency in extracting local features from text sequences. While traditional models like SVM and Random Forest showed high performance, their limitations become evident in handling sequential sentiment dynamics, especially when compared to LSTM and RNN. This confirms the importance of sequential modeling when analyzing"
+    },
+    {
+      "rank": 5,
+      "page": 13,
+      "chunk_id": 177,
+      "score": 0.6651,
+      "text": "below illustrates the comparison of model performance. The comparative analysis of model performances reveals important insights into the effectiveness of different algorithms for sentiment classification in the context of cyberbullying detection. Deep learning models, especially RNN and LSTM, outperformed traditional classifiers by effectively capturing temporal and contextual nuances in textual data. Their ability to model long-term dependencies explains their superior accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to"
+    }
+  ],
+  "prompt": "\nأنت مساعد بحثي.\n\nاعتمد فقط على السياق المرفق.\nلا تستخدم معرفتك السابقة.\nاذكر الدقة لكل نموذج إذا كانت موجودة في السياق.\nلا تستنتج أرقاماً غير مذكورة.\nإذا تساوى نموذجان في الدقة، اذكر التعادل.\nبعد كل ادعاء اذكر مصدره بهذه الصيغة:\n[Page X, Chunk Y]\n\nإذا لم تجد الأدلة اللازمة للإجابة، قل:\nالسياق غير كافٍ للإجابة.\nيمكنك ذكر المعلومات المتاحة مع تحديد ما ينقصها.\n\nالسياق:\n[Page 13, Chunk 182]\nperformance of different machine learning models and neural networks in binary classification. The two methods used included: Metrics evaluation: The models were evaluated based on key performance indicators such as accuracy, recall, F1 score, and precision. The results showed that advanced neural network architectures, especially recurrent neural network (RNN) and long short-term memory (LSTM) models, provided superior performance metrics, outperforming traditional machine learning models such as support vector machines (SVMs) and decision trees in accuracy and overall effectiveness for binary\n\n[Page 12, Chunk 171]\n(RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision, recall, F1-score for both classes (Class 0 and Class 1), and overall accuracy. The performance metrics for each model are summarized below Table 5. Discussion The sentiment analysis results highlight varying performance across traditional machine learning models and neural network architectures. Among traditional models, the Support Vector Machine (SVM) achieved the highest accuracy of 0.96, with balanced precision (0.96) and\n\n[Page 12, Chunk 170]\nTable 4. 9. Evaluation metrics 9.1. Comparative analysis This study evaluates the performance of various machine learning and neural network models in classifying binary classes, focusing on metrics such as precision, recall, F1-score, and accuracy. The models analyzed include Logistic Regression, Decision Tree, Random Forest, Support Vector Machine (SVM), Convolutional Neural Network (CNN), Simple Neural Network (MLP), Recurrent Neural Network (RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision,\n\n[Page 13, Chunk 178]\naccuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to subtler linguistic patterns. The success of CNN also supports findings in previous studies that highlight its efficiency in extracting local features from text sequences. While traditional models like SVM and Random Forest showed high performance, their limitations become evident in handling sequential sentiment dynamics, especially when compared to LSTM and RNN. This confirms the importance of sequential modeling when analyzing\n\n[Page 13, Chunk 177]\nbelow illustrates the comparison of model performance. The comparative analysis of model performances reveals important insights into the effectiveness of different algorithms for sentiment classification in the context of cyberbullying detection. Deep learning models, especially RNN and LSTM, outperformed traditional classifiers by effectively capturing temporal and contextual nuances in textual data. Their ability to model long-term dependencies explains their superior accuracy (0.98) and high F1-scores, particularly in Class 1, which represents the positive class—often more difficult to detect due to\n\nالسؤال:\nقارن دقة نماذج CNN وRNN وLSTM في التصنيف الثنائي. ما النموذج الأفضل؟\n\nأجب باللغة العربية.\n",
+  "answer": "An examination of model performance has uncovered critical insights into the efficacy of diverse algorithms for sentiment classification in cyberbullying detection scenarios. Specifically, deep learning models—particularly recurrent neural networks (RNNs) and long short-term memory (LSTM) networks—outperformed traditional classifiers by effectively capturing temporal and contextual nuances within textual data. This superior performance, characterized by an accuracy of 0.98 and high F1-scores, especially for the positive class (which is often challenging to identify due to its subtle linguistic patterns), stems from their ability to model long-term dependencies."
+}
