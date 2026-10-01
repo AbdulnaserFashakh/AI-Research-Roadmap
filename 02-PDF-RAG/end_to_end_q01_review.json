@@ -1,0 +1,140 @@
+{
+  "question_id": "Q01",
+  "generation_commit": "418000b",
+  "review_type": "human_review_with_ai_assistance",
+  "review_status": "provisional",
+  "independent_second_review": false,
+  "answerable_from_full_chunks": true,
+  "results": [
+    {
+      "method": "Dense@5",
+      "answer_file": "end_to_end_q01_dense5.json",
+      "context_sufficient_for_complete_answer": false,
+      "answer_correctness": 0.5,
+      "answer_correctness_reason": "Reports 0.98 for RNN and LSTM but omits CNN accuracy and does not complete the requested comparison.",
+      "citation_correctness": null,
+      "citation_coverage": 0.0,
+      "faithfulness_assessment": "All six reviewed claims are supported by the retrieved context.",
+      "faithfulness_score": 1.0,
+      "faithfulness_score_reason": "Six supported claim occurrences divided by six reviewed claim occurrences.",
+      "full_abstention": false,
+      "acknowledged_missing_evidence": false,
+      "language_instruction_followed": false,
+      "claims": [
+        {
+          "id": "D1",
+          "claim": "RNN and LSTM outperformed traditional classifiers in the reported comparison.",
+          "supported": true,
+          "explicit_citation": false,
+          "evidence_chunk_ids": [
+            177,
+            182
+          ]
+        },
+        {
+          "id": "D2",
+          "claim": "RNN and LSTM capture temporal and contextual nuances in text.",
+          "supported": true,
+          "explicit_citation": false,
+          "evidence_chunk_ids": [
+            177
+          ]
+        },
+        {
+          "id": "D3",
+          "claim": "The reported accuracy for RNN and LSTM is 0.98.",
+          "supported": true,
+          "explicit_citation": false,
+          "evidence_chunk_ids": [
+            177
+          ]
+        },
+        {
+          "id": "D4",
+          "claim": "The models achieved high F1-scores, particularly for the positive class.",
+          "supported": true,
+          "explicit_citation": false,
+          "evidence_chunk_ids": [
+            177,
+            178
+          ]
+        },
+        {
+          "id": "D5",
+          "claim": "The positive class is often harder to identify because of subtler linguistic patterns.",
+          "supported": true,
+          "explicit_citation": false,
+          "evidence_chunk_ids": [
+            178
+          ]
+        },
+        {
+          "id": "D6",
+          "claim": "The answer explains superior performance by the ability to model long-term dependencies, as stated in the source.",
+          "supported": true,
+          "explicit_citation": false,
+          "evidence_chunk_ids": [
+            177
+          ]
+        }
+      ]
+    },
+    {
+      "method": "Reranked@5",
+      "answer_file": "end_to_end_q01_reranked5.json",
+      "context_sufficient_for_complete_answer": true,
+      "answer_correctness": 1.0,
+      "answer_correctness_reason": "Reports CNN 0.97, RNN 0.98 and LSTM 0.98, and identifies the accuracy tie.",
+      "citation_correctness": 1.0,
+      "citation_count": 3,
+      "correct_citation_count": 3,
+      "citation_evidence": {
+        "page": 12,
+        "chunk_id": 173
+      },
+      "citation_coverage": 0.6,
+      "citation_coverage_reason": "Three of five claim occurrences carry explicit citations. Repeated factual statements are counted at each occurrence.",
+      "faithfulness_assessment": "All five claim occurrences are supported by chunk 173.",
+      "faithfulness_score": 1.0,
+      "faithfulness_score_reason": "Five supported claim occurrences divided by five reviewed claim occurrences.",
+      "claims": [
+        {
+          "id": "R1",
+          "claim": "CNN accuracy is 0.97.",
+          "supported": true,
+          "explicit_citation": true,
+          "evidence_chunk_id": 173
+        },
+        {
+          "id": "R2",
+          "claim": "RNN accuracy is 0.98.",
+          "supported": true,
+          "explicit_citation": true,
+          "evidence_chunk_id": 173
+        },
+        {
+          "id": "R3",
+          "claim": "LSTM accuracy is 0.98.",
+          "supported": true,
+          "explicit_citation": true,
+          "evidence_chunk_id": 173
+        },
+        {
+          "id": "R4",
+          "claim": "RNN and LSTM tie for the highest accuracy among the three models at 0.98.",
+          "supported": true,
+          "explicit_citation": false,
+          "evidence_chunk_id": 173
+        },
+        {
+          "id": "R5",
+          "claim": "CNN accuracy is 0.97, repeated in the final sentence.",
+          "supported": true,
+          "explicit_citation": false,
+          "evidence_chunk_id": 173
+        }
+      ]
+    }
+  ],
+  "interpretation": "For Q01, one generation per method showed a complete answer with Reranked@5 and a partial answer with Dense@5. This does not establish a general improvement."
+}
