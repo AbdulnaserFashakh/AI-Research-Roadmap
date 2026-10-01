@@ -1,0 +1,62 @@
+{
+  "question_id": "Q04",
+  "question_ar": "ما دقة نموذج التصنيف متعدد الفئات الأربع؟",
+  "retrieval_method": "Reranked@5",
+  "model": "qwen3:4b",
+  "temperature": 0,
+  "seed": 42,
+  "retrieved_chunks": [
+    {
+      "dense_rank": 1,
+      "chunk_id": 171,
+      "page": 12,
+      "dense_score": 0.632475,
+      "text": "(RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision, recall, F1-score for both classes (Class 0 and Class 1), and overall accuracy. The performance metrics for each model are summarized below Table 5. Discussion The sentiment analysis results highlight varying performance across traditional machine learning models and neural network architectures. Among traditional models, the Support Vector Machine (SVM) achieved the highest accuracy of 0.96, with balanced precision (0.96) and",
+      "rerank_score": 1.699027,
+      "rerank_rank": 1,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 6,
+      "chunk_id": 172,
+      "page": 12,
+      "dense_score": 0.561193,
+      "text": "architectures. Among traditional models, the Support Vector Machine (SVM) achieved the highest accuracy of 0.96, with balanced precision (0.96) and F1scores (0.97 for Class 0, 0.94 for Class 1). The Decision Tree and Random Forest models also performed well, each achieving 0.96 accuracy, with F1-scores of 0.97 (Class 0) and 0.94/0.93 (Class 1), respectively. Logistic Regression had slightly lower accuracy (0.93) but demonstrated strong recall for negative sentiment (0.98). In contrast, neural networks showed superior performance. The CNN achieved an",
+      "rerank_score": 1.400253,
+      "rerank_rank": 2,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 20,
+      "chunk_id": 183,
+      "page": 13,
+      "dense_score": 0.499423,
+      "text": "traditional machine learning models such as support vector machines (SVMs) and decision trees in accuracy and overall effectiveness for binary classification tasks. Comparative subgroup analysis: This part of the study focused on the patterns and distributions of negative emotions in different demographic and sociocultural subgroups. By comparing the rates and effects of negative emotions across groups such as adolescents, adults, different genders, sexual orientations, and religious affiliations, crucial insights were discovered about their specific vulnerabilities and needs. Table 4 The",
+      "rerank_score": -0.452291,
+      "rerank_rank": 3,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 12,
+      "chunk_id": 173,
+      "page": 12,
+      "dense_score": 0.531215,
+      "text": "(0.93) but demonstrated strong recall for negative sentiment (0.98). In contrast, neural networks showed superior performance. The CNN achieved an accuracy of 0.97, while both RNN and LSTM achieved the highest accuracy of 0.98. These models excelled with F1-scores of 0.99 (Class 0) and 0.97 (Class 1), effectively capturing sequential patterns in sentiment data. The MLP performed poorly, achieving only 0.67 accuracy, with notably low precision (0.48) and recall (0.01) for positive sentiment. Key Insights: • Traditional Models: SVM, Decision",
+      "rerank_score": -0.669777,
+      "rerank_rank": 4,
+      "selected_for_final_top5": true
+    },
+    {
+      "dense_rank": 3,
+      "chunk_id": 170,
+      "page": 12,
+      "dense_score": 0.611849,
+      "text": "Table 4. 9. Evaluation metrics 9.1. Comparative analysis This study evaluates the performance of various machine learning and neural network models in classifying binary classes, focusing on metrics such as precision, recall, F1-score, and accuracy. The models analyzed include Logistic Regression, Decision Tree, Random Forest, Support Vector Machine (SVM), Convolutional Neural Network (CNN), Simple Neural Network (MLP), Recurrent Neural Network (RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision,",
+      "rerank_score": -1.926848,
+      "rerank_rank": 5,
+      "selected_for_final_top5": true
+    }
+  ],
+  "prompt": "\nأنت مساعد بحثي.\n\nاعتمد فقط على السياق المرفق.\nلا تستخدم معرفتك السابقة.\nاذكر الدقة لكل نموذج إذا كانت موجودة في السياق.\nلا تستنتج أرقاماً غير مذكورة.\nإذا تساوى نموذجان في الدقة، اذكر التعادل.\nبعد كل ادعاء اذكر مصدره بهذه الصيغة:\n[Page X, Chunk Y]\n\nإذا لم تجد الأدلة اللازمة للإجابة، قل:\nالسياق غير كافٍ للإجابة.\nيمكنك ذكر المعلومات المتاحة مع تحديد ما ينقصها.\n\nالسياق:\n[Page 12, Chunk 171]\n(RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision, recall, F1-score for both classes (Class 0 and Class 1), and overall accuracy. The performance metrics for each model are summarized below Table 5. Discussion The sentiment analysis results highlight varying performance across traditional machine learning models and neural network architectures. Among traditional models, the Support Vector Machine (SVM) achieved the highest accuracy of 0.96, with balanced precision (0.96) and\n\n[Page 12, Chunk 172]\narchitectures. Among traditional models, the Support Vector Machine (SVM) achieved the highest accuracy of 0.96, with balanced precision (0.96) and F1scores (0.97 for Class 0, 0.94 for Class 1). The Decision Tree and Random Forest models also performed well, each achieving 0.96 accuracy, with F1-scores of 0.97 (Class 0) and 0.94/0.93 (Class 1), respectively. Logistic Regression had slightly lower accuracy (0.93) but demonstrated strong recall for negative sentiment (0.98). In contrast, neural networks showed superior performance. The CNN achieved an\n\n[Page 13, Chunk 183]\ntraditional machine learning models such as support vector machines (SVMs) and decision trees in accuracy and overall effectiveness for binary classification tasks. Comparative subgroup analysis: This part of the study focused on the patterns and distributions of negative emotions in different demographic and sociocultural subgroups. By comparing the rates and effects of negative emotions across groups such as adolescents, adults, different genders, sexual orientations, and religious affiliations, crucial insights were discovered about their specific vulnerabilities and needs. Table 4 The\n\n[Page 12, Chunk 173]\n(0.93) but demonstrated strong recall for negative sentiment (0.98). In contrast, neural networks showed superior performance. The CNN achieved an accuracy of 0.97, while both RNN and LSTM achieved the highest accuracy of 0.98. These models excelled with F1-scores of 0.99 (Class 0) and 0.97 (Class 1), effectively capturing sequential patterns in sentiment data. The MLP performed poorly, achieving only 0.67 accuracy, with notably low precision (0.48) and recall (0.01) for positive sentiment. Key Insights: • Traditional Models: SVM, Decision\n\n[Page 12, Chunk 170]\nTable 4. 9. Evaluation metrics 9.1. Comparative analysis This study evaluates the performance of various machine learning and neural network models in classifying binary classes, focusing on metrics such as precision, recall, F1-score, and accuracy. The models analyzed include Logistic Regression, Decision Tree, Random Forest, Support Vector Machine (SVM), Convolutional Neural Network (CNN), Simple Neural Network (MLP), Recurrent Neural Network (RNN), and Long Short-Term Memory (LSTM). The models were tested on a binary classification dataset, with performance measured using precision,\n\nالسؤال:\nما دقة نموذج التصنيف متعدد الفئات الأربع؟\n\nأجب باللغة العربية.\n",
+  "answer": "السياق غير كافٍ للإجابة.  \nالمعلومات المتاحة تشير إلى أن الدراسة تُقيّم نماذج تصنيف **بصيغة تصنيف ثنائي الفئات** (Class 0 وClass 1)، ولا تُذكر أي نماذج تُصنف فئات متعددة (مثل 4 فئات) في السياق. السؤال يطلب دقة نموذج تصنيف متعدد الفئات (4 فئات)، لكن السياق يركز على تحليل تصنيف ثنائي الفئات فقط، ولا توجد أرقام أو تفاصيل تُشير إلى نماذج متعددة الفئات.  \nالمعلومات المُتاحة:  \n- السياق يُشير إلى أن النماذج المُختبرة على بيانات تصنيف ثنائي الفئات (Page 12, Chunk 170, 171, 172, 173).  \n- لا توجد ذكرٌ لأي نماذج تُصنف فئات أكثر من 2 فئة (مثل 4 فئات) في السياق.  \nالمطلوب: دقة نموذج تصنيف 4 فئات، وهو غير مذكور في السياق."
+}

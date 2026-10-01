@@ -1,0 +1,66 @@
+{
+  "question_id": "Q04",
+  "review_type": "human_review_with_ai_assistance",
+  "review_status": "provisional",
+  "independent_second_review": false,
+  "answerable_from_full_chunks": false,
+  "answerability_basis": "Current evaluation_questions.json annotation. This does not assert absence from the original PDF.",
+  "results": [
+    {
+      "method": "Dense@5",
+      "answer_file": "end_to_end_q04_dense5.json",
+      "retrieved_chunk_ids": [
+        171,
+        178,
+        170,
+        182,
+        174
+      ],
+      "context_sufficient_for_requested_accuracy": false,
+      "abstained_from_requested_accuracy": true,
+      "supplied_requested_accuracy": false,
+      "acknowledged_missing_evidence": true,
+      "contains_other_factual_claims": true,
+      "explanation_fully_supported": false,
+      "unsupported_model_guess": true,
+      "faithfulness_score": null,
+      "citation_correctness": null,
+      "citation_coverage": null,
+      "pending_scoring_reason": "Complete claim segmentation and citation mapping are pending.",
+      "review_findings": [
+        "Chunk 171 supports SVM accuracy of 0.96.",
+        "Chunk 174 does not identify the model associated with 0.67.",
+        "The suggestion that 0.67 may belong to SVM is unsupported.",
+        "The retrieved context does not support the opening statement about multiclass evaluation."
+      ]
+    },
+    {
+      "method": "Reranked@5",
+      "answer_file": "end_to_end_q04_reranked5.json",
+      "retrieved_chunk_ids": [
+        171,
+        172,
+        183,
+        173,
+        170
+      ],
+      "context_sufficient_for_requested_accuracy": false,
+      "abstained_from_requested_accuracy": true,
+      "supplied_requested_accuracy": false,
+      "acknowledged_missing_evidence": true,
+      "contains_other_factual_claims": true,
+      "explanation_fully_supported": true,
+      "unsupported_model_guess": false,
+      "faithfulness_score": null,
+      "citation_correctness": null,
+      "citation_coverage": null,
+      "pending_scoring_reason": "Complete claim segmentation and citation mapping are pending.",
+      "review_findings": [
+        "The five retrieved chunks do not report four-class accuracy.",
+        "The explanation of binary classification is supported by chunks 170 and 171.",
+        "No substitute accuracy or speculative model name is supplied."
+      ]
+    }
+  ],
+  "interpretation": "Both methods withheld the requested accuracy. Dense added unsupported explanatory claims. Reranked explanation was supported by the inspected context."
+}
