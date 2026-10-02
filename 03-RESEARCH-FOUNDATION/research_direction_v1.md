@@ -190,10 +190,14 @@ Pilot experiments Q01, Q02, Q04 and Q05 have been completed for Dense at 5 and R
 
 Q05 remains excluded from aggregate evaluation because its intended task and answerability are ambiguous.
 
-The literature matrix contains seed records S001-S015. S009, *The Cross-Lingual Cost*, is the first record with a completed provisional full-text extraction and quality appraisal.
+The literature matrix contains seed records S001-S015. S009, *The Cross-Lingual Cost*, and S012, *Benchmarking Retrieval-Augmented Generation for Scientific Knowledge QA in European Portuguese*, now have completed provisional full-text extractions and quality appraisals.
 
 S009 provides direct evidence that retrieval can be the main bottleneck in domain-specific Arabic-English RAG and that mixed-language candidate ranking can produce cross-language gaps above 40 percentage points. It does not evaluate scientific documents, small local generators, claim-level evidence sufficiency, citations, faithfulness, or abstention.
 
 This evidence also limits the interpretation of H1. Because the planned scientific corpus is predominantly English-only, the mixed-language document-ranking failure isolated by S009 may be absent. Query translation must therefore remain an empirical comparison and must not be assumed to outperform direct Arabic multilingual retrieval.
 
-The repository checkpoint before this extraction session is commit 5095664.
+S012 shows that scientific RAG with open 4–12B instruction-tuned models, retriever specialization, reranking comparisons, and top-k ablations is already established. These components cannot be presented as standalone novelty. Its results strengthen H2 and H3: larger contexts did not consistently improve accuracy, every tested RAG configuration harmed Qwen3-8B, and reranking sometimes erased gains from a specialized retriever. The paper also motivates H4 because it identifies retriever–reranker language and domain mismatch as a likely source of degradation.
+
+S012 does not directly evaluate chunk relevance, claim-level evidence sufficiency, open-ended answers, citations, faithfulness, answerability conditions, or abstention. It explicitly uses multiple-choice task accuracy as a proxy for retrieval quality. The candidate contribution therefore remains the controlled link between Arabic-to-English retrieval choices, claim-level evidence sufficiency, and downstream trustworthiness in open-ended scientific RAG with a small local model.
+
+The repository checkpoint before this extraction session is commit 4768aed.
