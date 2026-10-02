@@ -190,4 +190,10 @@ Pilot experiments Q01, Q02, Q04 and Q05 have been completed for Dense at 5 and R
 
 Q05 remains excluded from aggregate evaluation because its intended task and answerability are ambiguous.
 
-The current repository checkpoint is commit 9b2015f.
+The literature matrix contains seed records S001-S015. S009, *The Cross-Lingual Cost*, is the first record with a completed provisional full-text extraction and quality appraisal.
+
+S009 provides direct evidence that retrieval can be the main bottleneck in domain-specific Arabic-English RAG and that mixed-language candidate ranking can produce cross-language gaps above 40 percentage points. It does not evaluate scientific documents, small local generators, claim-level evidence sufficiency, citations, faithfulness, or abstention.
+
+This evidence also limits the interpretation of H1. Because the planned scientific corpus is predominantly English-only, the mixed-language document-ranking failure isolated by S009 may be absent. Query translation must therefore remain an empirical comparison and must not be assumed to outperform direct Arabic multilingual retrieval.
+
+The repository checkpoint before this extraction session is commit 5095664.
