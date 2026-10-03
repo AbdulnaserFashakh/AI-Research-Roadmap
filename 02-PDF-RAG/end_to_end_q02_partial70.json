@@ -1,0 +1,19 @@
+{
+  "question_id": "Q02",
+  "question_ar": "كم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟",
+  "retrieval_method": "Controlled partial context: chunk 70 only",
+  "model": "qwen3:4b",
+  "temperature": 0,
+  "seed": 42,
+  "retrieved_chunks": [
+    {
+      "rank": 1,
+      "page": 5,
+      "chunk_id": 70,
+      "score": 0.7053,
+      "text": "of the important categories and with the completion of the process of balancing data categories, the total number of tweets became (71,704) by (17,926) for each category, as shown in the following distribution in the table below: Table 2. 4.2. Model training This study builds on an integrated methodology that combines diverse machine learning models, including traditional methods such as logistic regression and decision trees, along with newer technologies such as conventional neural networks (CNNs) and long- and short-term memory"
+    }
+  ],
+  "prompt": "\nأنت مساعد بحثي.\n\nاعتمد فقط على السياق المرفق.\nلا تستخدم معرفتك السابقة.\nاذكر الدقة لكل نموذج إذا كانت موجودة في السياق.\nلا تستنتج أرقاماً غير مذكورة.\nإذا تساوى نموذجان في الدقة، اذكر التعادل.\nبعد كل ادعاء اذكر مصدره بهذه الصيغة:\n[Page X, Chunk Y]\n\nإذا لم تجد الأدلة اللازمة للإجابة، قل:\nالسياق غير كافٍ للإجابة.\nيمكنك ذكر المعلومات المتاحة مع تحديد ما ينقصها.\n\nالسياق:\n[Page 5, Chunk 70]\nof the important categories and with the completion of the process of balancing data categories, the total number of tweets became (71,704) by (17,926) for each category, as shown in the following distribution in the table below: Table 2. 4.2. Model training This study builds on an integrated methodology that combines diverse machine learning models, including traditional methods such as logistic regression and decision trees, along with newer technologies such as conventional neural networks (CNNs) and long- and short-term memory\n\nالسؤال:\nكم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟\n\nأجب باللغة العربية.\n",
+  "answer": "عدد التغريدات بعد موازنة البيانات هو 71,704 [Page 5, Chunk 70]، وعدد التغريدات بعد التنظيف غير مذكور في السياق."
+}
