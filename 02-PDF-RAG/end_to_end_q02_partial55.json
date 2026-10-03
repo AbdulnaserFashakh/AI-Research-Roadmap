@@ -1,0 +1,19 @@
+{
+  "question_id": "Q02",
+  "question_ar": "كم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟",
+  "retrieval_method": "Controlled partial context: chunk 55 only",
+  "model": "qwen3:4b",
+  "temperature": 0,
+  "seed": 42,
+  "retrieved_chunks": [
+    {
+      "rank": 4,
+      "page": 4,
+      "chunk_id": 55,
+      "score": 0.6127,
+      "text": "This collection consists of cyberbullying scripts collected from various sources, including Kaggle, and has been expanded using Tweepy, a Python programming tool that gives access to the Twitter API. This resulted in a rich and diverse dataset of 58,000 tweets, which after processing, cleaning and iterating became 51,202 tweets that can provide a solid foundation for analysis and study. This joint strategy provided coverage across a range of cyberbullying types and language variants, promoting model generalizability. 4.1.2. Sources and expansion"
+    }
+  ],
+  "prompt": "\nأنت مساعد بحثي.\n\nاعتمد فقط على السياق المرفق.\nلا تستخدم معرفتك السابقة.\nاذكر الدقة لكل نموذج إذا كانت موجودة في السياق.\nلا تستنتج أرقاماً غير مذكورة.\nإذا تساوى نموذجان في الدقة، اذكر التعادل.\nبعد كل ادعاء اذكر مصدره بهذه الصيغة:\n[Page X, Chunk Y]\n\nإذا لم تجد الأدلة اللازمة للإجابة، قل:\nالسياق غير كافٍ للإجابة.\nيمكنك ذكر المعلومات المتاحة مع تحديد ما ينقصها.\n\nالسياق:\n[Page 4, Chunk 55]\nThis collection consists of cyberbullying scripts collected from various sources, including Kaggle, and has been expanded using Tweepy, a Python programming tool that gives access to the Twitter API. This resulted in a rich and diverse dataset of 58,000 tweets, which after processing, cleaning and iterating became 51,202 tweets that can provide a solid foundation for analysis and study. This joint strategy provided coverage across a range of cyberbullying types and language variants, promoting model generalizability. 4.1.2. Sources and expansion\n\nالسؤال:\nكم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟\n\nأجب باللغة العربية.\n",
+  "answer": "عدد التغريدات بعد التنظيف: 51,202 تغريدات [Page 4, Chunk 55]  \nعدد التغريدات بعد موازنة البيانات: غير مذكور في السياق"
+}
