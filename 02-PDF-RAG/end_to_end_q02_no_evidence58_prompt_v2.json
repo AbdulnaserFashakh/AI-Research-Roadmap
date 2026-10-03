@@ -1,0 +1,19 @@
+{
+  "question_id": "Q02",
+  "question_ar": "كم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟",
+  "retrieval_method": "Controlled partial context: chunk 58 only",
+  "model": "qwen3:4b",
+  "temperature": 0,
+  "seed": 42,
+  "retrieved_chunks": [
+    {
+      "rank": 2,
+      "page": 4,
+      "chunk_id": 58,
+      "score": 0.6487,
+      "text": "nature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text"
+    }
+  ],
+  "prompt": "\n\nAnswer only the information requested in the question.\nDo not explain preprocessing steps or add unrelated details.\nIf the context supports none of the requested answers, respond only\nwith the Arabic sentence meaning: The context is insufficient to answer.\nIf it supports some parts, answer those parts with citations and\nidentify the unsupported parts.\n\nأنت مساعد بحثي.\n\nاعتمد فقط على السياق المرفق.\nلا تستخدم معرفتك السابقة.\nاذكر الدقة لكل نموذج إذا كانت موجودة في السياق.\nلا تستنتج أرقاماً غير مذكورة.\nإذا تساوى نموذجان في الدقة، اذكر التعادل.\nبعد كل ادعاء اذكر مصدره بهذه الصيغة:\n[Page X, Chunk Y]\n\nإذا لم تجد الأدلة اللازمة للإجابة، قل:\nالسياق غير كافٍ للإجابة.\nيمكنك ذكر المعلومات المتاحة مع تحديد ما ينقصها.\n\nالسياق:\n[Page 4, Chunk 58]\nnature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text\n\nالسؤال:\nكم بلغ عدد التغريدات بعد التنظيف، وكم أصبح العدد بعد موازنة البيانات؟\n\nأجب باللغة العربية.\n",
+  "answer": "السياق غير كافٍ للإجابة."
+}
