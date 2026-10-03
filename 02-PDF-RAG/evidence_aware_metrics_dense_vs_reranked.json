@@ -155,7 +155,8 @@
             "claim_id": "Q02-C1",
             "claim": "The dataset contained 51,202 tweets after cleaning",
             "acceptable_chunk_ids": [
-              55
+              55,
+              69
             ],
             "matched_chunk_ids": [
               55
@@ -193,10 +194,12 @@
             "claim_id": "Q02-C1",
             "claim": "The dataset contained 51,202 tweets after cleaning",
             "acceptable_chunk_ids": [
-              55
+              55,
+              69
             ],
             "matched_chunk_ids": [
-              55
+              55,
+              69
             ],
             "covered": true
           },
