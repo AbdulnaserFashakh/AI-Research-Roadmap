@@ -1,0 +1,922 @@
+{
+  "status": "references_reviewed_ready_to_freeze_before_generation",
+  "purpose": "Controlled-context prompt comparison, not retrieval evaluation",
+  "source_commit": "7dfa16993ff3b883f176f3d84cc52a7be17f587b",
+  "source_chunk_count": 221,
+  "question_count": 20,
+  "conditions": {
+    "full": 10,
+    "partial": 5,
+    "none": 5
+  },
+  "cases": [
+    {
+      "id": "H01",
+      "question_ar": "كيف تُوحَّد حالة الحروف أثناء تنظيف نص التغريدة، وما العناصر غير ذات الصلة التي تُحذف منه؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        58
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "nature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text",
+          "chunk_id": 58
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H01-C1",
+          "reference_ar": "تحويل الحروف إلى أحرف صغيرة lowercase",
+          "evidence_chunk_ids": [
+            58
+          ],
+          "evidence_page": 4,
+          "evidence_text": "nature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text",
+          "supported_in_context": true
+        },
+        {
+          "id": "H01-C2",
+          "reference_ar": "حذف الرموز الخاصة غير ذات الصلة",
+          "evidence_chunk_ids": [
+            58
+          ],
+          "evidence_page": 4,
+          "evidence_text": "nature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text",
+          "supported_in_context": true
+        },
+        {
+          "id": "H01-C3",
+          "reference_ar": "حذف الأرقام غير ذات الصلة",
+          "evidence_chunk_ids": [
+            58
+          ],
+          "evidence_page": 4,
+          "evidence_text": "nature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text",
+          "supported_in_context": true
+        },
+        {
+          "id": "H01-C4",
+          "reference_ar": "حذف علامات الترقيم غير ذات الصلة",
+          "evidence_chunk_ids": [
+            58
+          ],
+          "evidence_page": 4,
+          "evidence_text": "nature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H02",
+      "question_ar": "كيف يجزئ Tokenization النص، وما المثالان المذكوران للكلمات الشائعة المستبعدة؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        59
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text is then encoded by dividing it into individual words or symbols. Encoding helps to further process and analyze texts at a fine-grained level. Removing Stop Words: Common words that do not add meaning to the text, known as “,” “the” and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has",
+          "chunk_id": 59
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H02-C1",
+          "reference_ar": "تقسيم النص إلى كلمات أو رموز",
+          "evidence_chunk_ids": [
+            59
+          ],
+          "evidence_page": 4,
+          "evidence_text": "marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text is then encoded by dividing it into individual words or symbols. Encoding helps to further process and analyze texts at a fine-grained level. Removing Stop Words: Common words that do not add meaning to the text, known as “,” “the” and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has",
+          "supported_in_context": true
+        },
+        {
+          "id": "H02-C2",
+          "reference_ar": "the مثال لكلمة شائعة مستبعدة",
+          "evidence_chunk_ids": [
+            59
+          ],
+          "evidence_page": 4,
+          "evidence_text": "marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text is then encoded by dividing it into individual words or symbols. Encoding helps to further process and analyze texts at a fine-grained level. Removing Stop Words: Common words that do not add meaning to the text, known as “,” “the” and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has",
+          "supported_in_context": true
+        },
+        {
+          "id": "H02-C3",
+          "reference_ar": "is مثال لكلمة شائعة مستبعدة",
+          "evidence_chunk_ids": [
+            59
+          ],
+          "evidence_page": 4,
+          "evidence_text": "marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text is then encoded by dividing it into individual words or symbols. Encoding helps to further process and analyze texts at a fine-grained level. Removing Stop Words: Common words that do not add meaning to the text, known as “,” “the” and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H03",
+      "question_ar": "بحسب المقطع المرفق، ما الأسباب الثلاثة التي يذكرها الباحثون لاختيار TF-IDF بدل BERT لهذه المهمة؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        60
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has been digitized using the term frequency scale–reverse document frequency (TF-IDF). TF-IDF assigns weight to each word based on its frequency in the document and scarcity across text, highlighting keywords and lowering the importance of common words. TF-IDF was chosen over deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance",
+          "chunk_id": 60
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H03-C1",
+          "reference_ar": "تكلفة حوسبة أقل",
+          "evidence_chunk_ids": [
+            60
+          ],
+          "evidence_page": 4,
+          "evidence_text": "and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has been digitized using the term frequency scale–reverse document frequency (TF-IDF). TF-IDF assigns weight to each word based on its frequency in the document and scarcity across text, highlighting keywords and lowering the importance of common words. TF-IDF was chosen over deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance",
+          "supported_in_context": true
+        },
+        {
+          "id": "H03-C2",
+          "reference_ar": "سهولة التفسير",
+          "evidence_chunk_ids": [
+            60
+          ],
+          "evidence_page": 4,
+          "evidence_text": "and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has been digitized using the term frequency scale–reverse document frequency (TF-IDF). TF-IDF assigns weight to each word based on its frequency in the document and scarcity across text, highlighting keywords and lowering the importance of common words. TF-IDF was chosen over deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance",
+          "supported_in_context": true
+        },
+        {
+          "id": "H03-C3",
+          "reference_ar": "أداء أساس قوي",
+          "evidence_chunk_ids": [
+            60
+          ],
+          "evidence_page": 4,
+          "evidence_text": "and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has been digitized using the term frequency scale–reverse document frequency (TF-IDF). TF-IDF assigns weight to each word based on its frequency in the document and scarcity across text, highlighting keywords and lowering the importance of common words. TF-IDF was chosen over deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H04",
+      "question_ar": "بحسب المقطع المرفق، ما المكتبة وخوارزمية Stemming المستخدمتان لمعالجة الكلمات؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        61
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance in short-text classification problems like tweets. It also works well with classic machine learning models and does not overfit on smaller datasets. Stemming: A lingual normalization technique involves breaking down words into their root forms. NLTK library stem. For this purpose, the Porter method was used. Porter. Stemmer to stem tokens and obtain stemmed tokens. For example, the words “connection,”",
+          "chunk_id": 61
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H04-C1",
+          "reference_ar": "NLTK",
+          "evidence_chunk_ids": [
+            61
+          ],
+          "evidence_page": 4,
+          "evidence_text": "deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance in short-text classification problems like tweets. It also works well with classic machine learning models and does not overfit on smaller datasets. Stemming: A lingual normalization technique involves breaking down words into their root forms. NLTK library stem. For this purpose, the Porter method was used. Porter. Stemmer to stem tokens and obtain stemmed tokens. For example, the words “connection,”",
+          "supported_in_context": true
+        },
+        {
+          "id": "H04-C2",
+          "reference_ar": "Porter Stemmer",
+          "evidence_chunk_ids": [
+            61
+          ],
+          "evidence_page": 4,
+          "evidence_text": "deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance in short-text classification problems like tweets. It also works well with classic machine learning models and does not overfit on smaller datasets. Stemming: A lingual normalization technique involves breaking down words into their root forms. NLTK library stem. For this purpose, the Porter method was used. Porter. Stemmer to stem tokens and obtain stemmed tokens. For example, the words “connection,”",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H05",
+      "question_ar": "بحسب المقطع المرفق، ما مكتبة استخراج قطبية المشاعر، وما حالات القطبية الثلاث المذكورة في وصفها؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        63
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "be verified using string punctuation. Sentiment Analysis: Emotion scores were drawn using the TextBlob library in Python, which processes text data. TextBlob offers polarity scores for texts, pointing to their feelings whether positive, negative, or neutral. These grades, in addition to the features of TF-IDF, are combined to form the final set of features used in the model training. The sentiment features enabled the model to differentiate emotionally charged messages—particularly those with negative polarity—enabling more in-depth psychological profiling of abusive",
+          "chunk_id": 63
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H05-C1",
+          "reference_ar": "TextBlob",
+          "evidence_chunk_ids": [
+            63
+          ],
+          "evidence_page": 4,
+          "evidence_text": "be verified using string punctuation. Sentiment Analysis: Emotion scores were drawn using the TextBlob library in Python, which processes text data. TextBlob offers polarity scores for texts, pointing to their feelings whether positive, negative, or neutral. These grades, in addition to the features of TF-IDF, are combined to form the final set of features used in the model training. The sentiment features enabled the model to differentiate emotionally charged messages—particularly those with negative polarity—enabling more in-depth psychological profiling of abusive",
+          "supported_in_context": true
+        },
+        {
+          "id": "H05-C2",
+          "reference_ar": "قطبية إيجابية",
+          "evidence_chunk_ids": [
+            63
+          ],
+          "evidence_page": 4,
+          "evidence_text": "be verified using string punctuation. Sentiment Analysis: Emotion scores were drawn using the TextBlob library in Python, which processes text data. TextBlob offers polarity scores for texts, pointing to their feelings whether positive, negative, or neutral. These grades, in addition to the features of TF-IDF, are combined to form the final set of features used in the model training. The sentiment features enabled the model to differentiate emotionally charged messages—particularly those with negative polarity—enabling more in-depth psychological profiling of abusive",
+          "supported_in_context": true
+        },
+        {
+          "id": "H05-C3",
+          "reference_ar": "قطبية سلبية",
+          "evidence_chunk_ids": [
+            63
+          ],
+          "evidence_page": 4,
+          "evidence_text": "be verified using string punctuation. Sentiment Analysis: Emotion scores were drawn using the TextBlob library in Python, which processes text data. TextBlob offers polarity scores for texts, pointing to their feelings whether positive, negative, or neutral. These grades, in addition to the features of TF-IDF, are combined to form the final set of features used in the model training. The sentiment features enabled the model to differentiate emotionally charged messages—particularly those with negative polarity—enabling more in-depth psychological profiling of abusive",
+          "supported_in_context": true
+        },
+        {
+          "id": "H05-C4",
+          "reference_ar": "قطبية محايدة",
+          "evidence_chunk_ids": [
+            63
+          ],
+          "evidence_page": 4,
+          "evidence_text": "be verified using string punctuation. Sentiment Analysis: Emotion scores were drawn using the TextBlob library in Python, which processes text data. TextBlob offers polarity scores for texts, pointing to their feelings whether positive, negative, or neutral. These grades, in addition to the features of TF-IDF, are combined to form the final set of features used in the model training. The sentiment features enabled the model to differentiate emotionally charged messages—particularly those with negative polarity—enabling more in-depth psychological profiling of abusive",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H06",
+      "question_ar": "بحسب المقطع المرفق، ما العنصران اللذان يقول الباحثون إنهم ثبّتوهما بين النماذج لجعل المقارنة تحت شروط متسقة؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        73
+      ],
+      "context": [
+        {
+          "page": 5,
+          "word_count": 80,
+          "text": "promising path for developing automated systems that can identify cyberbullying cases with high accuracy and understand their psychological implications [34]. To ensure scientific validity, all models were trained and validated under consistent conditions, using the same training/test splits and feature vectors. This controlled setup helps minimize bias when comparing models. The dataset used in this study consisted of Kaggle’s compilation of cyberbullying texts reinforced by Tweepy, resulting in a powerful collection of 58,000 tweets. Advanced data processing steps, including text",
+          "chunk_id": 73
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H06-C1",
+          "reference_ar": "تقسيمات التدريب والاختبار نفسها",
+          "evidence_chunk_ids": [
+            73
+          ],
+          "evidence_page": 5,
+          "evidence_text": "promising path for developing automated systems that can identify cyberbullying cases with high accuracy and understand their psychological implications [34]. To ensure scientific validity, all models were trained and validated under consistent conditions, using the same training/test splits and feature vectors. This controlled setup helps minimize bias when comparing models. The dataset used in this study consisted of Kaggle’s compilation of cyberbullying texts reinforced by Tweepy, resulting in a powerful collection of 58,000 tweets. Advanced data processing steps, including text",
+          "supported_in_context": true
+        },
+        {
+          "id": "H06-C2",
+          "reference_ar": "متجهات الخصائص نفسها",
+          "evidence_chunk_ids": [
+            73
+          ],
+          "evidence_page": 5,
+          "evidence_text": "promising path for developing automated systems that can identify cyberbullying cases with high accuracy and understand their psychological implications [34]. To ensure scientific validity, all models were trained and validated under consistent conditions, using the same training/test splits and feature vectors. This controlled setup helps minimize bias when comparing models. The dataset used in this study consisted of Kaggle’s compilation of cyberbullying texts reinforced by Tweepy, resulting in a powerful collection of 58,000 tweets. Advanced data processing steps, including text",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H07",
+      "question_ar": "ما طريقتا ضبط المعاملات المذكورتان، وما المعامل المذكور لضبط SVM؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        75
+      ],
+      "context": [
+        {
+          "page": 5,
+          "word_count": 80,
+          "text": "TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes an accurate process for modifying and validating superior parameters to enhance algorithm performance. Hyperparameter tuning was performed using grid search or manual adjustment depending on the model type, optimizing variables like tree depth (Random Forest), C value (SVM), and number of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide",
+          "chunk_id": 75
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H07-C1",
+          "reference_ar": "Grid search إحدى طريقتي الضبط بحسب نوع النموذج",
+          "evidence_chunk_ids": [
+            75
+          ],
+          "evidence_page": 5,
+          "evidence_text": "TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes an accurate process for modifying and validating superior parameters to enhance algorithm performance. Hyperparameter tuning was performed using grid search or manual adjustment depending on the model type, optimizing variables like tree depth (Random Forest), C value (SVM), and number of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide",
+          "supported_in_context": true
+        },
+        {
+          "id": "H07-C2",
+          "reference_ar": "التعديل اليدوي الطريقة الأخرى بحسب نوع النموذج",
+          "evidence_chunk_ids": [
+            75
+          ],
+          "evidence_page": 5,
+          "evidence_text": "TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes an accurate process for modifying and validating superior parameters to enhance algorithm performance. Hyperparameter tuning was performed using grid search or manual adjustment depending on the model type, optimizing variables like tree depth (Random Forest), C value (SVM), and number of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide",
+          "supported_in_context": true
+        },
+        {
+          "id": "H07-C3",
+          "reference_ar": "C معامل ضبط SVM المذكور",
+          "evidence_chunk_ids": [
+            75
+          ],
+          "evidence_page": 5,
+          "evidence_text": "TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes an accurate process for modifying and validating superior parameters to enhance algorithm performance. Hyperparameter tuning was performed using grid search or manual adjustment depending on the model type, optimizing variables like tree depth (Random Forest), C value (SVM), and number of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H08",
+      "question_ar": "ما طريقة تخصيص مجموعة التقييم، وما نسبتها من البيانات؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        76
+      ],
+      "context": [
+        {
+          "page": 5,
+          "word_count": 80,
+          "text": "of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide a comprehensive assessment of the model’s efficiency [35]. The full evaluation was conducted using a hold-out test set (20 % of the data) to measure real-world generalization. This study, combined to analyze sentiment with traditional text characteristics, seeks to improve model detection capabilities and provides a deeper understanding of the emotional impact of cyberbullying, contributing to more efficient intervention strategies.",
+          "chunk_id": 76
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H08-C1",
+          "reference_ar": "مجموعة اختبار hold-out",
+          "evidence_chunk_ids": [
+            76
+          ],
+          "evidence_page": 5,
+          "evidence_text": "of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide a comprehensive assessment of the model’s efficiency [35]. The full evaluation was conducted using a hold-out test set (20 % of the data) to measure real-world generalization. This study, combined to analyze sentiment with traditional text characteristics, seeks to improve model detection capabilities and provides a deeper understanding of the emotional impact of cyberbullying, contributing to more efficient intervention strategies.",
+          "supported_in_context": true
+        },
+        {
+          "id": "H08-C2",
+          "reference_ar": "20%",
+          "evidence_chunk_ids": [
+            76
+          ],
+          "evidence_page": 5,
+          "evidence_text": "of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide a comprehensive assessment of the model’s efficiency [35]. The full evaluation was conducted using a hold-out test set (20 % of the data) to measure real-world generalization. This study, combined to analyze sentiment with traditional text characteristics, seeks to improve model detection capabilities and provides a deeper understanding of the emotional impact of cyberbullying, contributing to more efficient intervention strategies.",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H09",
+      "question_ar": "كيف تجمع Random Forest تنبؤات الأشجار لإنتاج التنبؤ النهائي بحسب النص؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        78
+      ],
+      "context": [
+        {
+          "page": 5,
+          "word_count": 80,
+          "text": "trees, each trained on a random subset of data using random subsets of features. This diversity reduces overfitting by preventing any single tree from dominating the model-decision-making process. To make a prediction, a new instance is passed through all the trees, and each tree’s prediction is counted. The final prediction is resolved by the majority vote or the average prediction of all individual trees, which enhances the generalization. because the combined predictions are less susceptible to noise and errors than",
+          "chunk_id": 78
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H09-C1",
+          "reference_ar": "تصويت الأغلبية أو متوسط تنبؤات الأشجار",
+          "evidence_chunk_ids": [
+            78
+          ],
+          "evidence_page": 5,
+          "evidence_text": "trees, each trained on a random subset of data using random subsets of features. This diversity reduces overfitting by preventing any single tree from dominating the model-decision-making process. To make a prediction, a new instance is passed through all the trees, and each tree’s prediction is counted. The final prediction is resolved by the majority vote or the average prediction of all individual trees, which enhances the generalization. because the combined predictions are less susceptible to noise and errors than",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H10",
+      "question_ar": "هل الدراسة رصدية، وهل استخدمت تقييمًا نفسيًا سريريًا؟",
+      "context_condition": "full",
+      "context_chunk_ids": [
+        4
+      ],
+      "context": [
+        {
+          "page": 1,
+          "word_count": 80,
+          "text": "and subcategories: gender (male, female, LGBT, other), age (adult, teenager, other), religion (Muslim, Christian, Jewish, other), and ethnicity (ethical, unethical, other). Keyword-based classification was used for Subcategory assignment. The emotional score derived from text served as a proxy for measuring psychological impact. We emphasize that this study is observational and does not rely on clinical psychological evaluation. Results showed that female and LGBT users experienced the highest levels of cyberbullying among gender subcategories. Teenagers were most affected by age-based bullying.",
+          "chunk_id": 4
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H10-C1",
+          "reference_ar": "الدراسة رصدية",
+          "evidence_chunk_ids": [
+            4
+          ],
+          "evidence_page": 1,
+          "evidence_text": "and subcategories: gender (male, female, LGBT, other), age (adult, teenager, other), religion (Muslim, Christian, Jewish, other), and ethnicity (ethical, unethical, other). Keyword-based classification was used for Subcategory assignment. The emotional score derived from text served as a proxy for measuring psychological impact. We emphasize that this study is observational and does not rely on clinical psychological evaluation. Results showed that female and LGBT users experienced the highest levels of cyberbullying among gender subcategories. Teenagers were most affected by age-based bullying.",
+          "supported_in_context": true
+        },
+        {
+          "id": "H10-C2",
+          "reference_ar": "لا تعتمد على تقييم نفسي سريري",
+          "evidence_chunk_ids": [
+            4
+          ],
+          "evidence_page": 1,
+          "evidence_text": "and subcategories: gender (male, female, LGBT, other), age (adult, teenager, other), religion (Muslim, Christian, Jewish, other), and ethnicity (ethical, unethical, other). Keyword-based classification was used for Subcategory assignment. The emotional score derived from text served as a proxy for measuring psychological impact. We emphasize that this study is observational and does not rely on clinical psychological evaluation. Results showed that female and LGBT users experienced the highest levels of cyberbullying among gender subcategories. Teenagers were most affected by age-based bullying.",
+          "supported_in_context": true
+        }
+      ],
+      "expected_behavior": "Answer all requested parts with supporting citations.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H11",
+      "question_ar": "بحسب المقطع المرفق، ما أسباب اختيار TF-IDF بدل BERT، وما نسبة مجموعة اختبار hold-out؟",
+      "context_condition": "partial",
+      "context_chunk_ids": [
+        60
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has been digitized using the term frequency scale–reverse document frequency (TF-IDF). TF-IDF assigns weight to each word based on its frequency in the document and scarcity across text, highlighting keywords and lowering the importance of common words. TF-IDF was chosen over deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance",
+          "chunk_id": 60
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H11-C1",
+          "reference_ar": "تكلفة حوسبة أقل",
+          "evidence_chunk_ids": [
+            60
+          ],
+          "evidence_page": 4,
+          "evidence_text": "and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has been digitized using the term frequency scale–reverse document frequency (TF-IDF). TF-IDF assigns weight to each word based on its frequency in the document and scarcity across text, highlighting keywords and lowering the importance of common words. TF-IDF was chosen over deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance",
+          "supported_in_context": true
+        },
+        {
+          "id": "H11-C2",
+          "reference_ar": "سهولة التفسير",
+          "evidence_chunk_ids": [
+            60
+          ],
+          "evidence_page": 4,
+          "evidence_text": "and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has been digitized using the term frequency scale–reverse document frequency (TF-IDF). TF-IDF assigns weight to each word based on its frequency in the document and scarcity across text, highlighting keywords and lowering the importance of common words. TF-IDF was chosen over deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance",
+          "supported_in_context": true
+        },
+        {
+          "id": "H11-C3",
+          "reference_ar": "أداء أساس قوي",
+          "evidence_chunk_ids": [
+            60
+          ],
+          "evidence_page": 4,
+          "evidence_text": "and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has been digitized using the term frequency scale–reverse document frequency (TF-IDF). TF-IDF assigns weight to each word based on its frequency in the document and scarcity across text, highlighting keywords and lowering the importance of common words. TF-IDF was chosen over deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance",
+          "supported_in_context": true
+        },
+        {
+          "id": "H11-C4",
+          "reference_ar": "20%",
+          "evidence_chunk_ids": [
+            76
+          ],
+          "evidence_page": 5,
+          "evidence_text": "of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide a comprehensive assessment of the model’s efficiency [35]. The full evaluation was conducted using a hold-out test set (20 % of the data) to measure real-world generalization. This study, combined to analyze sentiment with traditional text characteristics, seeks to improve model detection capabilities and provides a deeper understanding of the emotional impact of cyberbullying, contributing to more efficient intervention strategies.",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Answer supported parts with citations and explicitly identify unsupported parts.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H12",
+      "question_ar": "ما مكتبة قطبية المشاعر، وما خوارزمية اشتقاق الكلمات؟",
+      "context_condition": "partial",
+      "context_chunk_ids": [
+        63
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "be verified using string punctuation. Sentiment Analysis: Emotion scores were drawn using the TextBlob library in Python, which processes text data. TextBlob offers polarity scores for texts, pointing to their feelings whether positive, negative, or neutral. These grades, in addition to the features of TF-IDF, are combined to form the final set of features used in the model training. The sentiment features enabled the model to differentiate emotionally charged messages—particularly those with negative polarity—enabling more in-depth psychological profiling of abusive",
+          "chunk_id": 63
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H12-C1",
+          "reference_ar": "TextBlob",
+          "evidence_chunk_ids": [
+            63
+          ],
+          "evidence_page": 4,
+          "evidence_text": "be verified using string punctuation. Sentiment Analysis: Emotion scores were drawn using the TextBlob library in Python, which processes text data. TextBlob offers polarity scores for texts, pointing to their feelings whether positive, negative, or neutral. These grades, in addition to the features of TF-IDF, are combined to form the final set of features used in the model training. The sentiment features enabled the model to differentiate emotionally charged messages—particularly those with negative polarity—enabling more in-depth psychological profiling of abusive",
+          "supported_in_context": true
+        },
+        {
+          "id": "H12-C2",
+          "reference_ar": "Porter Stemmer",
+          "evidence_chunk_ids": [
+            61
+          ],
+          "evidence_page": 4,
+          "evidence_text": "deep contextual embeddings like BERT because it was less computationally expensive, more easily interpretable, and had a strong baseline performance in short-text classification problems like tweets. It also works well with classic machine learning models and does not overfit on smaller datasets. Stemming: A lingual normalization technique involves breaking down words into their root forms. NLTK library stem. For this purpose, the Porter method was used. Porter. Stemmer to stem tokens and obtain stemmed tokens. For example, the words “connection,”",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Answer supported parts with citations and explicitly identify unsupported parts.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H13",
+      "question_ar": "ما الأجزاء الثلاثة لشجرة القرار، وكيف تجمع Random Forest تنبؤات الأشجار؟",
+      "context_condition": "partial",
+      "context_chunk_ids": [
+        85
+      ],
+      "context": [
+        {
+          "page": 6,
+          "word_count": 80,
+          "text": "a set of questions and their responses Pavlopoulos et al [38]. This tree has three main parts: the starting point (root), middle parts with questions (internal nodes), and endpoints with answers (leaf nodes). A decision tree is a predictive model that maps features to a target value. It consists of nodes that represent the attributes of the data, and branches that represent the decision rules. Starting at the root node, the data are split based on the feature that provides",
+          "chunk_id": 85
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H13-C1",
+          "reference_ar": "الجذر root",
+          "evidence_chunk_ids": [
+            85
+          ],
+          "evidence_page": 6,
+          "evidence_text": "a set of questions and their responses Pavlopoulos et al [38]. This tree has three main parts: the starting point (root), middle parts with questions (internal nodes), and endpoints with answers (leaf nodes). A decision tree is a predictive model that maps features to a target value. It consists of nodes that represent the attributes of the data, and branches that represent the decision rules. Starting at the root node, the data are split based on the feature that provides",
+          "supported_in_context": true
+        },
+        {
+          "id": "H13-C2",
+          "reference_ar": "العقد الداخلية internal nodes",
+          "evidence_chunk_ids": [
+            85
+          ],
+          "evidence_page": 6,
+          "evidence_text": "a set of questions and their responses Pavlopoulos et al [38]. This tree has three main parts: the starting point (root), middle parts with questions (internal nodes), and endpoints with answers (leaf nodes). A decision tree is a predictive model that maps features to a target value. It consists of nodes that represent the attributes of the data, and branches that represent the decision rules. Starting at the root node, the data are split based on the feature that provides",
+          "supported_in_context": true
+        },
+        {
+          "id": "H13-C3",
+          "reference_ar": "الأوراق leaf nodes",
+          "evidence_chunk_ids": [
+            85
+          ],
+          "evidence_page": 6,
+          "evidence_text": "a set of questions and their responses Pavlopoulos et al [38]. This tree has three main parts: the starting point (root), middle parts with questions (internal nodes), and endpoints with answers (leaf nodes). A decision tree is a predictive model that maps features to a target value. It consists of nodes that represent the attributes of the data, and branches that represent the decision rules. Starting at the root node, the data are split based on the feature that provides",
+          "supported_in_context": true
+        },
+        {
+          "id": "H13-C4",
+          "reference_ar": "تصويت الأغلبية أو متوسط تنبؤات الأشجار بحسب النص",
+          "evidence_chunk_ids": [
+            78
+          ],
+          "evidence_page": 5,
+          "evidence_text": "trees, each trained on a random subset of data using random subsets of features. This diversity reduces overfitting by preventing any single tree from dominating the model-decision-making process. To make a prediction, a new instance is passed through all the trees, and each tree’s prediction is counted. The final prediction is resolved by the majority vote or the average prediction of all individual trees, which enhances the generalization. because the combined predictions are less susceptible to noise and errors than",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Answer supported parts with citations and explicitly identify unsupported parts.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H14",
+      "question_ar": "ما معامل SVM المذكور في الضبط، وما العنصران المثبتان بين النماذج للمقارنة؟",
+      "context_condition": "partial",
+      "context_chunk_ids": [
+        75
+      ],
+      "context": [
+        {
+          "page": 5,
+          "word_count": 80,
+          "text": "TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes an accurate process for modifying and validating superior parameters to enhance algorithm performance. Hyperparameter tuning was performed using grid search or manual adjustment depending on the model type, optimizing variables like tree depth (Random Forest), C value (SVM), and number of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide",
+          "chunk_id": 75
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H14-C1",
+          "reference_ar": "C",
+          "evidence_chunk_ids": [
+            75
+          ],
+          "evidence_page": 5,
+          "evidence_text": "TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes an accurate process for modifying and validating superior parameters to enhance algorithm performance. Hyperparameter tuning was performed using grid search or manual adjustment depending on the model type, optimizing variables like tree depth (Random Forest), C value (SVM), and number of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide",
+          "supported_in_context": true
+        },
+        {
+          "id": "H14-C2",
+          "reference_ar": "تقسيمات التدريب والاختبار نفسها",
+          "evidence_chunk_ids": [
+            73
+          ],
+          "evidence_page": 5,
+          "evidence_text": "promising path for developing automated systems that can identify cyberbullying cases with high accuracy and understand their psychological implications [34]. To ensure scientific validity, all models were trained and validated under consistent conditions, using the same training/test splits and feature vectors. This controlled setup helps minimize bias when comparing models. The dataset used in this study consisted of Kaggle’s compilation of cyberbullying texts reinforced by Tweepy, resulting in a powerful collection of 58,000 tweets. Advanced data processing steps, including text",
+          "supported_in_context": false
+        },
+        {
+          "id": "H14-C3",
+          "reference_ar": "متجهات الخصائص نفسها",
+          "evidence_chunk_ids": [
+            73
+          ],
+          "evidence_page": 5,
+          "evidence_text": "promising path for developing automated systems that can identify cyberbullying cases with high accuracy and understand their psychological implications [34]. To ensure scientific validity, all models were trained and validated under consistent conditions, using the same training/test splits and feature vectors. This controlled setup helps minimize bias when comparing models. The dataset used in this study consisted of Kaggle’s compilation of cyberbullying texts reinforced by Tweepy, resulting in a powerful collection of 58,000 tweets. Advanced data processing steps, including text",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Answer supported parts with citations and explicitly identify unsupported parts.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H15",
+      "question_ar": "هل اعتمدت الدراسة تقييمًا نفسيًا سريريًا، وما نسبة مجموعة اختبار hold-out؟",
+      "context_condition": "partial",
+      "context_chunk_ids": [
+        4
+      ],
+      "context": [
+        {
+          "page": 1,
+          "word_count": 80,
+          "text": "and subcategories: gender (male, female, LGBT, other), age (adult, teenager, other), religion (Muslim, Christian, Jewish, other), and ethnicity (ethical, unethical, other). Keyword-based classification was used for Subcategory assignment. The emotional score derived from text served as a proxy for measuring psychological impact. We emphasize that this study is observational and does not rely on clinical psychological evaluation. Results showed that female and LGBT users experienced the highest levels of cyberbullying among gender subcategories. Teenagers were most affected by age-based bullying.",
+          "chunk_id": 4
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H15-C1",
+          "reference_ar": "لم تعتمد تقييمًا نفسيًا سريريًا",
+          "evidence_chunk_ids": [
+            4
+          ],
+          "evidence_page": 1,
+          "evidence_text": "and subcategories: gender (male, female, LGBT, other), age (adult, teenager, other), religion (Muslim, Christian, Jewish, other), and ethnicity (ethical, unethical, other). Keyword-based classification was used for Subcategory assignment. The emotional score derived from text served as a proxy for measuring psychological impact. We emphasize that this study is observational and does not rely on clinical psychological evaluation. Results showed that female and LGBT users experienced the highest levels of cyberbullying among gender subcategories. Teenagers were most affected by age-based bullying.",
+          "supported_in_context": true
+        },
+        {
+          "id": "H15-C2",
+          "reference_ar": "20%",
+          "evidence_chunk_ids": [
+            76
+          ],
+          "evidence_page": 5,
+          "evidence_text": "of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide a comprehensive assessment of the model’s efficiency [35]. The full evaluation was conducted using a hold-out test set (20 % of the data) to measure real-world generalization. This study, combined to analyze sentiment with traditional text characteristics, seeks to improve model detection capabilities and provides a deeper understanding of the emotional impact of cyberbullying, contributing to more efficient intervention strategies.",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Answer supported parts with citations and explicitly identify unsupported parts.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H16",
+      "question_ar": "ما الأهداف الثلاثة التي يتنبأ بها نموذج LSTM متعدد المخرجات؟",
+      "context_condition": "none",
+      "context_chunk_ids": [
+        58
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "nature of tweet extraction through Tweepy helps maintain temporal relevance in the dataset, supporting more accurate real-world application of the model. 4.1.3. Data preprocessing Preprocessing a dataset involves several critical steps to prepare text data for analysis and model training. Text Cleaning: Text cleaning involves converting all text to lowercase to ensure uniformity and removing special characters, numbers, and punctuation marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text",
+          "chunk_id": 58
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H16-C1",
+          "reference_ar": "cyberbullying_type",
+          "evidence_chunk_ids": [
+            6
+          ],
+          "evidence_page": 1,
+          "evidence_text": "outperforming others. Among the traditional models, Random Forest performed better, while Logistic Regression was the worst performing. The inclusion of sentiment features significantly improved calssification accuracy, particularly in LSTM. A multi-output LSTM model was created to predict cyberbullying_type, sub_category and sentiment all at once, providing an end-to-end detection system. This framwork enables proactive monitoring of online harm and support timely interventions. 1. Introduction Incorporating ethical considerations into the development and implementation of tools to prevent and mitigate cyberbullying is important.",
+          "supported_in_context": false
+        },
+        {
+          "id": "H16-C2",
+          "reference_ar": "sub_category",
+          "evidence_chunk_ids": [
+            6
+          ],
+          "evidence_page": 1,
+          "evidence_text": "outperforming others. Among the traditional models, Random Forest performed better, while Logistic Regression was the worst performing. The inclusion of sentiment features significantly improved calssification accuracy, particularly in LSTM. A multi-output LSTM model was created to predict cyberbullying_type, sub_category and sentiment all at once, providing an end-to-end detection system. This framwork enables proactive monitoring of online harm and support timely interventions. 1. Introduction Incorporating ethical considerations into the development and implementation of tools to prevent and mitigate cyberbullying is important.",
+          "supported_in_context": false
+        },
+        {
+          "id": "H16-C3",
+          "reference_ar": "sentiment",
+          "evidence_chunk_ids": [
+            6
+          ],
+          "evidence_page": 1,
+          "evidence_text": "outperforming others. Among the traditional models, Random Forest performed better, while Logistic Regression was the worst performing. The inclusion of sentiment features significantly improved calssification accuracy, particularly in LSTM. A multi-output LSTM model was created to predict cyberbullying_type, sub_category and sentiment all at once, providing an end-to-end detection system. This framwork enables proactive monitoring of online harm and support timely interventions. 1. Introduction Incorporating ethical considerations into the development and implementation of tools to prevent and mitigate cyberbullying is important.",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Abstain without adding factual claims.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H17",
+      "question_ar": "كيف أُسندت الفئات الفرعية في الدراسة؟",
+      "context_condition": "none",
+      "context_chunk_ids": [
+        63
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "be verified using string punctuation. Sentiment Analysis: Emotion scores were drawn using the TextBlob library in Python, which processes text data. TextBlob offers polarity scores for texts, pointing to their feelings whether positive, negative, or neutral. These grades, in addition to the features of TF-IDF, are combined to form the final set of features used in the model training. The sentiment features enabled the model to differentiate emotionally charged messages—particularly those with negative polarity—enabling more in-depth psychological profiling of abusive",
+          "chunk_id": 63
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H17-C1",
+          "reference_ar": "تصنيف قائم على الكلمات المفتاحية",
+          "evidence_chunk_ids": [
+            4
+          ],
+          "evidence_page": 1,
+          "evidence_text": "and subcategories: gender (male, female, LGBT, other), age (adult, teenager, other), religion (Muslim, Christian, Jewish, other), and ethnicity (ethical, unethical, other). Keyword-based classification was used for Subcategory assignment. The emotional score derived from text served as a proxy for measuring psychological impact. We emphasize that this study is observational and does not rely on clinical psychological evaluation. Results showed that female and LGBT users experienced the highest levels of cyberbullying among gender subcategories. Teenagers were most affected by age-based bullying.",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Abstain without adding factual claims.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H18",
+      "question_ar": "ماذا يذكر بيان التمويل عن منح تمويل الدراسة؟",
+      "context_condition": "none",
+      "context_chunk_ids": [
+        78
+      ],
+      "context": [
+        {
+          "page": 5,
+          "word_count": 80,
+          "text": "trees, each trained on a random subset of data using random subsets of features. This diversity reduces overfitting by preventing any single tree from dominating the model-decision-making process. To make a prediction, a new instance is passed through all the trees, and each tree’s prediction is counted. The final prediction is resolved by the majority vote or the average prediction of all individual trees, which enhances the generalization. because the combined predictions are less susceptible to noise and errors than",
+          "chunk_id": 78
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H18-C1",
+          "reference_ar": "لم تتلق الدراسة منحة تمويل من الجهات العامة أو التجارية أو غير الربحية",
+          "evidence_chunk_ids": [
+            195
+          ],
+          "evidence_page": 14,
+          "evidence_text": "in real time, enabling platforms and educators to respond proactively. It is also crucial to ensure fairness and prevent model bias against specific groups, maintaining ethical standards in all real-world applications. Funding statement The research received no funding grant from any funding agency in the public, commercial, or not-for-profit sectors. CRediT authorship contribution statement Abdulnaser M. Fashakh: Data curation, Methodology, Formal analysis, Writing – original draft. Mesut Çevik: Supervision, Conceptualization. S¸enay Kocakoyun Aydo˘gan: Validation, Review & Editing. Abdullahi Abdu Ibrahim:",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Abstain without adding factual claims.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H19",
+      "question_ar": "ما الفائدة المتوقعة من التعلم بالنقل في قسم العمل المستقبلي؟",
+      "context_condition": "none",
+      "context_chunk_ids": [
+        75
+      ],
+      "context": [
+        {
+          "page": 5,
+          "word_count": 80,
+          "text": "TextBlob) adds emotional context, creating a hybrid feature space that improves model sensitivity to harmful content. Advanced model training includes an accurate process for modifying and validating superior parameters to enhance algorithm performance. Hyperparameter tuning was performed using grid search or manual adjustment depending on the model type, optimizing variables like tree depth (Random Forest), C value (SVM), and number of layers or neurons (deep networks). Evaluation criteria such as accuracy, remembrance, F1 score, and health were used to provide",
+          "chunk_id": 75
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H19-C1",
+          "reference_ar": "تقليل وقت التدريب",
+          "evidence_chunk_ids": [
+            192
+          ],
+          "evidence_page": 14,
+          "evidence_text": "monitoring systems and digital mental health applications. Future work Future studies could expand on this work by exploring the following research directions: Data Augmentation: Using data augmentation techniques to expand the training dataset and enhance the model’s ability to generalize new data. Transfer Learning: Exploring transfer learning to leverage pretrained models in similar tasks, which can reduce training time and improve performance. Practical Applications: Applying models to real-world datasets from diverse domains to test their performance and adaptability to multiple",
+          "supported_in_context": false
+        },
+        {
+          "id": "H19-C2",
+          "reference_ar": "تحسين الأداء باستخدام نماذج مدربة مسبقًا",
+          "evidence_chunk_ids": [
+            192
+          ],
+          "evidence_page": 14,
+          "evidence_text": "monitoring systems and digital mental health applications. Future work Future studies could expand on this work by exploring the following research directions: Data Augmentation: Using data augmentation techniques to expand the training dataset and enhance the model’s ability to generalize new data. Transfer Learning: Exploring transfer learning to leverage pretrained models in similar tasks, which can reduce training time and improve performance. Practical Applications: Applying models to real-world datasets from diverse domains to test their performance and adaptability to multiple",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Abstain without adding factual claims.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    },
+    {
+      "id": "H20",
+      "question_ar": "ما نوع النظام المقترح للعمل المستقبلي لرصد المحتوى المسيء، وما توقيت الرصد المقترح؟",
+      "context_condition": "none",
+      "context_chunk_ids": [
+        59
+      ],
+      "context": [
+        {
+          "page": 4,
+          "word_count": 80,
+          "text": "marks that are irrelevant to the analysis. This step helps reduce the noise in the data. Tokenization: The cleaned text is then encoded by dividing it into individual words or symbols. Encoding helps to further process and analyze texts at a fine-grained level. Removing Stop Words: Common words that do not add meaning to the text, known as “,” “the” and “is,” were excluded. This helps focus on keywords that play a role in identifying cyberbullying. TF-IDF Vectorization: Text has",
+          "chunk_id": 59
+        }
+      ],
+      "reference_claims": [
+        {
+          "id": "H20-C1",
+          "reference_ar": "نظام إنذار مبكر لرصد المحتوى المسيء في وسائل التواصل",
+          "evidence_chunk_ids": [
+            194
+          ],
+          "evidence_page": 14,
+          "evidence_text": "in binary classification, leading to more accurate and reliable systems in multiple applications. This comprehensive approach ensures that our results are not only scientifically robust, but also relevant to practical application, paving the way for continued progress in the field of machine learning and artificial intelligence. Additionally, we propose developing early-warning systems that can flag abusive content in social media in real time, enabling platforms and educators to respond proactively. It is also crucial to ensure fairness and prevent model",
+          "supported_in_context": false
+        },
+        {
+          "id": "H20-C2",
+          "reference_ar": "الرصد في الوقت الحقيقي",
+          "evidence_chunk_ids": [
+            194
+          ],
+          "evidence_page": 14,
+          "evidence_text": "in binary classification, leading to more accurate and reliable systems in multiple applications. This comprehensive approach ensures that our results are not only scientifically robust, but also relevant to practical application, paving the way for continued progress in the field of machine learning and artificial intelligence. Additionally, we propose developing early-warning systems that can flag abusive content in social media in real time, enabling platforms and educators to respond proactively. It is also crucial to ensure fairness and prevent model",
+          "supported_in_context": false
+        }
+      ],
+      "expected_behavior": "Abstain without adding factual claims.",
+      "reference_review": "assistant_checked_against_supplied_chunks"
+    }
+  ],
+  "source_sha256": "a6a3052571a642b8100d3e2ddd6f20edef7fd79ad537c4fae44179aee1d907ef",
+  "limitations": [
+    "Single paper; topics, evidence and several requested answers overlap across cases.",
+    "20 constructed cases are not 20 independent knowledge targets.",
+    "One assistant reference review, not independent human validation.",
+    "Controlled contexts do not measure retrieval performance.",
+    "Source claims are evaluated as reported, not verified against training code."
+  ]
+}
