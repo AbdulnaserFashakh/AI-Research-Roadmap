@@ -1,0 +1,12 @@
+{
+  "input_file": "data/raw/tweets_raw.csv",
+  "source_sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+  "timestamp_utc": "2026-10-09T16:51:51.864642+00:00",
+  "python_version": "3.14.7",
+  "total_rows": 58316,
+  "empty_tweets": 0,
+  "nonempty_tweets": 58316,
+  "unique_nonempty_texts_exact": 51529,
+  "duplicate_excess_rows_exact": 6787,
+  "source_modified": false
+}
