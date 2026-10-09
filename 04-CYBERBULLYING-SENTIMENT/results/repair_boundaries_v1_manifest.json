@@ -1,0 +1,37 @@
+[
+  {
+    "file": "audit_remaining_encoding.py",
+    "bytes": 5390,
+    "sha256": "119e0e9aa99a91937022bf01007a2535c30db3131c18d2be114e155e0ba62937"
+  },
+  {
+    "file": "boundary_review.csv",
+    "bytes": 97451,
+    "sha256": "396d99a1cb000fcd311984e650c26bbdb06eb9d6761789ccf50c806d449f4d19"
+  },
+  {
+    "file": "input_snapshot.csv",
+    "bytes": 19302742,
+    "sha256": "824e0d2b6390c6b5ca09561a0486c4598e60f8377db839e413a67c76eccc478d"
+  },
+  {
+    "file": "preview_additional_repairs.py",
+    "bytes": 4268,
+    "sha256": "5cb802a722b33536127275c52bd2e746d60c7992784e105a863750c069abb2b1"
+  },
+  {
+    "file": "preview_encoding_repair.py",
+    "bytes": 4653,
+    "sha256": "4992457cb5cc4eb4f00449bec1eb35b2f37945376b4be2691577895a9b5e6cc4"
+  },
+  {
+    "file": "report.json",
+    "bytes": 528,
+    "sha256": "dfbeb60260a73212db5606faa1f2906b5ada6e472830ae5641d2691d7a352870"
+  },
+  {
+    "file": "review_repair_boundaries.py",
+    "bytes": 5363,
+    "sha256": "9cf1e9ec89c2cd071982437bc3d9401a11b4c0285a5ab04fdc7a6a65efba61c6"
+  }
+]

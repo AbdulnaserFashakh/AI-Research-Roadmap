@@ -1,0 +1,13 @@
+{
+  "run_id": "repair_boundaries_20261009T184651176311Z",
+  "input_sha256": "824e0d2b6390c6b5ca09561a0486c4598e60f8377db839e413a67c76eccc478d",
+  "total_rows": 58316,
+  "match_occurrences_by_type": {
+    "whole_extracted_fragment": 1195,
+    "inside_longer_fragment": 500
+  },
+  "distinct_rule_fragment_pairs": 141,
+  "input_modified": false,
+  "repairs_applied": 0,
+  "limitation": "Fragment boundaries are heuristic. Matches inside longer fragments are not necessarily wrong. Preview applies one rule at a time."
+}

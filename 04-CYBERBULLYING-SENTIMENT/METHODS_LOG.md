@@ -511,6 +511,23 @@ The manifest covers the other archived files, not itself.
 - Input snapshot, code, preview, report and manifest were archived
   in the experiment directory.
 
+  ## Additional repair boundary audit
+
+- Run ID: repair_boundaries_20261009T184651176311Z
+- Script: review_repair_boundaries.py
+- Total rows inspected: 58,316.
+- Whole extracted-fragment match occurrences: 1,195.
+- Match occurrences inside longer fragments: 500.
+- Total matched occurrences: 1,695.
+- Distinct rule/fragment pairs: 141.
+- Five displayed longer-fragment examples involved adjacent
+  or repeated emoji sequences.
+- Some surrounding emoji sequences remained damaged.
+- These examples do not validate all longer-fragment matches.
+- No input modification or repair application.
+- Code, dependencies, input snapshot, review table, report
+  and manifest were archived in the experiment directory.
+
 ## References
 
 Python CSV:
