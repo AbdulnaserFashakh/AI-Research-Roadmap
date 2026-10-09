@@ -1,0 +1,12 @@
+{
+  "source_sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+  "total_rows": 58316,
+  "normalized_groups": 51487,
+  "duplicate_excess_rows": 6829,
+  "groups_with_multiple_rows": 2958,
+  "largest_group_size": 20,
+  "normalization": "NFKC + casefold + whitespace collapse",
+  "original_text_preserved": true,
+  "rows_removed": 0,
+  "near_duplicates_checked": false
+}
