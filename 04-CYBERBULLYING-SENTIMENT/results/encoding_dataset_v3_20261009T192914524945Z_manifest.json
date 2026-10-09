@@ -1,0 +1,62 @@
+[
+  {
+    "file": "audit_remaining_encoding.py",
+    "bytes": 5390,
+    "sha256": "119e0e9aa99a91937022bf01007a2535c30db3131c18d2be114e155e0ba62937"
+  },
+  {
+    "file": "build_encoding_dataset_v3.py",
+    "bytes": 10767,
+    "sha256": "d60c6a82f3b14be11e14af859839e3db17e7cf5f95a9655a5c565c93f79b7728"
+  },
+  {
+    "file": "change_log.csv",
+    "bytes": 521429,
+    "sha256": "8347ff2e69e348dbce1c1f785d18ad16eb1e79b6c9074664efe8cfe3274c2016"
+  },
+  {
+    "file": "dataset_proposed.csv",
+    "bytes": 19522816,
+    "sha256": "0a06f95557aac73b6bba27945517bc1bc55ca9c5936c95385cb5469087e74f03"
+  },
+  {
+    "file": "encoding_rules_v3.py",
+    "bytes": 834,
+    "sha256": "d97e4bd7d7d03033accbe98cb6178630f9c8c4fb7bcf98e32b3d575666068761"
+  },
+  {
+    "file": "methods_entry.md",
+    "bytes": 2075,
+    "sha256": "0fe41453eaa4406ed3bcd62219adda8963fcbc1b67cd17fdee24c5feab9a8b66"
+  },
+  {
+    "file": "preview_additional_repairs.py",
+    "bytes": 4268,
+    "sha256": "5cb802a722b33536127275c52bd2e746d60c7992784e105a863750c069abb2b1"
+  },
+  {
+    "file": "preview_encoding_repair.py",
+    "bytes": 4653,
+    "sha256": "4992457cb5cc4eb4f00449bec1eb35b2f37945376b4be2691577895a9b5e6cc4"
+  },
+  {
+    "file": "remaining_fragments.csv",
+    "bytes": 60029,
+    "sha256": "6a1a1e1e637213b10556304bbf1b6f43e4b62dfc701f43e684fa3a34a3889da1"
+  },
+  {
+    "file": "report.json",
+    "bytes": 1545,
+    "sha256": "4e404b36b8d6d59f0b76b501aa0eb3c1d0a011df1686b9328903489a9b4d654c"
+  },
+  {
+    "file": "rules.json",
+    "bytes": 3844,
+    "sha256": "4c1262af5c4b45493733b88bea2a256b0c1d37434c7b2bca516f11aad6b00570"
+  },
+  {
+    "file": "source_snapshot.csv",
+    "bytes": 8747116,
+    "sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea"
+  }
+]

@@ -630,3 +630,74 @@ Execution results:
 - Preserved contextual previews and code in the experiment.
 - Input dataset identified by SHA-256 in report.json.
 - No repairs applied. Candidates require contextual review.
+
+
+## Encoding proposal v3 — encoding_dataset_v3_20261009T192914524945Z
+
+- Script: build_encoding_dataset_v3.py
+- Applied 28 exact rules to a derived copy of the source.
+- One inspected fragment remains deferred.
+- Verified original text and record order preservation.
+- Checked second-pass idempotence and remaining fragments.
+- No normalization, annotation or row deletion performed.
+- Archived source, code, rules, changes, dataset and reports.
+- Proposal remains incomplete and requires review.
+
+```json
+{
+  "run_id": "encoding_dataset_v3_20261009T192914524945Z",
+  "started_utc": "2026-10-09T19:29:14.524945+00:00",
+  "python_version": "3.14.7",
+  "unicode_database_version": "16.0.0",
+  "source_sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+  "rules_count": 28,
+  "total_rows": 58316,
+  "changed_rows_from_raw": 9691,
+  "unchanged_rows": 48625,
+  "replacement_occurrences": 21163,
+  "occurrences_by_rule": {
+    "R01": 10757,
+    "R02": 2994,
+    "R03": 2927,
+    "R04": 291,
+    "R05": 972,
+    "R06": 44,
+    "R07": 17,
+    "R08": 771,
+    "R09": 48,
+    "R10": 271,
+    "R11": 269,
+    "R12": 131,
+    "R13": 251,
+    "R14": 334,
+    "R15": 93,
+    "R16": 69,
+    "R17": 74,
+    "R18": 134,
+    "R19": 69,
+    "R20": 60,
+    "R21": 96,
+    "R22": 50,
+    "R23": 114,
+    "R24": 75,
+    "R25": 67,
+    "R26": 42,
+    "R27": 92,
+    "R28": 51
+  },
+  "unique_exact_texts_before": 51529,
+  "unique_exact_texts_after": 51529,
+  "rows_with_remaining_candidate_fragments": 1900,
+  "distinct_remaining_candidate_fragments": 1203,
+  "remaining_fragment_occurrences": 2992,
+  "rows_with_deferred_fragment": 42,
+  "idempotence_failure_rows": 0,
+  "verified_original_rows": 58316,
+  "source_modified": false,
+  "rows_removed": 0,
+  "normalization_applied": false,
+  "labels_created": false,
+  "status": "partial_encoding_repair_proposal",
+  "limitation": "Exact substring proposals are not globally validated. Remaining-fragment detection is heuristic and incomplete."
+}
+```
