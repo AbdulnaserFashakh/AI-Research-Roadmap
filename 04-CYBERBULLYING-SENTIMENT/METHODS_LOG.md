@@ -382,6 +382,26 @@ from the preparation steps alone.
 8. Fit learned preprocessing on training data only.
 9. Compare the same model with and without sentiment.
 10. Report overall and group-specific errors with uncertainty.
+## Encoding repair preview — version 2
+
+- Input: data/raw/tweets_raw.csv
+- Script: preview_encoding_repair.py
+- Rules: five punctuation rules and four emoji rules.
+- Emoji decoding path: cp1256 followed by latin1.
+- Exact round-trip reconstruction verified for four tested fragments.
+- Total source rows: 58,316.
+- Rows with proposed changes: 8,877.
+- Replacement occurrences: 18,821.
+- Additional changed rows compared with version 1: 236.
+- Preview: data/review/encoding_repair_preview.csv
+- Report: results/encoding_repair_preview.json
+- Source unchanged.
+- Preview contains changed rows only.
+- Remaining encoding defects are unresolved.
+- Global annotation review has not been completed.
+- Version 1 preview CSV was overwritten by this execution.
+- Version 1 code remains available in Git history.
+- A separate archive copy was requested, but its creation is unconfirmed.
 
 ## References
 
