@@ -1,0 +1,401 @@
+# Methods and Execution Log
+
+## Study objective
+
+Evaluate whether explicit sentiment integration changes abuse-detection
+errors across target groups through a controlled comparison of the
+same model with and without sentiment information.
+
+This objective has not yet been tested.
+Target-group definitions and annotation guidelines remain under development.
+
+## Documentation policy
+
+For each step, record:
+- Script and relevant functions.
+- Input and output paths.
+- Parameters and software versions.
+- Observed results.
+- Changes made to the data.
+- Validation performed and unresolved limitations.
+
+Distinguish executed procedures from proposed procedures.
+Do not treat reviewed examples as validation of the entire dataset.
+
+## 1. Execution environment
+
+- Local Windows computer.
+- Editor: Visual Studio Code.
+- Terminal: PowerShell.
+- Python version reported by the interpreter: 3.14.7.
+- Project-specific virtual environment: .venv.
+- Display adapter reported: Intel(R) UHD Graphics.
+- The nvidia-smi command was unavailable.
+- No GPU training has been performed.
+- No third-party Python packages were required for the executed scripts.
+
+Project directory:
+C:\Users\lenovo\AI-Research-Roadmap\04-CYBERBULLYING-SENTIMENT
+
+## 2. Working dataset
+
+Input: data/raw/tweets_raw.csv
+
+The working file contains one column named text.
+Legacy labels were removed from the working copy.
+
+SHA-256:
+bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea
+
+A separate five-column comparison file was retained:
+data/raw/tweets_original.csv
+
+Columns:
+text, created_at, cyberbullying_type, sub_category, emotions
+
+SHA-256:
+869510601196dd8d43d30b9478bed33072303b9c001bca3d6f828ff8f079fc02
+
+The provenance of this comparison file before the current workflow
+has not been independently verified.
+
+Legacy labels have not been used as new annotations or model inputs.
+
+## 3. Initial raw-data audit
+
+Script: audit_raw.py
+Function: main()
+
+Input:
+data/raw/tweets_raw.csv
+
+Output:
+results/raw_audit.json
+
+Procedure:
+- Read CSV using utf-8-sig and csv.DictReader.
+- Require a single column named text.
+- Check malformed records and whitespace-only texts.
+- Count exact duplicate texts without normalizing them.
+- Calculate the source SHA-256.
+- Record the Python version and execution timestamp.
+
+Results:
+- Total rows: 58,316.
+- Empty texts: 0.
+- Nonempty texts: 58,316.
+- Unique nonempty texts by exact matching: 51,529.
+- Duplicate excess rows by exact matching: 6,787.
+
+Duplicate excess means occurrences beyond the first occurrence.
+It does not mean the number of duplicate groups.
+
+No source rows or texts were changed.
+
+Git commit:
+ff3ebb0 — Add raw tweet audit and exclude local data
+
+## 4. Normalization for duplicate grouping
+
+Script: group_duplicates.py
+Functions:
+- normalize_for_grouping(text)
+- main()
+
+Input:
+data/raw/tweets_raw.csv
+
+Outputs:
+- data/processed/tweets_grouped.csv
+- results/duplicate_groups.json
+
+Normalization sequence:
+1. unicodedata.normalize("NFKC", text)
+2. casefold()
+3. Split and rejoin whitespace using a single space.
+
+Normalization was applied only to calculate grouping identifiers.
+The original text was retained in the output.
+
+Identifier construction:
+- row_id: first 16 characters of source SHA-256 plus one-based CSV record index.
+- group_id: SHA-256 of the normalized text encoded as UTF-8.
+- group_size: number of source records sharing the group_id.
+
+Results:
+- Total rows: 58,316.
+- Normalized text groups: 51,487.
+- Duplicate excess rows: 6,829.
+- Groups containing multiple rows: 2,958.
+- Largest group: 20 rows.
+- Additional duplicate excess compared with exact matching: 42.
+- Rows removed: 0.
+
+Limitations:
+- Semantic and near duplicates were not assessed.
+- A shared group_id does not establish identical annotations.
+- Grouping must be recalculated after encoding repair.
+- No train/validation/test split has been created.
+
+Git commit:
+7e84806 — Group duplicate tweets while preserving original text
+
+## 5. Annotation-guideline pilot
+
+Script: create_review_sample.py
+Function: main()
+
+Input:
+data/processed/tweets_grouped.csv
+
+Outputs:
+- data/review/pilot_100.csv
+- results/pilot_100_manifest.json
+
+Procedure:
+- Retain the first source row as representative of each group.
+- Sort group identifiers.
+- Sample 100 groups without replacement.
+- Use random.Random(42).
+- Leave annotation fields blank.
+- Record selected group identifiers and input/output SHA-256 values.
+- Refuse to overwrite an existing pilot CSV.
+
+Annotation fields:
+abuse_label, mentioned_groups, targeted_groups, sentiment,
+uncertain, rationale, annotator_id
+
+Purpose:
+Test and refine annotation guidelines.
+This is not a held-out evaluation dataset.
+
+Five texts received preliminary discussion in the conversation.
+Those judgments were not independently validated and were not
+confirmed as saved annotations.
+
+Annotation decisions still required:
+- Operational definition of abuse.
+- Distinction between abuse and cyberbullying.
+- Mentioned versus targeted groups.
+- Multi-label group representation.
+- Treatment of sexual orientation relative to gender.
+- Sentiment scope and uncertain cases.
+- Independent review and disagreement resolution.
+
+## 6. Encoding inspection
+
+Script: check_encoding.py
+
+Outputs generated across two script versions:
+- results/encoding_check.json
+- results/raw_encoding_check.json
+
+Inspected source record indices:
+4,186; 6,436; 56,335.
+
+Procedure:
+Read texts as UTF-8 and display their stored characters
+using JSON Unicode escapes.
+
+Finding:
+Malformed character sequences were present in both the pilot
+and the working raw CSV.
+The issue was not solely terminal display.
+
+Reproducibility limitation:
+check_encoding.py was subsequently replaced with the raw-file
+inspection version. The earlier pilot inspection is therefore
+not reproduced by the current script without modification.
+
+## 7. Full text-preservation comparison
+
+Script: compare_encoding.py
+Functions:
+- inspect(path)
+- read_texts(path), defined within main()
+- main()
+
+Inputs:
+- data/raw/tweets_original.csv
+- data/raw/tweets_raw.csv
+
+Output:
+results/encoding_comparison.json
+
+Results:
+- Both files decoded successfully as UTF-8.
+- Both contained 58,316 records.
+- All text values matched in the same order.
+- Different paired rows: 0.
+- The three inspected texts contained the same malformed sequences.
+
+Interpretation:
+Removing legacy columns preserved the text values in the
+two compared files.
+
+This comparison does not establish when the encoding damage arose.
+Valid UTF-8 does not prove that text is free of prior decoding damage.
+
+Neither input was modified.
+
+## 8. Encoding-pattern audit
+
+Script: audit_encoding_patterns.py
+Function: main()
+
+Input:
+data/raw/tweets_raw.csv
+
+Outputs:
+- results/encoding_patterns.json
+- data/review/encoding_candidates.csv
+
+Patterns inspected:
+- \u0623\u00a2\u0622
+- \u0623\u00a3
+- \ufffd
+
+Results:
+- Total rows: 58,316.
+- Rows matching at least one pattern: 9,071.
+- Rows matching the first pattern: 8,956.
+- Rows matching the second pattern: 118.
+- Rows containing U+FFFD: 0.
+- Rows matching both the first and second patterns: 3.
+- Repairs applied: 0.
+
+Pattern counts refer to rows, not individual occurrences.
+
+Limitations:
+Matches are candidates for review.
+The patterns do not cover all possible encoding defects.
+Absence of U+FFFD does not establish intact text.
+
+## 9. Proposed punctuation repair
+
+Script: preview_encoding_repair.py
+Function: main()
+
+Input:
+data/review/encoding_candidates.csv
+
+Output:
+data/review/encoding_repair_preview.csv
+
+Exact replacement rules:
+- \u0623\u00a2\u0622\u20ac\u0622\u2122 -> U+2019
+- \u0623\u00a2\u0622\u20ac\u0622\u0153 -> U+201C
+- \u0623\u00a2\u0622\u20ac\u0622\u200c -> U+201D
+- \u0623\u00a2\u0622\u20ac\u0622\u201d -> U+2014
+- \u0623\u00a2\u0622\u20ac\u0622\u00a6 -> U+2026
+
+Output fields:
+source_row, text_original, text_proposed,
+replacement_count, review_decision
+
+Results:
+- Rows with proposed changes: 8,641.
+- Original source unchanged.
+- review_decision remains blank.
+- Output contains changed candidate rows only.
+
+Review performed:
+- Before/after examples inspected at source rows 1, 10 and 23.
+- First available example displayed for each replacement rule.
+- Rule examples occurred at rows 1, 75 and 77.
+- Apostrophe, quotation-mark and ellipsis changes were
+  consistent with the displayed examples.
+- The dash example at row 75 remains less contextually clear.
+
+Status:
+Proposed repair, not globally validated or approved for training.
+
+Unresolved:
+- Corrupted emoji sequences.
+- Other encoding defects outside the inspected patterns.
+- HTML entities such as &amp; and &lt; remain unchanged.
+- No spelling, grammatical wording or abusive terms were removed.
+- No complete repaired dataset has been created.
+
+The preview must not be used as the full training dataset.
+
+## 10. Version-control and file locations
+
+Project .gitignore excludes:
+.venv/
+data/
+__pycache__/
+*.pyc
+
+Code is stored in the project root.
+Data and text-bearing review files are stored under data/.
+Audit reports are stored under results/.
+
+check_encoding.py and compare_encoding.py were moved from
+data/review/ to the project root for version control.
+
+Additional commits were reported as completed for:
+- Encoding inspection and preservation comparison.
+
+Their hashes have not been recorded in this log.
+
+The pilot and subsequent encoding/repair scripts require a
+Git status check to confirm their current commit status.
+
+Encoding inspection reports contain tweet excerpts.
+No upload to the remote repository was confirmed in this workflow.
+
+## 11. Current study status
+
+Completed:
+- Raw-data audit.
+- Exact and normalized duplicate analysis.
+- Reproducible pilot sampling.
+- Full comparison of text preservation.
+- Audit of selected encoding patterns.
+- Proposed punctuation-repair preview.
+
+Not completed:
+- Full encoding repair and validation.
+- Final normalization policy for model inputs.
+- Revised duplicate grouping after repair.
+- Final annotation guidelines.
+- Independent annotation and adjudication.
+- Train/validation/test split.
+- Training-set balancing.
+- Model selection and training.
+- Sentiment ablation.
+- Target-group FPR/FNR analysis.
+
+No model-performance or research-novelty conclusion follows
+from the preparation steps alone.
+
+## 12. Next procedures
+
+1. Validate and document encoding-repair rules.
+2. Address emoji and remaining encoding defects.
+3. Create a complete derived dataset with preserved source text.
+4. Recalculate duplicate groups.
+5. Finalize and test annotation guidelines.
+6. Establish reviewed labels.
+7. Split by groups before any training-set balancing.
+8. Fit learned preprocessing on training data only.
+9. Compare the same model with and without sentiment.
+10. Report overall and group-specific errors with uncertainty.
+
+## References
+
+Python CSV:
+https://docs.python.org/3/library/csv.html
+
+Unicode normalization:
+https://docs.python.org/3/library/unicodedata.html
+
+Unicode handling:
+https://docs.python.org/3/howto/unicode.html
+
+Grouped data splitting:
+https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupShuffleSplit.html
+
+Data leakage:
+https://scikit-learn.org/stable/common_pitfalls.html#data-leakage
