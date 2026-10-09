@@ -1,0 +1,57 @@
+{
+  "original": {
+    "sha256": "869510601196dd8d43d30b9478bed33072303b9c001bca3d6f828ff8f079fc02",
+    "utf8_valid": true,
+    "columns": [
+      "text",
+      "created_at",
+      "cyberbullying_type",
+      "sub_category",
+      "emotions"
+    ],
+    "total_rows": 58316,
+    "records": [
+      {
+        "source_row": 4186,
+        "text": "y\u0623\u00a2\u0622\u20ac\u0622\u2122all offer dick more than y\u0623\u00a2\u0622\u20ac\u0622\u2122all offer dates"
+      },
+      {
+        "source_row": 6436,
+        "text": "Why boys crack up at rape jokes, think having a girlfriend is \u0623\u00a2\u0622\u20ac\u0622\u0153gay,\u0623\u00a2\u0622\u20ac\u0622\u200c and still can\u0623\u00a2\u0622\u20ac\u0622\u2122t cry\u0623\u00a2\u0622\u20ac\u0622\u201dand why we need to give them new and better models of masculinity. Thank YOU @peggyorenstein https://www.theatlantic.com/magazine/archive/2020/01/the-miseducation-of-the-american-boy/603046/"
+      },
+      {
+        "source_row": 56335,
+        "text": "Read my response to \"- Diga n\u0623\u00a3o ao bullying! #repassa\": http://t.co/qhUaIKg"
+      }
+    ]
+  },
+  "working": {
+    "sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+    "utf8_valid": true,
+    "columns": [
+      "text"
+    ],
+    "total_rows": 58316,
+    "records": [
+      {
+        "source_row": 4186,
+        "text": "y\u0623\u00a2\u0622\u20ac\u0622\u2122all offer dick more than y\u0623\u00a2\u0622\u20ac\u0622\u2122all offer dates"
+      },
+      {
+        "source_row": 6436,
+        "text": "Why boys crack up at rape jokes, think having a girlfriend is \u0623\u00a2\u0622\u20ac\u0622\u0153gay,\u0623\u00a2\u0622\u20ac\u0622\u200c and still can\u0623\u00a2\u0622\u20ac\u0622\u2122t cry\u0623\u00a2\u0622\u20ac\u0622\u201dand why we need to give them new and better models of masculinity. Thank YOU @peggyorenstein https://www.theatlantic.com/magazine/archive/2020/01/the-miseducation-of-the-american-boy/603046/"
+      },
+      {
+        "source_row": 56335,
+        "text": "Read my response to \"- Diga n\u0623\u00a3o ao bullying! #repassa\": http://t.co/qhUaIKg"
+      }
+    ]
+  },
+  "full_text_comparison": {
+    "same_row_count": true,
+    "same_text_and_order": true,
+    "different_paired_rows": 0,
+    "first_different_rows": []
+  },
+  "source_files_modified": false
+}

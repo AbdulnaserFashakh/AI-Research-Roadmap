@@ -1,0 +1,19 @@
+{
+  "input_file": "data/review/pilot_100.csv",
+  "matched_rows": 3,
+  "records": [
+    {
+      "row_id": "bfeb77e512a90d2a_004186",
+      "text": "y\u0623\u00a2\u0622\u20ac\u0622\u2122all offer dick more than y\u0623\u00a2\u0622\u20ac\u0622\u2122all offer dates"
+    },
+    {
+      "row_id": "bfeb77e512a90d2a_056335",
+      "text": "Read my response to \"- Diga n\u0623\u00a3o ao bullying! #repassa\": http://t.co/qhUaIKg"
+    },
+    {
+      "row_id": "bfeb77e512a90d2a_006436",
+      "text": "Why boys crack up at rape jokes, think having a girlfriend is \u0623\u00a2\u0622\u20ac\u0622\u0153gay,\u0623\u00a2\u0622\u20ac\u0622\u200c and still can\u0623\u00a2\u0622\u20ac\u0622\u2122t cry\u0623\u00a2\u0622\u20ac\u0622\u201dand why we need to give them new and better models of masculinity. Thank YOU @peggyorenstein https://www.theatlantic.com/magazine/archive/2020/01/the-miseducation-of-the-american-boy/603046/"
+    }
+  ],
+  "source_modified": false
+}
