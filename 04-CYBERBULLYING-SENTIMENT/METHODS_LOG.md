@@ -416,6 +416,19 @@ from the preparation steps alone.
 - Restored code and output were copied into experiments/encoding_v2
   under separate filenames.
 - No source text was modified.
+## Remaining encoding audit — version 1
+
+- Script: audit_remaining_encoding.py
+- Existing nine repair rules were applied in memory only.
+- Rows with remaining candidate fragments: 2,839.
+- Distinct candidate fragments: 1,316.
+- Candidate fragment occurrences: 4,727.
+- No source modification or additional repair was performed.
+- Extraction may flag genuine Arabic and miss other defects.
+- Candidate decoding tested two stages only.
+- Single-stage decoding was not tested in this version.
+- Code, dependency script, report and fragment table were archived
+  locally under experiments/remaining_encoding_v1.
 
 ## References
 

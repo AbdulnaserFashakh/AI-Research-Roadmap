@@ -1,0 +1,12 @@
+{
+  "source_sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+  "rules_script_sha256": "4992457cb5cc4eb4f00449bec1eb35b2f37945376b4be2691577895a9b5e6cc4",
+  "total_rows": 58316,
+  "current_rules": 9,
+  "rows_with_remaining_candidate_fragments": 2839,
+  "distinct_candidate_fragments": 1316,
+  "candidate_fragment_occurrences": 4727,
+  "source_modified": false,
+  "new_repairs_applied": 0,
+  "limitation": "Heuristic extraction may flag genuine Arabic text and may miss other encoding defects."
+}
