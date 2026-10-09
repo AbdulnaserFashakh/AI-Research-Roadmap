@@ -402,6 +402,20 @@ from the preparation steps alone.
 - Version 1 preview CSV was overwritten by this execution.
 - Version 1 code remains available in Git history.
 - A separate archive copy was requested, but its creation is unconfirmed.
+## Emoji probe code restoration
+
+- Identical SHA-256 hashes revealed that inspect_emoji_repair.py
+  contained the preview script instead of the probe script.
+- The misnamed code was preserved in
+  archive/inspect_emoji_repair_misnamed.py.
+- The probe code was restored and rerun.
+- Output: results/emoji_repair_probe_restored.json.
+- Fragment occurrence counts were reproduced: 44, 17, 771 and 48.
+- Each fragment had one reversible cp1256/latin1 decoding candidate.
+- The source SHA-256 matched the prior raw-data audit.
+- Restored code and output were copied into experiments/encoding_v2
+  under separate filenames.
+- No source text was modified.
 
 ## References
 

@@ -1,0 +1,67 @@
+{
+  "source_sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+  "source_modified": false,
+  "repairs_applied": 0,
+  "probes": [
+    {
+      "fragment": "\u0623\u00b0\u0622\u06ba\u0622\u06a9\u0622\u0688",
+      "occurrences": 44,
+      "candidates": [
+        {
+          "first_codec": "cp1256",
+          "second_codec": "latin1",
+          "proposed": "\ud83d\ude0f",
+          "codepoints": [
+            "U+1F60F"
+          ],
+          "roundtrip_verified": true
+        }
+      ]
+    },
+    {
+      "fragment": "\u0623\u00b0\u0622\u06ba\u0622\u06a9\u0622\u06a9",
+      "occurrences": 17,
+      "candidates": [
+        {
+          "first_codec": "cp1256",
+          "second_codec": "latin1",
+          "proposed": "\ud83d\ude18",
+          "codepoints": [
+            "U+1F618"
+          ],
+          "roundtrip_verified": true
+        }
+      ]
+    },
+    {
+      "fragment": "\u0623\u00b0\u0622\u06ba\u0622\u06a9\u0622\u201a",
+      "occurrences": 771,
+      "candidates": [
+        {
+          "first_codec": "cp1256",
+          "second_codec": "latin1",
+          "proposed": "\ud83d\ude02",
+          "codepoints": [
+            "U+1F602"
+          ],
+          "roundtrip_verified": true
+        }
+      ]
+    },
+    {
+      "fragment": "\u0623\u00b0\u0622\u06ba\u0622\u2122\u0622\u201e",
+      "occurrences": 48,
+      "candidates": [
+        {
+          "first_codec": "cp1256",
+          "second_codec": "latin1",
+          "proposed": "\ud83d\ude44",
+          "codepoints": [
+            "U+1F644"
+          ],
+          "roundtrip_verified": true
+        }
+      ]
+    }
+  ]
+}
