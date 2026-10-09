@@ -528,6 +528,19 @@ The manifest covers the other archived files, not itself.
 - Code, dependencies, input snapshot, review table, report
   and manifest were archived in the experiment directory.
 
+  ## Contextual review of ten remaining fragments
+
+- Probe run: remaining_top10_20261009T192255202836Z.
+- Nine final decoding outputs were supported by the displayed contexts.
+- Single-stage intermediate damaged outputs were not selected.
+- Two decoding paths produced the same final é output.
+- Nine exact proposals were recorded in encoding_rules_v3.py.
+- One fragment was deferred because it decoded to two Arabic
+  fathatan marks with unexplained usage in the displayed context.
+- No new replacements have yet been applied.
+- These decisions concern inspected examples, not validation
+  of every occurrence across the dataset.
+
 ## References
 
 Python CSV:
@@ -608,3 +621,12 @@ Execution results:
   "limitation": "Remaining-fragment detection is heuristic and incomplete. Repair proposals have not received global human validation."
 }
 ```
+
+
+## Remaining-fragment probe — remaining_top10_20261009T192255202836Z
+- Script: probe_remaining_top10.py
+- Examined the ten most frequent remaining fragments.
+- Tested reversible one-stage and two-stage decoding.
+- Preserved contextual previews and code in the experiment.
+- Input dataset identified by SHA-256 in report.json.
+- No repairs applied. Candidates require contextual review.
