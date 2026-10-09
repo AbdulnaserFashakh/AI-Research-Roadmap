@@ -1,0 +1,29 @@
+{
+  "run_id": "encoding_dataset_v1_20261009T184159656645Z",
+  "started_utc": "2026-10-09T18:41:59.656645+00:00",
+  "python_version": "3.14.7",
+  "source_sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+  "rules_count": 9,
+  "total_rows": 58316,
+  "changed_rows": 8877,
+  "unchanged_rows": 49439,
+  "replacement_occurrences": 18821,
+  "occurrences_by_rule": {
+    "R01": 10757,
+    "R02": 2994,
+    "R03": 2927,
+    "R04": 291,
+    "R05": 972,
+    "R06": 44,
+    "R07": 17,
+    "R08": 771,
+    "R09": 48
+  },
+  "verified_original_rows": 58316,
+  "source_modified": false,
+  "rows_removed": 0,
+  "status": "partial_encoding_repair_proposal",
+  "all_encoding_defects_resolved": false,
+  "normalization_applied": false,
+  "labels_created": false
+}

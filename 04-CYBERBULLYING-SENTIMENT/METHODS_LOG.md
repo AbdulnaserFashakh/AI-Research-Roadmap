@@ -465,6 +465,31 @@ from the preparation steps alone.
 - No repair was applied to the source dataset.
 - Code, input candidate table and outputs were archived under
   experiments/encoding_screen_v1.
+  ## Complete derived dataset — encoding proposal v1
+
+- Run ID: encoding_dataset_v1_20261009T184159656645Z
+- Script: build_encoding_dataset_v1.py
+- Python: 3.14.7
+- Rules: 9 exact replacements.
+- Total rows: 58,316.
+- Changed rows: 8,877.
+- Unchanged rows: 49,439.
+- Replacement occurrences: 18,821.
+- Occurrences by rule:
+  R01=10,757; R02=2,994; R03=2,927; R04=291; R05=972;
+  R06=44; R07=17; R08=771; R09=48.
+- Original text preservation verified for all 58,316 rows.
+- No source modification or row removal.
+- No normalization or label creation in this run.
+- Encoding repair remains partial and proposed.
+
+Experiment directory:
+experiments/encoding_dataset_v1_20261009T184159656645Z
+
+Archived artifacts:
+source snapshot, executed script, dependency script, rules,
+complete proposed dataset, change log, report and SHA-256 manifest.
+The manifest covers the other archived files, not itself.
 
 ## References
 

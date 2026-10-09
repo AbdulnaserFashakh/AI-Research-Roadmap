@@ -1,0 +1,37 @@
+[
+  {
+    "file": "build_encoding_dataset_v1.py",
+    "bytes": 6615,
+    "sha256": "a04dfde37b0a39178885473af18c99ff8fcb0eb34ffd7ca163f893a20b41bf7d"
+  },
+  {
+    "file": "change_log.csv",
+    "bytes": 465453,
+    "sha256": "afa2a2e60e01d0ad4673c975b47e5923e8c8da8440ae5cc6c005285faa5edd46"
+  },
+  {
+    "file": "dataset_proposed.csv",
+    "bytes": 19302742,
+    "sha256": "824e0d2b6390c6b5ca09561a0486c4598e60f8377db839e413a67c76eccc478d"
+  },
+  {
+    "file": "preview_encoding_repair.py",
+    "bytes": 4653,
+    "sha256": "4992457cb5cc4eb4f00449bec1eb35b2f37945376b4be2691577895a9b5e6cc4"
+  },
+  {
+    "file": "report.json",
+    "bytes": 799,
+    "sha256": "0e6eaa99eb7e08380d4d894fae84a0efbaf88ca83d578d1899b11c634a318a91"
+  },
+  {
+    "file": "rules.json",
+    "bytes": 1146,
+    "sha256": "8f8d69288a7ac9b93735a3f904a44e48920fb26114ad7c9f30a52003c096de80"
+  },
+  {
+    "file": "source_snapshot.csv",
+    "bytes": 8747116,
+    "sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea"
+  }
+]
