@@ -1,0 +1,22 @@
+[
+  {
+    "file": "additional_repair_preview.csv",
+    "sha256": "cd027f847a5a5777c44cb7e92430b60251883916f81a543b692875197686855e",
+    "bytes": 349856
+  },
+  {
+    "file": "input_snapshot.csv",
+    "sha256": "824e0d2b6390c6b5ca09561a0486c4598e60f8377db839e413a67c76eccc478d",
+    "bytes": 19302742
+  },
+  {
+    "file": "preview_additional_repairs.py",
+    "sha256": "5cb802a722b33536127275c52bd2e746d60c7992784e105a863750c069abb2b1",
+    "bytes": 4268
+  },
+  {
+    "file": "report.json",
+    "sha256": "7a1aaa0331ba8b9a5cc50eef2bdd9a44b8145d093ed2f203ae02c3de5adc30e7",
+    "bytes": 1634
+  }
+]

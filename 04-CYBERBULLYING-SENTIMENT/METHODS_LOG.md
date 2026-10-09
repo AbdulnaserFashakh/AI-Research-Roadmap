@@ -491,6 +491,26 @@ source snapshot, executed script, dependency script, rules,
 complete proposed dataset, change log, report and SHA-256 manifest.
 The manifest covers the other archived files, not itself.
 
+## Additional repair proposals — version 1
+
+- Run ID: additional_repairs_20261009T184437845002Z
+- Script: preview_additional_repairs.py
+- Input: complete nine-rule derived dataset.
+- Input SHA-256:
+  824e0d2b6390c6b5ca09561a0486c4598e60f8377db839e413a67c76eccc478d
+- Additional rules: 10 exact substring replacements.
+- Total rows inspected: 58,316.
+- Rows with additional proposals: 882.
+- Replacement occurrences: 1,695.
+- Input unchanged.
+- Output contains changed rows only.
+- These rows may overlap with previously changed rows.
+- Substring replacement counts differ from whole-fragment
+  extraction counts and must not be treated as equivalent.
+- Proposals remain subject to contextual review.
+- Input snapshot, code, preview, report and manifest were archived
+  in the experiment directory.
+
 ## References
 
 Python CSV:

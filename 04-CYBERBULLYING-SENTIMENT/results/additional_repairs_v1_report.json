@@ -1,0 +1,62 @@
+{
+  "run_id": "additional_repairs_20261009T184437845002Z",
+  "input_sha256": "824e0d2b6390c6b5ca09561a0486c4598e60f8377db839e413a67c76eccc478d",
+  "total_rows": 58316,
+  "rows_with_additional_proposals": 882,
+  "replacement_occurrences": 1695,
+  "rules": [
+    {
+      "damaged": "\u0623\u00a2\u0622\u20ac\u0622\u06a9",
+      "replacement": "\u2018",
+      "occurrences": 271
+    },
+    {
+      "damaged": "\u0623\u00a9",
+      "replacement": "\u00e9",
+      "occurrences": 269
+    },
+    {
+      "damaged": "\u0623\u00a2\u0622\u20ac\u0622\u00a2",
+      "replacement": "\u2022",
+      "occurrences": 131
+    },
+    {
+      "damaged": "\u0623\u00a3",
+      "replacement": "\u00e3",
+      "occurrences": 251
+    },
+    {
+      "damaged": "\u0623\u00b0\u0622\u06ba\u0622\u06a9\u0622\u00ad",
+      "replacement": "\ud83d\ude2d",
+      "occurrences": 334
+    },
+    {
+      "damaged": "\u0623\u060c",
+      "replacement": "\u00e1",
+      "occurrences": 93
+    },
+    {
+      "damaged": "\u0623\u00a2\u0622\u2014\u0622\u2014",
+      "replacement": "\u25d7",
+      "occurrences": 69
+    },
+    {
+      "damaged": "\u0623\u00ad",
+      "replacement": "\u00ed",
+      "occurrences": 74
+    },
+    {
+      "damaged": "\u0623\u00b0\u0622\u06ba\u0622\u06a9\u0622\u00a9",
+      "replacement": "\ud83d\ude29",
+      "occurrences": 134
+    },
+    {
+      "damaged": "\u0623\u00a2\u0622\u2014\u0622\u2013",
+      "replacement": "\u25d6",
+      "occurrences": 69
+    }
+  ],
+  "input_modified": false,
+  "status": "additional_proposals_for_review",
+  "output_contains": "changed_rows_only"
+}
