@@ -1,0 +1,14 @@
+{
+  "input_sha256": "8b9bb303e04252a65eaa681e59665538fa47af6c81172d1195568865d6f4daaf",
+  "source_sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+  "script_sha256": "bd9f1a08e77f1c487a14bd47e8df16e866bf39e2ac2a8766ca8839536ec85b51",
+  "fragment_status_counts": {
+    "one_candidate_for_context_review": 915,
+    "multiple_candidates_for_context_review": 61,
+    "no_decoding_candidate": 145,
+    "all_candidates_excluded_by_heuristic": 195
+  },
+  "source_modified": false,
+  "repairs_applied": 0,
+  "limitation": "Heuristic screening is not repair validation. Legitimate format characters or Arabic may be excluded. Context preview uses exact fragment replacement only."
+}

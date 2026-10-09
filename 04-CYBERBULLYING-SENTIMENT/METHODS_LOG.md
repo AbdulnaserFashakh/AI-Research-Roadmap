@@ -448,6 +448,24 @@ from the preparation steps alone.
 - Code, input fragment table and outputs were archived locally
   under experiments/remaining_encoding_v2.
 
+  ## Encoding candidate screening — version 1
+
+- Script: screen_encoding_candidates.py
+- Fragments with one retained output: 915.
+- Fragments with multiple retained outputs: 61.
+- Fragments without decoding candidates: 145.
+- Fragments with all candidates excluded by the heuristic: 195.
+- Counts describe distinct fragments, not tweets.
+- Context previews supported several accented-letter,
+  punctuation and emoji candidates.
+- Previews also revealed encoding damage outside the extraction
+  markers, including the sequence U+00E2 U+20AC U+2122.
+- Context previews replaced the inspected fragment only.
+- Heuristic exclusions are not confirmed decoding failures.
+- No repair was applied to the source dataset.
+- Code, input candidate table and outputs were archived under
+  experiments/encoding_screen_v1.
+
 ## References
 
 Python CSV:
