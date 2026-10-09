@@ -430,6 +430,24 @@ from the preparation steps alone.
 - Code, dependency script, report and fragment table were archived
   locally under experiments/remaining_encoding_v1.
 
+  ## Remaining encoding candidates — version 2
+
+- Script: audit_remaining_encoding_v2.py
+- Tested reversible one-stage and two-stage decoding.
+- Distinct fragments tested: 1,316.
+- No candidate: 145 fragments.
+- One distinct output: 82 fragments.
+- Multiple distinct outputs: 1,089 fragments.
+- Multiple outputs can include an intermediate damaged string
+  and a further decoded string, rather than conflicting final repairs.
+- Inspected examples recovered accented letters, punctuation,
+  symbols and emoji.
+- Reversibility alone does not establish the intended source text.
+- No new repairs were applied.
+- Input and script SHA-256 values are recorded in the report.
+- Code, input fragment table and outputs were archived locally
+  under experiments/remaining_encoding_v2.
+
 ## References
 
 Python CSV:

@@ -1,0 +1,12 @@
+{
+  "input_sha256": "3d41858ceb64af619a0c528e40f631e5f1ffe7bdfe0bdc77b2031f1381c0608b",
+  "script_sha256": "5a9bc70213e5072ade9ae6af6529ca18be1fb26c110c4adbb1046621d67f42d8",
+  "distinct_fragments_tested": 1316,
+  "fragments_without_candidates": 145,
+  "fragments_with_one_distinct_output": 82,
+  "fragments_with_multiple_distinct_outputs": 1089,
+  "source_modified": false,
+  "repairs_applied": 0,
+  "status": "decoding_candidates_only",
+  "limitation": "Reversible decoding does not prove intended text. One-stage outputs may still contain encoding damage."
+}
