@@ -1,0 +1,26 @@
+{
+  "run_id": "encoding_batch_v4_20261009T193401069292Z",
+  "python_version": "3.14.7",
+  "unicode_database_version": "16.0.0",
+  "input_sha256": "0a06f95557aac73b6bba27945517bc1bc55ca9c5936c95385cb5469087e74f03",
+  "total_rows": 58316,
+  "distinct_fragments_examined": 1203,
+  "fragment_decision_counts": {
+    "unique_terminal_proposal": 786,
+    "deferred_fragment": 2,
+    "no_eligible_terminal_candidate": 335,
+    "arabic_output_requires_review": 80
+  },
+  "rows_changed_in_batch": 1605,
+  "rows_changed_from_raw": 10724,
+  "batch_fragment_replacement_occurrences": 2125,
+  "rows_with_remaining_candidate_fragments": 383,
+  "distinct_remaining_candidate_fragments": 417,
+  "verified_preserved_rows": 58316,
+  "input_modified": false,
+  "rows_removed": 0,
+  "normalization_applied": false,
+  "labels_created": false,
+  "status": "automated_encoding_proposal_requires_review",
+  "limitation": "Unique reversible terminal decoding is a selection heuristic, not proof of intended text. Detection misses defects outside the observed extraction markers. Arabic outputs are deferred."
+}

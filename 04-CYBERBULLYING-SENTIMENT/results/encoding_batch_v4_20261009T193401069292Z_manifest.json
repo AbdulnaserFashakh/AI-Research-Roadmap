@@ -1,0 +1,62 @@
+[
+  {
+    "file": "audit_remaining_encoding.py",
+    "bytes": 5390,
+    "sha256": "119e0e9aa99a91937022bf01007a2535c30db3131c18d2be114e155e0ba62937"
+  },
+  {
+    "file": "audit_remaining_encoding_v2.py",
+    "bytes": 4856,
+    "sha256": "5a9bc70213e5072ade9ae6af6529ca18be1fb26c110c4adbb1046621d67f42d8"
+  },
+  {
+    "file": "build_encoding_batch_v4.py",
+    "bytes": 11645,
+    "sha256": "37a2cbfb0d213d27b34897d664d521e816db94e58e8c8000778bd534bdf26a22"
+  },
+  {
+    "file": "change_log.csv",
+    "bytes": 128595,
+    "sha256": "48432b726003c51484bca91f6edd5bc06d5a440ef7df418c68d88582c8c68910"
+  },
+  {
+    "file": "dataset_proposed.csv",
+    "bytes": 27725159,
+    "sha256": "31b6aa0526f75aa5240c1923e57b7c6483ccbc2e6008ae235600f435b8fd85e3"
+  },
+  {
+    "file": "encoding_rules_v3.py",
+    "bytes": 834,
+    "sha256": "d97e4bd7d7d03033accbe98cb6178630f9c8c4fb7bcf98e32b3d575666068761"
+  },
+  {
+    "file": "fragment_decisions.csv",
+    "bytes": 382918,
+    "sha256": "8f44f42a493ab39abad1f85616821fc428fe41436c3bf1262e2e70fd595b6e2a"
+  },
+  {
+    "file": "input_snapshot.csv",
+    "bytes": 19522816,
+    "sha256": "0a06f95557aac73b6bba27945517bc1bc55ca9c5936c95385cb5469087e74f03"
+  },
+  {
+    "file": "methods_entry.md",
+    "bytes": 1682,
+    "sha256": "903f34069ad312ad72e34e17cddbf05dc5b90fd13ae3a40534d89ecb13c2bd9d"
+  },
+  {
+    "file": "preview_encoding_repair.py",
+    "bytes": 4653,
+    "sha256": "4992457cb5cc4eb4f00449bec1eb35b2f37945376b4be2691577895a9b5e6cc4"
+  },
+  {
+    "file": "remaining_fragments.csv",
+    "bytes": 22370,
+    "sha256": "5d6717f8c1c93ad586554f57b50f5f3034ad9e5ed24ab177bf13ce8f0308e5f3"
+  },
+  {
+    "file": "report.json",
+    "bytes": 1110,
+    "sha256": "0a189893d28fe6376742b2c9ef45752c68483b682c97da5f5ebeb79eccc019ca"
+  }
+]
