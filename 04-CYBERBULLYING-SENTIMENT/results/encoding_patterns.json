@@ -1,0 +1,17 @@
+{
+  "source_sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+  "total_rows": 58316,
+  "candidate_rows": 9071,
+  "rows_matching_each_pattern": {
+    "double_encoded_sequence": 8956,
+    "encoded_accent_sequence": 118,
+    "replacement_character": 0
+  },
+  "patterns_unicode": {
+    "double_encoded_sequence": "\u0623\u00a2\u0622",
+    "encoded_accent_sequence": "\u0623\u00a3",
+    "replacement_character": "\ufffd"
+  },
+  "source_modified": false,
+  "repairs_applied": 0
+}
