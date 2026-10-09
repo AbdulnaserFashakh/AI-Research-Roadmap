@@ -544,3 +544,67 @@ https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupS
 
 Data leakage:
 https://scikit-learn.org/stable/common_pitfalls.html#data-leakage
+
+## Encoding dataset proposal v2 — encoding_dataset_v2_20261009T192006935492Z
+
+- Script: build_encoding_dataset_v2.py
+- Applied 19 exact replacement rules to a derived copy.
+- No Unicode normalization or label creation performed.
+- Preserved and verified every original text and source row.
+- Assessed exact-text counts and second-pass idempotence.
+- Audited remaining fragments using the existing heuristic.
+- Counts of changed rows are measured directly against raw text.
+- Source, code, rules, dataset, change log, remaining fragments,
+  report and manifest are archived in the experiment directory.
+- This dataset remains a partial repair proposal.
+
+Execution results:
+
+```json
+{
+  "run_id": "encoding_dataset_v2_20261009T192006935492Z",
+  "started_utc": "2026-10-09T19:20:06.935492+00:00",
+  "python_version": "3.14.7",
+  "unicode_database_version": "16.0.0",
+  "source_sha256": "bfeb77e512a90d2a02942f1c7aba1288e308e7486db2881d347038b42d4859ea",
+  "rules_count": 19,
+  "total_rows": 58316,
+  "changed_rows_from_raw": 9405,
+  "unchanged_rows": 48911,
+  "replacement_occurrences": 20516,
+  "occurrences_by_rule": {
+    "R01": 10757,
+    "R02": 2994,
+    "R03": 2927,
+    "R04": 291,
+    "R05": 972,
+    "R06": 44,
+    "R07": 17,
+    "R08": 771,
+    "R09": 48,
+    "R10": 271,
+    "R11": 269,
+    "R12": 131,
+    "R13": 251,
+    "R14": 334,
+    "R15": 93,
+    "R16": 69,
+    "R17": 74,
+    "R18": 134,
+    "R19": 69
+  },
+  "unique_exact_texts_before": 51529,
+  "unique_exact_texts_after": 51529,
+  "rows_with_remaining_candidate_fragments": 2201,
+  "distinct_remaining_candidate_fragments": 1256,
+  "remaining_fragment_occurrences": 3455,
+  "idempotence_failure_rows": 0,
+  "verified_original_rows": 58316,
+  "source_modified": false,
+  "rows_removed": 0,
+  "normalization_applied": false,
+  "labels_created": false,
+  "status": "partial_encoding_repair_proposal",
+  "limitation": "Remaining-fragment detection is heuristic and incomplete. Repair proposals have not received global human validation."
+}
+```
